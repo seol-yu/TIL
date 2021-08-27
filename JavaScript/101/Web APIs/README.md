@@ -1,8 +1,10 @@
 Web APIs 이해
 
-[Web APIs란?](#WEB APIs)
+[Web APIs란?](#WEB_APIs)
 
-[Browser 구조 분석](#Browser 구조 분석)
+[Browser 구조 분석](#Browser_구조_분석)
+
+[Window 사이즈 표기](#Window_사이즈_표기)
 
 <br/>
 
@@ -10,7 +12,7 @@ Web APIs 이해
 
 <br/>
 
-### WEB APIs
+### WEB_APIs
 
 APIs : Application Programming Interfaces
 
@@ -56,7 +58,7 @@ https://www.thoughtco.com/what-javascript-cannot-do-2037666
 
 <br />
 
-### Browser 구조 분석
+### Browser_구조_분석
 
 Window(전체적인 오브젝트) <- 브라우저 전체 창
 
@@ -105,6 +107,23 @@ https://developer.mozilla.org/en-US/docs/Glossary/layout_viewport
 **Navigator**
 
 https://developer.mozilla.org/en-US/docs/Web/API/Navigator
+
+<br />
+
+---
+
+<br />
+
+### Window_사이즈_표기
+
+```
+window.screen <- 모니터 사이즈
+------------------------------------
+아래는 브라우저 사이즈 변경되면 업데이트
+window.outer <- 브라우저 사이즈
+window.inner <- 페이지가 표기되는 부분 전체(스크롤바 포함)
+documentElement.clientWidth <- 스크롤바 제외한 순수 document문서 자체
+```
 
 <br />
 

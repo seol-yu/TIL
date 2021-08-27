@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window Size</title>
+    <script
+      src="https://kit.fontawesome.com/3aeb1bf02f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        /* Color */
+        --color-white: #ffffff;
+        --color-light-white: #eeeeee;
+        --color-dark-white: #bdbdbd;
+        --color-pink: rgb(216, 154, 188);
+        --color-dark-pink: rgb(211, 136, 165);
+        --color-dark-grey: #4d4d4d;
+        --color-grey: #616161;
+        --color-light-grey: #7c7979;
+        --color-blue: #73aace;
+        --color-yellow: #fff7d1;
+        --color-orange: #feb546;
+        --color-black: #000000;
+
+        /* Font size */
+        --font-large: 48px;
+        --font-medium: 28px;
+        --font-regular: 18px;
+        --font-small: 16px;
+        --font-micro: 14px;
+
+        /* Font weight */
+        --weight-bold: 700;
+        --weight-semi-bold: 600;
+        --weight-regular: 400;
+
+        /* Size */
+        --size-border-radius: 4px;
+
+        /* Animation */
+        --animation-duration: 300ms;
+      }
+
+      body {
+        font-family: "Cafe24SsurroundAir";
+      }
+
+      @font-face {
+        font-family: "TmoneyRoundWindExtraBold";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Cafe24SsurroundAir";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .tag {
+        display: inline-block;
+        background-color: thistle;
+        padding: 16px;
+        margin-top: 16px;
+        font-size: var(--font-regular);
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tag">Window Size</div>
+    <script>
+      const tag = document.querySelector(".tag");
+      function updateTag() {
+        tag.innerHTML = `
+            <i class="fas fa-desktop" style="color: var(--color-dark-pink);"></i>&nbsp<b>모니터 사이즈</b><br/>
+            window.screen: ${window.screen.width}, ${window.screen.height} <br/><br />
+            <i class="far fa-window-maximize" style="color: var(--color-dark-pink);"></i>&nbsp<b>브라우저 사이즈</b><br />
+            window.outer: ${window.outerWidth}, ${window.outerHeight} <br/><br />
+            <i class="fas fa-file-code" style="color: var(--color-dark-pink);"></i>&nbsp<b>스크롤바 포함 페이지가 표기되는 부분 전체</b><br />
+            window.inner: ${window.innerWidth}, ${window.innerHeight} <br/><br/>
+            <i class="far fa-file-code" style="color: var(--color-dark-pink);"></i>&nbsp<b>스크롤바 제외한 순수 document 문서 자체</b><br />
+            documentElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}
+            `;
+      }
+      window.addEventListener("resize", () => {
+        updateTag(); // resize 되면 호출
+        // console.log(
+        //     `window.screen: ${window.screen.width}, ${window.screen.height}`
+        // );
+        // console.log(
+        //     `window.outer: ${window.outerWidth}, ${window.outerHeight}`
+        // );
+        // console.log(
+        //     `window.inner: ${window.innerWidth}, ${window.innerHeight}`
+        // );
+        // console.log(
+        //     `documentElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}`
+        // );
+      });
+      updateTag(); // 페이지 처음 로딩되면
+    </script>
+  </body>
+</html>
