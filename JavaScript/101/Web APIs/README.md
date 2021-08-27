@@ -1,9 +1,21 @@
+Web APIs 이해
+
+[Web APIs란?](#WEB APIs)
+
+[Browser 구조 분석](#Browser 구조 분석)
+
+<br/>
+
+---
+
+<br/>
+
 ### WEB APIs
 
 APIs : Application Programming Interfaces
 
 브라우저에 대해 완벽히 이해
-브라우저 자체 제공 API가 많다
+브라우저 자체 제공 API가 많다<br />
 ex) DOM APIs, Network APIs, Graphics APIs, Audio/Video APIs, Device APIs, File APIs, Storage APIs ..
 
 <br />
@@ -39,4 +51,62 @@ https://developer.mozilla.org/en-US/docs/Web/API
 https://www.thoughtco.com/what-javascript-cannot-do-2037666
 
 <br />
+
+---
+
+<br />
+
+### Browser 구조 분석
+
+Window(전체적인 오브젝트) <- 브라우저 전체 창
+
+Document <- 윈도우 안에 페이지가 표기되는 부분
+
+Navigator <- 사용자 눈엔 안보이는 브라우저 관련 정보 담겨있는 오브젝트
+
+<br />
+
+window
+
+* DOM <- document ...
+* BOM <- navigator, location, fetch, storage ...
+* JavaScript <- Array, Map, Date ...
+
+<br />
+
+`console.log(window)`  <- 윈도우 관련 다양한 함수, 오브젝트 확인
+
+`console.log(this)`
+
+Window는 글로벌 오브젝트라서
+
+`console.log(innerWidth)` 는 `console.log(window.innerWidth)`와 동일
+
+size, scroll, load 확인 때 많이 쓰임
+
+<br />
+
+Window 안에 navigator 오브젝트 <- 브라우저에 포함되어 있는 유용한 정보들 포함
+
+<br />
+
+**Document**
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document
+
+**Window**
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window
+
+**Viewport**
+
+https://developer.mozilla.org/en-US/docs/Glossary/layout_viewport
+
+**Navigator**
+
+https://developer.mozilla.org/en-US/docs/Web/API/Navigator
+
+<br />
+
+---
 
