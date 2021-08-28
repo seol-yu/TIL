@@ -6,6 +6,8 @@ Web APIs 이해
 
 [Window 사이즈 표기](#Window_사이즈_표기)
 
+[브라우저 좌표](#브라우저_좌표)
+
 <br/>
 
 ---
@@ -124,6 +126,48 @@ window.outer <- 브라우저 사이즈
 window.inner <- 페이지가 표기되는 부분 전체(스크롤바 포함)
 documentElement.clientWidth <- 스크롤바 제외한 순수 document문서 자체
 ```
+
+<br />
+
+---
+
+<br />
+
+### 브라우저_좌표
+
+coordinates(좌표)
+
+왼쪽 최상위가 (0, 0)
+
+<br />
+
+`Element.getBoundingClientRect()`  <- 요소가 브라우저 위에서 즉 window 위에서 얼마나 멀리 떨어져 있는지, 크기 얼마인지 등
+
+left <- x축
+
+top <- y축
+
+bottom <- 브라우저 제일 위에서 요소 밑까지. 
+
+right <- 왼쪽에서 제일 끝까지
+
+cf) CSS 에서는 포지션을 absolute나 relative로 지정하게 되면 top과 left / right(브라우저 제일 오른쪽으로부터 떨어진 거리)과 bottom(브라우저 제일 밑에서 떨어진 거리) 이용
+
+![WindowGetBoundingClientRect](../imgs/WindowGetBoundingClientRect.png)
+
+![WindowCSS](../imgs/WindowCSS.png)
+
+<br />
+
+### Client x,y  vs  Page x,y
+
+Client x, y  <- 브라우저 window에서 좌표값에 해당
+
+Page x, y  <- 문서의 제일 시작점부터 x, y 계산
+
+<br />
+
+윈도우 스크롤링 APIs
 
 <br />
 
