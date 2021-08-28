@@ -171,5 +171,4 @@ Page x, y  <- 문서의 제일 시작점부터 x, y 계산
 
 <br />
 
----
-
+Window load
