@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Cafe24SsurroundAir";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    font-family: "Cafe24SsurroundAir";
+}
+
+.line {
+    position: absolute;
+    background-color: white;
+}
+
+.horozontal {
+    width: 100%;
+    height: 1px;
+    top: 50%;
+}
+
+.vertical {
+    height: 100%;
+    width: 1px;
+    left: 50%;
+}
+
+.target {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tag {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(20px, 20px);
+}
