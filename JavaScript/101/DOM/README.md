@@ -345,3 +345,21 @@ ex) 애니메이션은 top, left(layout, paint, composite까지 발생) 말고 t
 
 <br />
 
+좌표 찾기 실습 리팩토링
+
+cf) 간혹 targetRect 확인해봤을 때 width, height이 0으로 나올 때가 있는데
+
+target에 getBoundingClientRect 함수 호출시 target 이미지가 준비안되어있을 가능성.
+
+(아직 다운로드X, 브라우저 위에 올라오지 않은)
+
+자바스크립트를 HTML에서 defer 옵션 이용해서 썼는데
+
+defer는 document content가 load 되기 전 호출이 되고
+
+모든 이미지와 리소스가 다 준비가 된 상태는 'load' 상태
+
+이때 쯤 getBoundingClientRect을 호출해야 정확한 크기 받을 수 있다
+
+![load](../imgs/load.png)
+
