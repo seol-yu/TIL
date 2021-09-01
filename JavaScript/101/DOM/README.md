@@ -12,6 +12,12 @@ DOM
 
 [브라우저가 어떻게 layers를 만들었는지 확인](#More_tools_Layers)
 
+[CSS 속성값 확인](#CSS_속성값_확인)
+
+[좌표 찾기 실습 리팩토링](#좌표찾기실습_리팩토링)
+
+[성능 개선 증거(퍼포먼스 개발툴 활용)](#퍼포먼스_개발툴)
+
 <br />
 
 ---
@@ -321,6 +327,10 @@ img {
 
 <br />
 
+### CSS_속성값_확인
+
+<br />
+
 http://csstriggers.com/
 
 내가 쓰는 CSS 속성값이 좋은지 안좋은지 확인
@@ -345,6 +355,10 @@ ex) 애니메이션은 top, left(layout, paint, composite까지 발생) 말고 t
 
 <br />
 
+### 좌표찾기실습_리팩토링
+
+<br />
+
 좌표 찾기 실습 리팩토링
 
 cf) 간혹 targetRect 확인해봤을 때 width, height이 0으로 나올 때가 있는데
@@ -363,3 +377,56 @@ defer는 document content가 load 되기 전 호출이 되고
 
 ![load](../imgs/load.png)
 
+<br />
+
+---
+
+<br />
+
+### 퍼포먼스_개발툴
+
+<br />
+
+개발툴 - Performance - Screenshots 체크
+
+Record 누르고 측정하고 싶은 동작 하기 Stop
+
+<br />
+
+빨간색은 경고
+
+![Performance](../imgs/Performance.png)
+
+사용자가 부드럽고 완만한 경험하려면 1초당 60개 프레임이 화면에 계속 계속 보여줘야 함
+
+한 프레임이 보여질 때 16.67밀리세컨드 동안 이루어져야 됨
+
+무언가를 처리해서 화면에 업데이트 되는 게 16ms 넘어가는 순간 사용자가 화면 이상하다고 느낌
+
+Layout Shift 클릭하면 밑에 자세히 설명 나옴
+
+![Layout_Shift](../imgs/Layout_Shift.png)
+
+윈도우는 Ctrl + Shift + p
+
+맥은 command shift p 누르면 개발툴 팔레트 이용 가능
+
+layout 검색하면 Show layout shift regions 메뉴 클릭하면 layout이 어떻게 발생하고 있는지 나옴
+
+![layout1](../imgs/layout1.png)
+
+<br />
+
+리팩토링한 것은
+
+![Performance2](../imgs/Performance2.png)
+
+Command Palette 이용해서 Show layout shift regions 해보면 layout 표기 안되는 것 확인
+
+translate을 이용했으므로(top, left 아닌) layout 발생하지 않음
+
+<br />
+
+---
+
+<br />
