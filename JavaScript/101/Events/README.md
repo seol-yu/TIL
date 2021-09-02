@@ -6,6 +6,8 @@
 
 [이벤트 위임 Event Delegation](#이벤트_위임)
 
+[Keyup 과 keydown](#Keyup_keydown)
+
 <br />
 
 ---
@@ -221,3 +223,60 @@ ul.addEventListener('click', event => {
 
 ---
 
+<br />
+
+### Keyup_keydown
+
+<br />
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document/keypress_event
+
+<br />
+
+keypress 더이상 지원 안됨
+
+Deprecated 됨
+
+<br />
+
+대체할 수 있는 것: beforeinput(IE 지원 안함), keydown
+
+<br />
+
+keydown <- 사용자가 키보드 누르면
+
+keyup <- 사용자가 키보드 누르고 있다가 손 떼면
+
+확인해보려면
+
+```javascript
+input.addEventListener('keyup', (event) => {
+    if (event.key === 'a') {
+        event.preventDefault();
+    }
+})
+// keyup이면 a 쓸 수 있고
+// keydown이면 a 안써짐
+```
+
+<br />
+
+```javascript
+input.addEventListener("keydown", (event) => {
+    // 한글처럼 여러번 눌러서 한글자 만드는 경우
+    // 글자가 만들어지고 있는 중간에 발생하는 엔터키라면 무시하라는 코드도 추가
+    // 아니면 keyup 사용
+    if (event.isComposing) {
+        return;
+    }
+    if (event.key === "Enter") {
+        onAdd();
+    }
+});
+```
+
+<br />
+
+---
+
+<br />
