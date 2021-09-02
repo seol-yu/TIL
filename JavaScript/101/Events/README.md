@@ -4,6 +4,8 @@
 
 [preventDefault](#preventDefault)
 
+[이벤트 위임 Event Delegation](#이벤트_위임)
+
 <br />
 
 ---
@@ -167,4 +169,49 @@ scrolling(<- 빠르게 뭔가가 동작해야되는 이벤트)과 같이 passive
 ---
 
 <br />
+
+### 이벤트_위임
+
+<br />
+
+Event Delegation
+
+<br />
+
+아래와 같이 모든 요소들을 찾아서 일일이 이벤트를 등록하는 것은 예쁘지 않다
+
+```javascript
+// Bad
+const lis = document.querySelectorAll('li');
+lis.forEach(li => {
+    li.addEventListener('click', () => {
+        li.classList.add('selected');
+    });
+});
+```
+
+<br />
+
+li가 들어있는 ul태그를 받아 와서 ul에 이벤트 리스너 한번만 등록하면 됨
+
+이벤트에는 
+
+currentTarget(이벤트 핸들러가 부착된 것)과 
+
+target(부모로부터 이벤트가 위임되어 발생하는 자식 요소)이라는 정보가 있으므로
+
+원하는 target에만 집중적으로 처리 가능
+
+```javascript
+const ul = document.querySelector('ul');
+ul.addEventListener('click', event => {
+    if (event.target.tagName == 'LI') {
+        event.target.classList.add('selected');
+    }
+});
+```
+
+<br />
+
+---
 
