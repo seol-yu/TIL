@@ -1,0 +1,143 @@
+[이벤트 이해하기 및 종류](#Events?)
+
+[Bubbling & capturing](#Bubbling_capturing)
+
+<br />
+
+---
+
+<br />
+
+### Events?
+
+<br />
+
+**Events 개념**
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
+
+**Events 종류**
+
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+<br />
+
+종류
+
+- mouse click
+- keyboard
+- resizing window
+- close window
+- page loading
+- form submission
+- video is being played
+- error
+
+<br />
+
+특정한 요소에 Event Handler 등록 -> 브라우저에서 다양한 정보가 들어있는 이벤트라는 오브젝트 만들어서 콜백 함수에 전달해줌
+
+EventTarget을 상속하는 모든 요소에 이벤트 핸들러 등록 가능
+
+<br />
+
+이벤트타겟에는 3개의 API가 있다
+
+- EventTarget.addEventListener()
+- EventTarget.removeEventListener()
+- EventTarget.dispatchEvent()
+
+<br />
+
+`$0.addEventListener('click', () => {console.log('clicked!')});`
+
+`$0.dispatchEvent(new Event('click'));`
+
+```
+const listener = () => {console.log('clicked!')};  // 콜백 함수 등록
+$0.addEventListener('click', listener);
+$0.removeEventListener('click', listener);
+```
+
+<br />
+
+---
+
+<br />
+
+### Bubbling_capturing
+
+<br />
+
+**Bubbling and Capturing** 
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture
+
+<br />
+
+capturing 부모 컨테이너에서 부터 시작해서 캡처링을 통해서 내려옴 이벤트 핸들러 호출
+
+이벤트는 버블링 업 해서 상위에 있는 부모에게 이벤트 발생했다고 해서 부모에게 등록된 이벤트 핸들러 호출, 그 상위에 또 등록된 부모의 이벤트 핸들러 호출
+
+capturing 단계에서 할 일은 딱히 없고
+
+버블링은 신경써서 하자
+
+<br />
+
+```javascript
+button.addEventListener('click', event => {
+    console.log(`button1 ${event.currentTarget}, ${event.target}`);
+    event.stopPropagation();  // 전달하는거 그만. 버튼에서만 핸들링이 되고 버블링 일어나지 않음
+});
+button.addEventListener('click', event => {
+    console.log(`button2 ${event.currentTarget}, ${event.target}`);
+});
+```
+
+<br />
+
+```javascript
+button.addEventListener('click', event => {
+    console.log(`button1 ${event.currentTarget}, ${event.target}`);
+    // event.stopPropagation();
+    event.stopImmediatePropagation();  // button1만 핸들링.
+});
+button.addEventListener('click', event => {
+    console.log(`button2 ${event.currentTarget}, ${event.target}`);
+});
+```
+
+```javascript
+button.addEventListener('click', event => {
+    console.log(`button1 ${event.currentTarget}, ${event.target}`);
+    // event.stopPropagation();
+});
+button.addEventListener('click', event => {
+    console.log(`button2 ${event.currentTarget}, ${event.target}`);
+    event.stopImmediatePropagation();  // button1이 먼저라서 button1, button2 둘 다
+});
+```
+
+<br />
+
+event.stopPropagation();
+
+event.stopImmediatePropagation();
+
+위험하고 나쁨. 사용하지 않는 것이 좋다
+
+<br />
+
+부모에다가 아래 코드 쓰기
+
+```javascript
+if (event.target !== event.currentTarget) {
+    return;
+}
+```
+
+<br />
+
+---
+
