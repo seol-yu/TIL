@@ -22,6 +22,10 @@ DOM
 
 [innerHTML vs element](#innerHTML_vs_element)
 
+[쇼핑 목록앱 참고](#쇼핑_목록앱_참고)
+
+[디버깅](#디버깅)
+
 <br />
 
 ---
@@ -489,3 +493,67 @@ https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
 Element의 레퍼런스 즉 Element의 변수를 가지고 있으면서 조금 더 많은 동작을 해야하면 `createElement`을 이용해서 만들어 쓰고
 
 한번 업데이트한 후 다시 변경할 일 없으면 `innerHTML`을 이용해서 동적으로 추가
+
+<br />
+
+---
+
+<br />
+
+### 쇼핑_목록앱_참고
+
+<br />
+
+**FontAwesome**
+
+https://fontawesome.com/
+
+https://www.youtube.com/watch?v=X91jsJyZofw&feature=youtu.be&t=340
+
+<br />
+
+---
+
+<br />
+
+**CSS Gradient**
+
+https://cssgradient.io/
+
+**Box Shadow CSS Generator**
+
+https://html-css-js.com/css/generator/box-shadow/ 
+
+<br />
+
+컬러 휠로 여러가지 색깔 조합
+
+https://color.adobe.com/ko/create/color-wheel
+
+<br />
+
+---
+
+<br />
+
+### 디버깅
+
+<br />
+
+개발툴 - Sources
+
+Breakpoints
+
+Watch <- + 누르고 event
+
+![debugging](../imgs/debugging.png)
+
+브레이크 포인트 없애고
+
+다시 재개한 후 끄기
+
+<br />
+
+주석의 경우 이 함수는 무엇인지 어떤 의도로 만들어졌는지 어떻게 사용하는 것이 바람직한지 왜 사용해야 되는지 등등 '왜' 의도를 설명할 수 있어야 한다
+
+코드를 그대로 설명하는 주석은 필요 없음

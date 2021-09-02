@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-family: "Cafe24SsurroundAir";
+}
+
+@font-face {
+    font-family: "Cafe24SsurroundAir";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+    padding: 0;
+}
+
+button {
+    outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: #ced3df;
+    text-align: center;
+}
+
+.list {
+    width: 400px;
+    margin: auto;
+    background-color: #f1f0f7;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 10px 12px 9px -6px rgba(203,164,224,0); 
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 10px 12px 9px -6px rgba(203,164,224,0);
+}
+
+.header {
+    height: 48px;
+    padding: 8px;
+    font-size: 24px;
+    background: rgb(242, 158, 210);
+    background: linear-gradient(105deg, rgba(242, 158, 210, 1) 28%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 20px 20px 0 0;
+    color: white;
+}
+
+.items {
+    height: 500px;
+    overflow-y: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 32px;
+}
+
+.item__delete {
+    font-size: 16px;
+    transition: all 300ms ease-in;
+}
+
+.item__delete:hover {
+    color: palevioletred;
+    transform: scale(1.1);
+}
+
+.item__divider {
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+    margin: auto;
+}
+
+.footer {
+    background: rgb(242, 158, 210);
+    background: linear-gradient(105deg, rgba(242, 158, 210, 1) 28%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 0 0 20px 20px;
+}
+
+.footer__input {
+    width: 100%;
+    height: 32px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    padding: 0 16px;
+}
+
+.footer__button {
+    width: 48px;
+    height: 48px;
+    font-size: 28px;
+    background-color: palevioletred;
+    border-radius: 50%;
+    color: white;
+    transition: transform 300ms ease-in;
+}
+
+.footer__button i {
+    line-height: 40px;
+}
+
+.footer__button:hover {
+    transform: scale(1.1);
+}
