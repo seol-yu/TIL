@@ -20,6 +20,8 @@ DOM
 
 [DOM 조작하기](#DOM_조작하기)
 
+[innerHTML vs element](#innerHTML_vs_element)
+
 <br />
 
 ---
@@ -447,13 +449,12 @@ cf) `const image = document.querySelector('img[src="img/avatar.png"]')`  // 골�
 
 새로운 것을 추가할 때는 document에 있는 createElement API 이용
 
-`const section = document.querySelector('section');`
-
-`const h2 = document.createElement('h2');`
-
-`h2.setAttribute('class', 'title');`  // <h2 class="title"></h2>
-
-`h2.textContent = 'This is a title';`  // <h2 class="title">This is a title</h2>
+```javascript
+const section = document.querySelector('section');
+const h2 = document.createElement('h2');
+h2.setAttribute('class', 'title');  // <h2 class="title"></h2>
+h2.textContent = 'This is a title';  // <h2 class="title">This is a title</h2>
+```
 
 <br />
 
@@ -480,3 +481,11 @@ https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
 ---
 
 <br />
+
+### innerHTML_vs_element
+
+<br />
+
+Element의 레퍼런스 즉 Element의 변수를 가지고 있으면서 조금 더 많은 동작을 해야하면 `createElement`을 이용해서 만들어 쓰고
+
+한번 업데이트한 후 다시 변경할 일 없으면 `innerHTML`을 이용해서 동적으로 추가
