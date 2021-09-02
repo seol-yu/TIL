@@ -8,6 +8,8 @@
 
 [Keyup 과 keydown](#Keyup_keydown)
 
+[Web Form](#Web_Form)
+
 <br />
 
 ---
@@ -280,3 +282,17 @@ input.addEventListener("keydown", (event) => {
 ---
 
 <br />
+
+### Web_Form
+
+<br />
+
+튜토리얼: https://developer.mozilla.org/en-US/docs/Learn/Forms
+
+form 태그: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+
+<br />
+
+form 태그 이용해서 리팩토링
+
+form 태그 안에 button은 type="submit" 이 디폴트(명시적으로 써주는 것이 좋긴함)
