@@ -18,6 +18,8 @@ DOM
 
 [성능 개선 증거(퍼포먼스 개발툴 활용)](#퍼포먼스_개발툴)
 
+[DOM 조작하기](#DOM_조작하기)
+
 <br />
 
 ---
@@ -424,6 +426,54 @@ layout 검색하면 Show layout shift regions 메뉴 클릭하면 layout이 어�
 Command Palette 이용해서 Show layout shift regions 해보면 layout 표기 안되는 것 확인
 
 translate을 이용했으므로(top, left 아닌) layout 발생하지 않음
+
+<br />
+
+---
+
+<br />
+
+### DOM_조작하기
+
+<br />
+
+querySelector는 처음에 찾아진 Element를 리턴. 만약 찾지 못하면 null을 리턴
+
+cf) `const image = document.querySelector('img[src="img/avatar.png"]')`  // 골라서
+
+`const image = document.querySelectorAll('img')`  // 문서 안에 있는 img 태그 모두 가지고오기
+
+<br />
+
+새로운 것을 추가할 때는 document에 있는 createElement API 이용
+
+`const section = document.querySelector('section');`
+
+`const h2 = document.createElement('h2');`
+
+`h2.setAttribute('class', 'title');`  // <h2 class="title"></h2>
+
+`h2.textContent = 'This is a title';`  // <h2 class="title">This is a title</h2>
+
+<br />
+
+https://developer.mozilla.org/en-US/docs/Web/API/Element/append
+
+이전 호환성 위해 appendChild
+
+<br />
+
+`section.appendChild(h2);`
+
+appendChild API 쓰면 결국 컨테이너 안에서 제일 끝부분에 추가
+
+<br />
+
+https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
+
+`insertBefore` 는 노드를 어떤 reference 노드 전에 추가해 줌
+
+`parentNode.insertBefore(newNode, referenceNode)` <- 추가하고자 하는 parent 컨테이너 박스에 insertBefore를 호출한 다음 새로 추가하고자 하는 노드 그리고 참고할 노드 2개 전달하면 새로운 노드를 이 reference 노드 이전에 추가해준다
 
 <br />
 
