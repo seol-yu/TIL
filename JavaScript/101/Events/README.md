@@ -2,6 +2,8 @@
 
 [Bubbling & capturing](#Bubbling_capturing)
 
+[preventDefault](#preventDefault)
+
 <br />
 
 ---
@@ -140,4 +142,29 @@ if (event.target !== event.currentTarget) {
 <br />
 
 ---
+
+<br />
+
+### preventDefault
+
+`event.preventDefault()`
+
+<br />
+
+```javascript
+document.addEventListener('wheel', event => {
+    console.log('scrolling');
+    event.preventDefault();
+}, { passive: false });
+```
+
+but,
+
+scrolling(<- 빠르게 뭔가가 동작해야되는 이벤트)과 같이 passive가 true로 설정된 애들은 웬만해서는 passive를 false로 설정하지 않는 것이 좋다
+
+<br />
+
+---
+
+<br />
 
