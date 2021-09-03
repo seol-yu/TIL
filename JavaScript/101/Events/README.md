@@ -1,3 +1,5 @@
+### 목차
+
 [이벤트 이해하기 및 종류](#Events?)
 
 [Bubbling & capturing](#Bubbling_capturing)
@@ -66,6 +68,10 @@ const listener = () => {console.log('clicked!')};  // 콜백 함수 등록
 $0.addEventListener('click', listener);
 $0.removeEventListener('click', listener);
 ```
+
+<br />
+
+[목차로](#목차)
 
 <br />
 
@@ -147,6 +153,10 @@ if (event.target !== event.currentTarget) {
 
 <br />
 
+[목차로](#목차)
+
+<br />
+
 ---
 
 <br />
@@ -167,6 +177,10 @@ document.addEventListener('wheel', event => {
 but,
 
 scrolling(<- 빠르게 뭔가가 동작해야되는 이벤트)과 같이 passive가 true로 설정된 애들은 웬만해서는 passive를 false로 설정하지 않는 것이 좋다
+
+<br />
+
+[목차로](#목차)
 
 <br />
 
@@ -220,6 +234,10 @@ ul.addEventListener('click', event => {
     }
 });
 ```
+
+<br />
+
+[목차로](#목차)
 
 <br />
 
@@ -279,6 +297,10 @@ input.addEventListener("keydown", (event) => {
 
 <br />
 
+[목차로](#목차)
+
+<br />
+
 ---
 
 <br />
@@ -296,3 +318,9 @@ form 태그: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
 form 태그 이용해서 리팩토링
 
 form 태그 안에 button은 type="submit" 이 디폴트(명시적으로 써주는 것이 좋긴함)
+
+<br />
+
+[목차로](#목차)
+
+<br />
