@@ -2,6 +2,8 @@
 
 [변수 let const 최종 정리](#let_const)
 
+[함수 최종 정리 - 함수 포인터](#함수_포인터)
+
 <br />
 
 ---
@@ -73,4 +75,83 @@ reference가 가리키는 object 안 내용은 변경 가능
 ---
 
 <br />
+
+### 함수_포인터
+
+<br />
+
+함수 이름은 짧지만 간결하고 의미 있는 이름
+
+인자는 외부에서 받아오는 값. 함수 내에서 접근(함수 만드는 시점에는 데이터 들어있지 않음)
+
+```javascript
+function add (a, b) {
+    return a + b;
+}
+```
+
+```javascript
+function add (num1, num2) {
+    return num1 + num2;
+}
+```
+
+<br />
+
+함수도 object 중 하나
+
+add에 함수가 정의된 곳 가리키는 reference 들어있다
+
+```javascript
+const doSomething = add; // reference 복사되어서 doSomething 변수에 들어옴. 즉 doSomething이나 add나 똑같은 함수 가리킴
+
+const result3 = doSomething(2, 3);
+console.log(result3);
+
+const result4 = add(2, 3);
+console.log(result4);
+```
+
+<br />
+
+```javascript
+function print() {
+    console.log('print');
+}
+
+print();  // 어떤 인자, 몇개를 전달하든, 아무런 인자를 받지 않는 함수는 input을 받지 않는다
+```
+
+<br />
+
+인자는 함수를 호출하는 사람으로부터 필요한 데이터를 받아오기 위해, 
+
+필요한 데이터를 받아올 때 함수 내부에서 좀 더 이해하기 쉬운 의미있는 이름을 부여해 놓는 것
+
+<br />
+
+```javascript
+function surprise(operator) {
+  const result = operator(2, 3);
+  console.log(result);
+}
+
+surprise();  // operator is not a function 에러 뜸. 아무런 값을 전달하지 않아서 operator는 undefined으로 되어 있음
+```
+
+```javascript
+surprise(add);  // add가 가리키는 함수 주소값 reference가 복사되어져 operator로 전달. operator()는 add()를 수행하는 것과 동일
+```
+
+<br />
+
+함수를 전달하는 것은 함수를 가리키고 있는 reference가 복사되어서 전달되는 것이다
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
 
