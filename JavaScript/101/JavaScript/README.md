@@ -4,6 +4,8 @@
 
 [함수 최종 정리 - 함수 포인터](#함수_포인터)
 
+[헷갈리는 boolean과 오퍼레이터&&](#boolean_&&)
+
 <br />
 
 ---
@@ -155,3 +157,59 @@ surprise(add);  // add가 가리키는 함수 주소값 reference가 복사되�
 
 ---
 
+<br />
+
+### boolean_&&
+
+<br />
+
+```javascript
+// false: 0, -0, '', null, undefined
+// true: -1, 'hello'
+if (null) {
+    console.log('true!');
+} else {
+    console.log('false!');
+}
+```
+
+데이터가 없고 비어있는 것들은 false(0, -0, null, false, NaN, undefined, '')
+
+빈 배열([]), "false" 는 true
+
+빈 array는 object 자체이므로
+
+<br />
+
+```javascript
+// false: 0, -0, '', null, undefined
+// true: -1, 'hello', 'false'
+let num;  // undefined
+if (num) {
+    console.log('true!');
+}
+
+num && console.log(num);  // num이 true라면(num에 데이터가 있다면) 출력
+```
+
+```javascript
+let obj = {
+    name: 'seolyu',
+};
+if (obj) {
+    console.log(obj.name);
+}
+
+// console.log(obj.name);  // 없는 데이터에 접근하면 프로그램 자체가 죽으므로
+obj && console.log(obj.name);
+```
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
