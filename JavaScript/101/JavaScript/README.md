@@ -6,6 +6,8 @@
 
 [헷갈리는 boolean과 오퍼레이터&&](#boolean_오퍼레이터)
 
+[클래스와 콜백함수](#클래스_콜백함수)
+
 <br />
 
 ---
@@ -213,3 +215,53 @@ obj && console.log(obj.name);
 ---
 
 <br />
+
+### 클래스_콜백함수
+
+<br />
+
+```javascript
+class Counter {
+  constructor(runEveryFiveTimes) {
+    this.counter = 0;
+    this.callback = runEveryFiveTimes;
+  }
+
+  increase() {
+    this.counter++;
+    console.log(this.counter);
+    if (this.counter % 5 === 0) {
+      this.callback && this.callback(this.counter);
+    }
+  }
+}
+
+function printSomething(num) {
+  console.log(`5️⃣ ${num}`);
+}
+function alertNum(num) {
+  alert(`❗ ${num}`);
+}
+
+// 생성자에 원하는 콜백함수 전달
+const printCounter = new Counter(printSomething);
+const alertCounter = new Counter(alertNum);
+
+printCounter.increase();
+printCounter.increase();
+printCounter.increase();
+printCounter.increase();
+printCounter.increase();
+
+printCounter.increase();
+printCounter.increase();
+printCounter.increase();
+printCounter.increase();
+printCounter.increase();
+```
+
+class에 원하는 기능 다 정의하게 되면
+
+사용하는 사람이 자세하게 컨트롤할 수 없고 재사용 떨어짐
+
+=> 콜백함수 이용해서 class 만들기
