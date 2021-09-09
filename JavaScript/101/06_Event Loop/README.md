@@ -258,11 +258,158 @@ Request Animation Frame 이라는 API를 부르면 그 때 등록한 콜백은 �
 
 <br />
 
+```javascript
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    const element = document.createElement('h1');
+    document.body.appendChild(element);
+    element.style.color = 'red';
+    element.innerText = 'hello';
+})
+```
+
+콜백 안에 작성된 코드는 어떤 순서를 하든 상관이 없다
+
+왜냐하면
+
+이 콜백이 콜백 스택에 들어가는 순간 이벤트 루프는 이것이 다 실행될 때까지 기다렸다가 
+
+나중에 렌더링이 될 때 전체적으로 적용된 아이들이 레이아웃 페인트에 걸쳐서 브라우저에 표기되기 때문이다
+
+<br />
+
+웹 API 중 하나인 addClickListener라는 함수를 이용해서 작성한 콜백 함수를 등록해 놓았다
+
+나중에 클릭 이벤트가 발생하면 웹 API는 등록한 콜백 함수를 테스트 큐에 보낸다
+
+이벤트 루프가 돌다가 태스트 큐에 아이템이 있는 것을 보고 콜 스택으로 가져오고, 
+
+콜 스택에 가져온 콜백 함수가 끝날 때까지 기다렸다가 (바디에 엘리먼트 등록하고 스타일 컬러 바꾸고 innerText 수정) 
+
+콜 스택에서 아이템이 사라지면 이벤트 루프는 이 수정된 사항들을 다 적용해서 렌더링 순서로 가게 된다
+
+그래서 렌더 트리 만들 때 쯤엔 모든 것들이 다 적용된 상태
+
+<br />
+
+결론:
+
+콜백 안에 작성된 코드는 어떤 순서를 하든 상관이 없다
+
+자바스크립트 엔진이 콜백에 들어 있는 코드 블럭이 다 완료될 때까지 기다렸다가 나중에 렌더링이 발생하니까
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+```javascript
+const button = document.querySelector('button');
+const box = document.querySelector('.box');
+button.addEventListener('click', () => {
+    box.style.transition = 'transform 1s ease-in';
+    box.style.transform = 'translateX(800px)';
+    box.style.transform = 'translateX(500px)';
+});
+```
+
+위 코드는 왜 의도대로 안될까?
+
+결국 렌더링 발생할 땐 최종적으로 트랜스폼에 할당된 애가 적용되므로
+
+브라우저에는 업데이트 사항 보여지지 않고(이벤트 루프가 Call Stack에 있으므로)
+
+콜백 끝나고 나서야 렌더링 발생
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+콜 스택에 코드가 수행되고 있을 동안에는 절대로 렌더링으로 올 수 없다
+
+```javascript
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    while (true) {
+        // repeat
+    }
+});
+```
+
+콜백 함수가 무한정 실행되면
+
+버튼 클릭한 후 아무 변화가 없다
+
+콜 스택이 영원히 끝나지 않아서
+
+브라우저는 더 이상 클릭을 해도 반응이 없다
+
+에러 발생 <- Page Unresponsive. 렉 걸림
+
+<br />
+
+결론: 콜 스택에 등록하는 함수 작성할 땐 오랫동안 일 하는 것 좋지 않다
+
+브라우저 업데이트 안되고 사용자의 이벤트 처리가 안되므로 최대한 콜백은 간단하게 작성
+
+루프나 while, for loop, 재귀 함수 쓸 때 조심해서 사용
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
 ### setTimeout
 
 <br />
 
+태스크 큐와 마이크로 태스크 큐의 차이점
 
+<br />
+
+```javascript
+function handleClick() {
+    console.log('handleClick');
+    setTimeout(() => {
+        console.log('setTimeout');
+        handleClick();
+    }, 0);
+}
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    handleClick();
+});
+```
+
+위 코드를 보면
+
+무한정 큐 태스크에 콜백 함수가 계속 들어옴
+
+근데 브라우저는 이벤트 처리가 가능하다
+
+<br />
+
+이벤트 루프는 태스크 큐에서는 하나씩만 콜 스택으로 가져온다
+
+콜 스택 끝나면 다시 순회하면서 가끔씩 렌더 쪽 가서 브라우저 렌더링 처리, 이벤트 처리도 하고
+
+다시 태스크 큐에 아이템 있으면 콜 스택 가져오고 ..
 
 <br />
 
