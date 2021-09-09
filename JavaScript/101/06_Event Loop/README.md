@@ -425,7 +425,50 @@ button.addEventListener('click', () => {
 
 <br />
 
+마이크로 태스크는 큐 태스크와 달리 큐 안에 있는 모든 아이들이 없어질 때까지, 
 
+그리고 거기에 머물러 있는 동안 새로 들어오는 아이들도 다 함께 처리를 계속적으로 하게 된다
+
+```javascript
+function handleClick() {
+    console.log('handleClick');
+    Promise.resolve(0)
+    	.then(() => {
+        	console.log('then');
+        	handleClick();
+    	});
+}
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    handleClick();
+});
+```
+
+handleClick()에서는 프로미스를 만들게 되는데, 
+
+이 프로미스는 만들어지면서 resolve 라는 API를 이용하면 바로 0 이라는 값을 리턴하는 프로미스가 만들어진다
+
+프로미스가 만들어져서 프로미스가 정상적으로 0을 만들게 되면 등록된 콜백이 수행된다
+
+콜백에서는 또 다시 then이라고 출력을 하고 handleClick() 을 다시 호출하게 된다
+
+..무한정 반복
+
+<br />
+
+setTimeout은 큐 태스크를 이용하게 되고
+
+프로미스의 콜백은 마이크로 태스크 큐를 이용한다
+
+<br />
+
+그래서
+
+버튼 클릭하면
+
+그 상태로 브라우저가 멈춘다
+
+로그가 무한정 출력되면서 브라우저는 전혀 반응하지 않음
 
 <br />
 
