@@ -145,7 +145,113 @@ cf) JSK, State, Props, SyntheticEvents, refs, Lifecycle methods, Lists and keys,
 
 <br />
 
+create react-app 툴 이용하면 필요 없는 것들도 기본적으로 많이 생기므로
 
+필요한 템플릿 프로젝트를 만들어보자
+
+<br />
+
+`yarn create react-app template`
+
+터미널 윈도우 두가지 준비
+
+한쪽은 yarn 커맨드 / 다른 곳은 다른 커맨드
+
+<br />
+
+`cd template`
+
+`yarn start`
+
+다른 터미널에서는
+
+`cd template`
+
+`code .`
+
+<br />
+
+프로젝트 구조 보면
+
+* public
+
+  정적인 애들. 사용자가 한번에 받아서 컨텐츠가 변하지 않는 HTML, 이미지, 리소스 등
+
+* src
+
+  컨텐츠가 다이나믹하게 동적으로 변화되는 소스코드들
+
+<br />
+
+public과 src의 차이점은 웹팩에서 특히 중요한데
+
+웹팩에서는 빌드할 때마다 자바스크립트의 유니크한 고유 버전(날짜, 시간..)이 할당됨
+
+사용자가 웹 어플리케이션을 다운로드 받았고 자바스크립트가 변경되지 않았으면 
+
+예전 그 고유 번호가 할당되어서 걔들은 캐쉬가 되어있어서 새로 다운로드 받지 않아도 됨
+
+<br />
+
+public에는 static(정적)한 애들
+
+소스(src)에는 다이나믹한 애들이 들어감
+
+<br />
+
+public - index.html
+
+apple-touch-icon 이거는 PWA(Progressive Web App)에 필요한 것으로 지워줌
+
+manifest.json도 지움
+
+코멘트들 지움
+
+<br />
+
+noscript는 사용자가 브라우저에서 자바스크립트를 enable(활성화)하지 않았을 때 보여주는 메세지
+
+리액트는 자바스크립트만으 이용해서 동적으로 만드는 애라서 사용자가 자바스크립트 쓰지 않으면 어플리케이션이 돌아가지 않으므로 이렇게 경고문을 보여주는 것이다
+
+놔둔다
+
+<br />
+
+manifest.json 파일 지우고
+
+웹 크롤러가 쓰는 robots.txt 지우고 로고들도 지우자
+
+<br />
+
+src에서는 serviceWorker.js(백그라운드에서 프로세스 쓸 때, 오프라인 제공할 때, PWA 프로그레시브 웹앱에서 쓰임) 지움.. 난 reportWebVitals.js 를 지웠다
+
+setupTests.js 도 지움
+
+logo.svg랑 App.test.js 지움
+
+App.js에서 logo.svg import하는 부분 지우고
+
+index.js에서는 serviceWorker(난 reportWebVitals) import하는 부분 지운다
+
+<br />
+
+App.js에서 return 안에 다 지우고
+
+`<h1>Hello :)</h1>`
+
+<br />
+
+소스(src) 안에 공통적으로 사용하는 컴포넌트를 폴더(components)를 만들어 따로 넣는다
+
+파일 이름 소문자로 시작하도록 변경(app.css / app.jsx)
+
+순수 자바스크립트 클래스, 파일과 구분하고 예쁜 아이콘 갖기 위해 App.js -> app.jsx 쓰기
+
+<br />
+
+index는 엄밀히 말하면 자바스크립트. 컴포넌트가 아님. 단순히 연결해주는 역할이니까 index.js 그대로
+
+import 부분 변경
 
 <br />
 
