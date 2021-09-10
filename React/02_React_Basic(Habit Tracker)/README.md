@@ -345,7 +345,7 @@ React.StrictMode 모드 이용
 
 <br />
 
-크롬 익스텐션 React developer tool - Components에서 
+크롬 익스텐션 React developer tools - Components에서 
 
 컴포넌트 구조
 
@@ -369,7 +369,53 @@ Props(내 컴포넌트에서 가지고 있는 State가 아닌 부모로부터 �
 
 <br />
 
+JSX <- 엄밀히 말하면 자바스크립트 코드
 
+https://reactjs.org/docs/introducing-jsx.html
+
+https://reactjs.org/docs/jsx-in-depth.html
+
+<br />
+
+```react
+function App() {
+    return React.createElement('h1', {}, 'Hello:)!!');
+}
+
+위와 같이 쓰면 힘들어서
+자바스크립트 코드 위에서 HTML처럼 할 수 있도록 JSX 만들어짐
+
+function App() {
+    const name = 'Seolyu';
+    return <h1 className="title" onClick="">Hello {name}:)</h1>;
+}
+```
+
+형제 노드 쓸 수 없고 JSX는 한 가지 태그로 감싸줘야해서 두 가지 자식 노드 이용할 땐
+
+Fragment 이용해서 묶기(<- 이렇게 하면 요소 검사 했을 때 부모 태그 없음)
+
+<></> 이것과 같음 <- 의미없이 그룹 묶어줄 때 사용
+
+```react
+function App() {
+    const name = 'Seolyu';
+    return (
+        <React.Fragment>
+            <h1 className="title" onClick="">Hello {name}:)</h1>
+            <h1>Hello</h1>
+            {
+                // 자바스크립트 코드 작성 가능
+                name && <h1>{name}</h1>
+            }
+        </React.Fragment>
+    );
+}
+```
+
+![map](./imgs/map.png)
+
+=> JSX는 HTML처럼 간편하게 마크업할 수 있고 비즈니스 로직 자바스크립트 코드와 함께 섞어서 사용 가능
 
 <br />
 
