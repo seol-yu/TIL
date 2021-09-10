@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="src/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Cafe24SsurroundAir";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: "Cafe24SsurroundAir";
+      }
+
+      button {
+        font-family: "Cafe24SsurroundAir";
+        background-color: #EA4C89;
+        border-radius: 2px;
+        border-style: none;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click to start</button>
+    <script>
+      function add(a, b) {
+        const sum = a + b;
+        return sum;
+      }
+      function calculate(a, b) {
+        console.log('calculate');
+        const result = add(a, b);
+        return result;
+      }
+      function main() {
+        const result = calculate(3, 4);
+        const element = document.createElement('span');
+        element.innerText = result;
+        document.body.appendChild(element);
+        console.log(result);
+        return;
+      }
+
+      const button = document.querySelector('button');
+      button.addEventListener('click', () => {
+        main();
+      });
+    </script>
+  </body>
+</html>
