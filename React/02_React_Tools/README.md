@@ -310,7 +310,17 @@ create-react-app 이라는 툴 이용하면 바벨, 타입스크립트, eslint�
 
 <br />
 
+크롬 웹 스토어에서 react dev 설치
 
+리액트로 만들어진 어플리케이션에서 개발자툴 통해 컴포넌트 확인 가능, 리액트 개발 시 유용하게 디버깅 가능
+
+<br />
+
+VSCode에서
+
+Reactjs code snippets <- rcc 엔터만 누르면 리액트 컴포넌트 생성
+
+auto import
 
 <br />
 
