@@ -156,7 +156,7 @@ create-react-app에는 VSCode에서 라이브서버 이용할 수 있듯 hot mod
 
 `yarn start`
 
-프로세스 중지할 땐 Ctrl + D
+프로세스 중지할 땐 Ctrl + C
 
 <br />
 

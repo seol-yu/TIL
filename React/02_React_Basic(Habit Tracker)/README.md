@@ -267,7 +267,69 @@ import 부분 변경
 
 <br />
 
+윈도우에서는 폴더에 공백없게 유의
 
+<br />
+
+Ctrl + C 프로세스 중지
+
+폴더 밖에 나가서
+
+`cp -R template habit-tracker`
+
+그냥 복붙함(config gensync-utils parser transform node_modules core tools transformation ....대상 폴더에 대한 파일 이름이 너무 길다는 메세지가 뜸)
+
+<br />
+
+리액트 <- 순수 자바스크립트. 이 자바스크립트 이용해서 컴포넌트들을 만들어 나감
+
+브라우저는 HTML, CSS, 순수 자바스크립트만을 이해 가능
+
+바벨(Babel)을 이용해 순수 JS로 변환됨
+
+변환된 컴포넌트를 HTML과 연결하는 작업을 하게 해주는 것이 react-dom
+
+<br />
+
+사용자에게 궁극적으로 배포되어지는 것 => index.html
+
+index.html에 body에 div 아이디가 root
+
+root 이용해서 자바스크립트와 연결
+
+index.js 보면
+
+react-dom 이라는 라이브러리에서 ReactDOM 클래스를 import
+
+가져온 ReactDOM 이라는 클래스에 있는 render 함수 이용해서 document 페이지에 id가 root 라는 요소(index에 있는 아이디가 root인 div) 가지고와서 그 요소에 root 컴포넌트 연결
+
+=> root 라는 아이디를 가진 요소에 제일 상위에 있는 App 이라는 컴포넌트를 연결하는 것이다(개발툴로 확인 가능)
+
+<br />
+
+App 이라는 것은
+
+**app.jsx**에 function App() {} 여기에 정의된 컴포넌트
+
+<br />
+
+index.js에 <React.StrictMode></React.StrictMode>
+
+StrictMode는 자바스크립트 쓸 때 'use strict' 이용해 엄격한 모드로 코딩하고
+
+조금 잘못하면 콘솔에서 에러 메세지 발생했듯
+
+React.StrictMode 모드 이용
+
+개발할 때 이용하고 배포할 땐 이 상태로 배포해도 배포 버전에선 StrictMode 활성화 안되어서 사용자가 콘솔에서 에러메세지 볼 수 없다
+
+<br />
+
+플젝 복사 후, 나중에 프로젝트 하다가 컴파일 문제 생기는 등 뭔가 이상하면
+
+`yarn && yarn start`
+
+프로젝트에 필요한 모듈을 다시 재설치하고나서 플젝 시작
 
 <br />
 
