@@ -232,7 +232,25 @@ create-react-app에는 VSCode에서 라이브서버 이용할 수 있듯 hot mod
 
 <br />
 
+create-react-app 툴 이용하면 깃도 초기화(.git <- 버전 관리할 때 작성되는 로그 파일)
 
+<br />
+
+`yarn eject` <- 숨겨져있는 유용한 툴들 열어볼 수 있는 명령어. 세부적 설정할 때만 열어봐야 함. 다시 포장 불가
+
+config 폴더보이고 package.json에 많은 것이 더 보여짐.. 
+
+<br />
+
+create-react-app 이라는 툴 이용하면 바벨, 타입스크립트, eslint에 다양한 것들, 테스팅 관련된 것들, 제스쳐, postCSS, polyfill, 다양한 웹팩 기본적으로 설정된다는 것 확인
+
+<br />
+
+웹팩 <- 코드 모듈화해서 번들링해서 배포할 수 있게 도와줌
+
+<br />
+
+결론: 리액트 개발할 때는 바벨, 테스팅에 관련된 것들, 타입스크립트, eslint, 제스트, postCSS, 웹팩 등이 많이 사용되는구나
 
 <br />
 
