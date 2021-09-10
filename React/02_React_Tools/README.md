@@ -254,6 +254,50 @@ create-react-app 이라는 툴 이용하면 바벨, 타입스크립트, eslint�
 
 <br />
 
+:thinking:
+
+* 바벨 BABEL
+
+  JavaScript transcompiler
+
+  ECMA 2015년도 이후 버전을 예전 버전으로 변환
+
+  배포할 땐 바벨 이용해서 예전 브라우저도 이해할 수 있는 예전 버전 자바스크립트 코드로 변환
+
+  타입스크립트나 jsx와 같이 순수 자바스크립트가 아닌 것들을 브라우저가 이해할 수 있도록 자바스크립트로 변환
+
+  즉, 브라우저 / 예전 브라우저가 이해할 수 있는 소스코드로 변환
+
+  어느정도 버전까지 변환할지 세부 설정 가능
+
+* 웹팩 Webpack (Bundling the code, JavaScript module bundler)
+
+  코드를 번들링(작성하는 소스 코드나 리소스 이미지들을 한 번에 묶어서 번들 단위로 사용자에게 제공)
+
+  자바스크립트를 작성하는 것 소스코드 줄여주거나 긴 변수 / 함수 이름을 해커들이 알아보지 못하게 이름을 이상하게 만드는 일도 함 
+
+  즉, 프로젝트, 소스코드를 사용자에게 간편하게 전달할 수 있도록 모듈 번들링하는 애
+
+* eslint
+
+  즉각적으로 코드에 잘못된 점 경고 사인 보내줌
+
+* 제스트 Jest (delightful JavaScript testing framework)
+
+  유닛 테스트 가능하게 도와주는 테스팅 프레임워크
+
+* PostCSS (expandable CSS libraries. tool for transforming CSS with JavaScript)
+
+  CSS 전처리기 중 하나
+
+  less나 sass 같이 브라우저가 이해할 수 있는 CSS로 변환
+
+  sass는 정해진 것들만 할 수 있지만 PostCSS는 굉장히 다양한 플러그인이 있어서 원하는 것을 조금 더 추가 가능
+
+한번 eject 하면 다시 되돌릴 수 없음
+
+<br />
+
 [목차로](#목차)
 
 <br />
