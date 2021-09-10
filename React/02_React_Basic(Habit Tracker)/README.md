@@ -345,7 +345,15 @@ React.StrictMode 모드 이용
 
 <br />
 
+크롬 익스텐션 React developer tool - Components에서 
 
+컴포넌트 구조
+
+State(컴포넌트에서 가지고 있는 데이터)
+
+Props(내 컴포넌트에서 가지고 있는 State가 아닌 부모로부터 받아온 데이터. properties(속성))
+
+확인 가능
 
 <br />
 
