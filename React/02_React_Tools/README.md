@@ -176,7 +176,47 @@ create-react-app에는 VSCode에서 라이브서버 이용할 수 있듯 hot mod
 
 <br />
 
+* .gitignore
 
+  깃 이그노어 파일에 명시된 폴더나 파일들은 깃에 정보가 유지되지 않음
+
+  깃허브/깃에 추가하고 싶지 않은 것들. 깃이 더이상 트래킹X
+
+* package.json
+
+  npm에서 버전 관리 시 플젝 외부적으로 쓰이고 있는 라이브러리와 그 버전들 명시
+
+  `yarn start` <- 리액트 스크립트의 스타트 실행하는 것과 동일
+
+* README
+
+  플젝 설명
+
+* node_modules
+
+  외부 라이브러리들 추가하면 여기에 자동적으로 추가됨
+
+  package.json 안에 있던 애들 다 여기 들어와있음
+
+* public
+
+  사용자에게 배포할 때 외부적으로 보여지는 대표적인 애들이 들어있음
+
+  favicon, index.html, 로고 이미지들..
+
+* manifest.json
+
+  PWA 프로그래시브 웹 어플리케이션 만들 때 필요
+
+* robots.txt
+
+  웹 크롤링 위해 이용
+
+* src
+
+  소스코드
+
+  최상위에 있는 루트는 index.js에 있음
 
 <br />
 
