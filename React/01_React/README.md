@@ -217,7 +217,55 @@ V(virtual)DOM <- 성능이 괜찮은 이유. 리액트 내부에 가상의 VDOM�
 
 <br />
 
+**React**: https://reactjs.org/docs/getting-started.html
 
+**Create React App**: https://create-react-app.dev/docs/getting-started
+
+<br />
+
+React는 Declarative(선언적) 하다
+
+스테이트와 랜덤함수를 통해서 명료하게 코드를 봤을 때 바로 이해 가능
+
+<br />
+
+컴포넌트 베이스로 만들어져 있고 스테이트가 안에 들어있다
+
+데이터의 상태가 컴포넌트 안에 포함 되어 있다
+
+props와 스테이트 이용해서 쉽게 어플리케이션 제작
+
+등등 ..
+
+<br />
+
+https://jsbin.com/
+
+https://codepen.io/pen?&editors=0010
+
+https://codesandbox.io/s/new
+
+https://stackblitz.com/edit/react-xrl9nn
+
+<br />
+
+리액트도 라이브러리이기 때문에 HTML 파일에서 바로 연결 가능하지만
+
+규모있는 프로젝트 / 다양한 라이브러리 묶어서 프로젝트 관리 가능하고 확장성있는 환경을 설정해야한다
+
+추천: Toolchains
+
+- Create React App <- 간편하게 싱글페이지 어플리케이션 제작
+- Next.js <- Server Side 렌더링
+- Gatsby <- 정적인 사이트
+
+Create React App <- 간단한 스트립트. 많은 리액트 개발자들이 공통적으로 사용, 설정해서 쓰는 프로젝트 환경 한번에 바로 설치해서 쓸 수 있도록
+
+https://github.com/facebook/create-react-app
+
+https://create-react-app.dev/
+
+https://create-react-app.dev/docs/getting-started
 
 <br />
 
