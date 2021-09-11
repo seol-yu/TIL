@@ -686,19 +686,7 @@ onClick={ (event) => this.makeSomeMeal(this.rice) }
 
 <br />
 
-[목차로](#목차)
-
-<br />
-
----
-
-<br />
-
-### App_컴포넌트_만들어보기
-
-<br />
-
-리액트에서는 State를 직접 수정하면 안된다
+<br />:sparkles: 리액트에서는 State를 직접 수정하면 안된다
 
 <br />
 
@@ -741,6 +729,22 @@ handleDelete 는 habit을 배열에서 삭제해야하는데
 특정한 곳 제외 또는 포함해서 만들 수 있는 배열 API인 filter를 쓴다
 
 ![filter](./imgs/filter.png)
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### App_컴포넌트_만들어보기
+
+<br />
+
+
 
 <br />
 
