@@ -1,3 +1,6 @@
+<br />
+<a href="https://github.com/seol-yu/TIL/tree/master/JavaScript/101" target="_blank"><img src="https://github.com/seol-yu/TIL/blob/master/images/javascript-badge-logo.png?raw=true" height=30 /></a>
+<br />
 ![debugging](./imgs/debugging.png)
 
 브레이크 포인트 넣으면 브라우저가 실행하다가 해당 코드를 만나는 순간 잠시 멈춘다

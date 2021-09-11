@@ -1,3 +1,6 @@
+<br />
+<a href="https://github.com/seol-yu/TIL/tree/master/JavaScript/101" target="_blank"><img src="https://github.com/seol-yu/TIL/blob/master/images/javascript-badge-logo.png?raw=true" height=30 /></a>
+<br />
 ### 목차
 
 [Web APIs 이해](#목차)
