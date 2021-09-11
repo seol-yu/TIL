@@ -744,7 +744,11 @@ handleDelete 는 habit을 배열에서 삭제해야하는데
 
 <br />
 
+Navbar에도 count가 변경되어야 한다
 
+state를 App으로 가져와서 App 안에서 Navbar 추가하고 input field 추가하고 리셋 버튼 추가해보자
+
+App은 function이 아닌 클래스 컴포넌트로 변경
 
 <br />
 
@@ -760,7 +764,9 @@ handleDelete 는 habit을 배열에서 삭제해야하는데
 
 <br />
 
+자신만의 단축키 만들기 위해선 커맨드 팔레트에서 keyboard 검색
 
+Open Keyboard Shortcuts 에서 
 
 <br />
 
