@@ -1157,7 +1157,103 @@ console.log(array3.length);  // 2
 
 <br />
 
+리액트 컴포넌트 <- 웹 어플리케이션, 웹 페이지에서 독립적이고 재사용 가능한 단위로 나뉘어진 블럭
 
+<br />
+
+* 클래스 컴포넌트
+
+  ```jsx
+  class Welcome extends React.Component {
+      render() {
+          return <h1>Hello, {this.props.name}</h1>;
+      }
+  }
+  ```
+
+  리액트에서 제공하는 React.Component 클래스를 상속하는 클래스를 만들고
+
+  UI가 어떻게 표기될지 정의하는 render() 함수 구현
+
+  컴포넌트 자체에 계속 기억되어져야 하는, UI 표기하기 위한 데이터는 this.state 멤버 변수에 오브젝트 형태로
+
+  <br />
+
+  클래스 인스턴스(오브젝트)가 생성되면 
+
+  클래스의 메소드(함수)를 아무리 많이 호출해도
+
+  클래스 멤버 변수를 직접적으로 수정하지 않는 이상 멤버 변수는 그 값 유지
+
+  <br />
+
+  render 함수가 많이 호출되어도 this.state 데이터 변하지 않아서 컴포넌트에서 가지고 있던 데이터 잃어버리지 않고 일정하게 보여줌
+
+  <br />
+
+  컴포넌트에서 데이터 변경해서 UI 업데이트 하려면 this.state 업데이트 <- 리액트가 알아서 render 함수 다시 호출하고 브라우저에 업데이트
+
+  <br />
+
+  React.Component 클래스 상속, 데이터는 this.state에 담기, render() 함수에 HTML과 같은 JSX 문법으로 데이터 UI에 어떻게 표기할지 정의(리액트 라이브러리 규칙)
+
+  <br />
+
+  :sparkles: 리액트는 변경사항이 한가지 방향으로 흘러감
+
+  데이터가 변경 -> UI가 업데이트
+
+  즉, 데이터(State)가 변경 -> 리액트가 render() 함수를 호출해서 UI가 업데이트
+
+<br />
+
+* 함수 컴포넌트
+
+  JSX를 리턴하는 함수
+
+  ```jsx
+  function Welcome(props) {
+      return <h1>Hello, {props.name}</h1>;
+  }
+  ```
+
+  컴포넌트 자체에 데이터(State)가 없는 경우, 
+
+  외부에서 전달받은 데이터(Props)만 보여주면 되거나 
+
+  State, Props 둘다 없는 정적인 컴포넌트는 함수만으로 리액트 컴포넌트 만들 수 있다
+
+  <br />
+
+  함수 호출 때마다 함수의 코드 블럭이 다시 실행, 안에 선언된 모든 로컬 변수들이 재정의, 값 할당
+
+  <br />
+
+  함수 안에서 State를 보관해서 일관적으로 보여줄 방법 없어서 컴포넌트 자체적 데이터(State) 못가짐
+
+  => 따로 State 필요 없고 라이프 싸이클 메소드 사용하지 않아도 될 때 사용
+
+  <br />
+
+  리액트 훅(React Hooks)
+
+  함수형 컴포넌트에서 State, 라이프 사이클 메소드 이용할 수 있게 해줌
+
+  - State Hook
+
+    useState()
+
+    함수형 컴포넌트에서도 State 쓸 수 있도록, 함수형 컴포넌트가 여러번 호출 되어도 계속 일정한 데이터 기억하고 있는 useState()
+
+  - Effect Hook
+
+    useEffect()
+
+    리액트의 라이프싸이클 메소드들처럼 활용할 수 있는
+
+    원하는 데이터만 타겟으로 삼아서 그것이 변경될 때마다 호출될 수 있도록 하는
+
+  - useCallback, useContext, useMemo, useReducer, UseRef...
 
 <br />
 
