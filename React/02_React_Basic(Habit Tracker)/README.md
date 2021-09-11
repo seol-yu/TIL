@@ -431,7 +431,61 @@ function App() {
 
 <br />
 
+Habit(습관) 이라는 컴포넌트 만들기
 
+<br />
+
+components 폴더 안에 habit.jsx 만들고
+
+앞서 익스텐션 설치했다면 rcc 탭 하면 기본적인 컴포넌트 골격
+
+<br />
+
+클래스는 항상 대문자로 시작
+
+```jsx
+import React, { Component } from 'react';
+
+class Habit extends Component {
+    render() {
+        return <div>Habit</div>;
+    }
+}
+
+export default Habit;
+```
+
+<br />
+
+app.jsx에 와서
+
+```jsx
+import React from 'react';
+import './app.css';
+import Habit from './components/habit';
+
+function App() {
+  return <Habit></Habit>;  // 이 경우 <Habit /> 으로 써도 됨
+}
+
+export default App;
+```
+
+<br />
+
+폰트 어썸 쓰자
+
+`yarn add @fortawesome/fontawesome-free`
+
+index.js에
+
+import '@fortawesome/fontawesome-free/js/all.js';
+
+https://fontawesome.com/icons?d=gallery&p=2&q=plus
+
+<br />
+
+Ctrl + p 가고자하는 파일명
 
 <br />
 
