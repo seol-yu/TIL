@@ -782,7 +782,21 @@ Open Keyboard Shortcuts 에서
 
 <br />
 
+DOM 요소를 직접적으로 쓰지 않으므로
 
+리액트에서 다른 리액트의 요소에 접근하려면 Ref 쓴다
+
+**Refs and the DOM**: https://reactjs.org/docs/refs-and-the-dom.html
+
+<br />
+
+멤버변수 정의 <- input에 접근해야하므로 inputRef라고 적는다(Ref 붙임)
+
+리액트의 createRef() 함수 호출하면 ref 라는 오브젝트가 생김
+
+이것을 원하는 요소 ref에다가 전달
+
+![ref](./imgs/ref.png)
 
 <br />
 
