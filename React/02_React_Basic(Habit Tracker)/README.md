@@ -625,7 +625,64 @@ key는 고유한 번호 써야하고 배열 인덱스 쓰면 절대 안된다
 
 <br />
 
+데이터를 가지고 있는 곳이 이 데이터를 어떻게 수정하면 되는지 잘 알고 있는 장소이므로 그곳에 처리를(로직들) 해준다(Habits)
 
+<br />
+
+함수는 오브젝트의 일종
+
+함수의 이름을 인자로 전달해주면 함수를 가리키고 있는 참조값을 전달하는 것
+
+<br />
+
+Habits 컴포넌트 안에서
+
+![Habits](./imgs/Habits.png)
+
+Habit 컴포넌트에게 + 버튼이 클릭되면 onIncrement라는 prop 이름으로 전달한 이 콜백 함수(handleIncrement)를 호출하고 - 버튼 클릭되면 onDecrement .. 호출하라고 전달
+
+<br />
+
+이제 Habit 컴포넌트에서는
+
+props로 전달된 해당 콜백함수들을 호출해주면 됨
+
+![Habit](./imgs/Habit.png)
+
+<br />
+
+=> Habit 컴포넌트에 props로 데이터를 전달했다(각각의 habit과 Increment, Decrement, Delete 콜백함수들을)
+
+그래서 버튼 누르면 전달된 함수를 호출하게 되는데
+
+해당 컴포넌트에 들어있는 habit 이라는 오브젝트를 콜백함수 인자로 전달한다
+
+그래서 해당 habit에 한해서 count 값 변경
+
+<br />
+
+결론적으로
+
+Habits 컴포넌트에 모든 데이터가 들어있고 데이터를 처리하는 함수들도 있다
+
+Habit 컴포넌트에는 단순히 props로 전달된 콜백함수들을 호출하게 되고 호출할 때 props로 전달받은 각각의 데이터를 다시 인자로 전달한다
+
+<br />
+
+함수 등록할 때 함수에 전달되는 인자와 그 안에서 호출하는 인자가 동일하면 문법 간소화 가능
+
+```jsx
+// 클릭이 발생할 때 둘 다 arrow 함수(콜백 함수)를 만들어서 전달한다
+// arrow 함수 안에는 각각 logClickEvent, makeSomeMeal 필요한 함수들을 호출
+
+onClick={ (event) => this.logClickEvent(event) }  // 함수에 전달되는 인자와 그 안에서 호출하는 인자가 동일하다. 문법 간소화 가능
+onClick={ (event) => this.makeSomeMeal(this.rice) }  // 간소화 할 수 없다
+```
+
+```jsx
+onClick={this.logClickEvent}
+onClick={ (event) => this.makeSomeMeal(this.rice) }
+```
 
 <br />
 
