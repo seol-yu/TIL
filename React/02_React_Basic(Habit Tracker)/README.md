@@ -698,7 +698,49 @@ onClick={ (event) => this.makeSomeMeal(this.rice) }
 
 <br />
 
+리액트에서는 State를 직접 수정하면 안된다
 
+<br />
+
+**Spread Syntax**:
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+<br />
+
+![spreadSyntax](./imgs/spreadSyntax.png)
+
+habits라는 배열 안에 있는 아이템들을 하나하나씩 새로운 배열 안으로 복사해오기
+
+즉 배열의 껍데기는 새로운 껍데기이고
+
+안에 들어있는 아이템들은 그대로 하나하나 복사해온다
+
+... <- spread syntax
+
+<br />
+
+![setState2](./imgs/setState2.png)
+
+그리고 indexOf라는 배열의 API 이용해서 count 값 변경
+
+this.state에 있는 오브젝트는 새로 만들어진 배열 habits에 들어있는 오브젝트와 동일해서 직접 수정 가능
+
+setState는 새로운 state 오브젝트를 만들어줘야하는데
+
+key는 habits이고 실제로 들어가는 배열은 로컬 변수인 habits
+
+key와 value가 동일한 이름 가지고 있는 경우 하나로 생략 가능
+
+<br />
+
+handleDelete 는 habit을 배열에서 삭제해야하는데
+
+전달받은 습관 제외한 새로운 배열 만들면 된다
+
+특정한 곳 제외 또는 포함해서 만들 수 있는 배열 API인 filter를 쓴다
+
+![filter](./imgs/filter.png)
 
 <br />
 
