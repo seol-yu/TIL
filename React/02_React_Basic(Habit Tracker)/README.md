@@ -1269,7 +1269,101 @@ console.log(array3.length);  // 2
 
 <br />
 
+왜 State 오브젝트를 바로 수정하면 안되는가?
 
+리액트는 한 방향으로만 흘러감
+
+데이터(State)가 변경 -> 리액트가 render() 함수를 호출해서 UI가 업데이트
+
+```jsx
+class App extends Component {
+    state = {
+        count: 0,
+    };
+	render() {
+        return (
+        	<>
+            	<span>{this.state.count}</span>
+            	<button
+                	onClick={() => {
+                    	this.setState({ count: this.state.count + 1 });
+                	}}    
+                >
+            	</button>
+            </>
+        );
+    }
+}
+```
+
+this.state.count++ 이런 식으로 바로 this.state가 가리키고 있는 오브젝트의 count 증가시키는거 해보면 업데이트 안됨
+
+리액트에서는 setState 함수 호출해야함
+
+현재 컴포넌트 상태(this.state)와 업데이트 해야하는 새로운 상태(setState 함수의 인자로 전달된 새로운 오브젝트) 비교해서 업데이트 필요한 경우 해당 컴포넌트 render 함수 호출
+
+<br />
+
+pureComponent는 얕게 비교(제일 상위 reference만 비교) 
+
+Component는 라이프 사이클 메소드 중 하나인 shouldComponentUpdate 구현하지 않았다면 setState 호출될 때마다 무조건 render함수 호출
+
+<br />
+
+setState는 비동기 API
+
+WebAPIs 중 setTimeout, setInterval과 같은 비동기 함수처럼, setState도 비동기 함수
+
+즉, setState 호출한다고 해서 무조건 바로 render 함수가 호출되는게 아니라
+
+리액트에 업데이트 요청만 하고 다시 뒤에 이어지는 코드 실행
+
+비동기로 동작하니까 여러가지 setState를 더 효율적으로 처리 가능
+
+<br />
+
+setState 함수는 두 가지 종류가 있다
+
+- setState(newState)  // 새로운 state 오브젝트를 인자로 바로 받는 함수
+- setState(prevState => { return newState; })  // 이전 state 받아서 그걸로 계산해서 새로운 state를 리턴하는 함수를 인자로 받는 함수
+
+state 업데이트 할 때 이전 state 값에서 계산되어지는 위 코드같은 경우 컴포넌트 내의 state 값에 의존하는 setState(updated) 보단 setState(prevState => newState)를 써서 이전 state 값을 받아와서 그걸로 업데이트되는 state 값 만드는 arrow 함수를 전달할 수 있는 함수를 호출하는 것이 좋음
+
+<br />
+
+그래서 위 코드는 아래처럼 작성하면 좋다
+
+```jsx
+<button
+	onClick={() => {
+        this.setState(state => ({
+            count: state.count + 1,
+        }));
+    }}    
+>
+    Click
+</button>
+```
+
+<br />
+
+https://reactjs.org/docs/state-and-lifecycle.html
+
+<br />
+
+어떤 프로그래밍에서도 오브젝트 직접 변경하는거 좋지 않으며
+
+이미 만들어진 오브젝트는 항상 불변성(Immutability)를 유지하는 것이 좋다
+
+<br />
+
+이유는
+
+1. setState <- 비동기적으로 동작
+
+   State를 직접 수정하면서 여러번 상태 업데이트하는 경우 이전 업데이트 내용이 다음 업데이트 내용으로 덮어쓰여질 수 있다
+
+2. PureComponent에서 정상적으로 동작X
 
 <br />
 
