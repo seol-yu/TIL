@@ -931,7 +931,25 @@ PureComponent(shouldComponentUpdate()을 구현. 컴포넌트를 업데이트 �
 
 <br />
 
+shallow comparison 때문에 안에 데이터 수정하면 동일한 오브젝트라고 판단해서 업데이트 안됨
 
+그래서 전체적인 오브젝트 업데이트 함 this.setState({ habit });
+
+<br />
+
+해결 방법 2가지
+
+1. 전달할 때 변화하는 것을 따로 빼서 오브젝트로 전달 
+
+   count={habit.count} 써주고 const { count } = this.props;
+
+   근데 이런 식으로 하면 불편함
+
+2. 근본적인 문제는 오브젝트 전체 업데이트하지 않고 오브젝트 안에 있는 데이터 변경해서이다
+
+   cf) deconstructing 오브젝트
+
+   ![deconstructing](./imgs/deconstructing.png)
 
 <br />
 
