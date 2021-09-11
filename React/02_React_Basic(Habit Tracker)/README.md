@@ -828,7 +828,88 @@ DOM 요소를 직접적으로 쓰지 않으므로
 
 <br />
 
+**PureComponent:** https://reactjs.org/docs/react-api.html#reactpurecomponent
 
+<br />
+
+React <- 리액트는 Component들이다. 데이터가 조금이라도 업데이트가 되면 전체적으로 어플리케이션이 re-render가 된다 (Re-render the whole app on every update)
+
+<br />
+
+리액트의 중요한 컨셉
+
+* Components
+* Re-render <- state, render()
+* VDOM <- virtual
+
+<br />
+
+리액트의 컴포넌트
+
+- 클래스로 만들 수 있는 컴포넌트
+
+  React.Component
+
+  React.PureComponent
+
+- 함수로 만들 수 있는 컴포넌트
+
+  function
+
+  memo(function)
+
+  React Hook 쓰면 함수 쓰면서 클래스 컴포넌트와 같이 state와 라이프사이클 메소드 이용 가능
+
+<br />
+
+렌더 함수가 계속 호출됨에도 성능 괜찮은 이유: 필요한 요소만 업데이트해서
+
+리액트 어플리케이션은 state가 변화되면 전체적으로 Render가 호출이 되는데
+
+Virtual DOM(메모리 상에 트리 보관) 때문에
+
+실제로 필요한 부분만 DOM 요소에 업데이트
+
+디버깅할 때 HTML Elements에서 변화가 너무 많이 일어나면 뭔가 잘못된 것
+
+<br />
+
+```jsx
+
+componentDidUpdate() {
+
+}
+```
+
+위와 같은 React가 Component가 업데이트 될 때마다 호출해주는 함수가 있는데
+
+예상하지 못한 화면 깜빡임이나 불필요한 일들이 수행될 수 있다
+
+이렇게 관련 데이터가 전혀 변경 안되었음에도 불구하고 render 함수가 계속 호출되는 것은 성능에 좋지 않다
+
+<br />
+
+Components 탭에서 Settings 누르고 체크박스 선택
+
+![settings](./imgs/settings.png)
+
+시각적으로 컴포넌트 렌더 확인
+
+<br />
+
+이걸 방지하는 것이
+
+pureComponent와 memo인데
+
+이들은 Component에 state나 props에 변화가 없다면 render 함수가 불려지지 않음
+
+cf) VSCode에서 단어 선택 후 Ctrl + D 누르면 다중선택
+
+![pureComponent](./imgs/pureComponent.png)
+
+PureComponent(shouldComponentUpdate()을 구현. 컴포넌트를 업데이트 해야할지 안해야할지 알아보는 함수. 얇게 비교. 오브젝트 안 오브젝트 안 오브젝트.. 이런 식으로 트리처럼 뻗어나갈 수 있는데.. 오브젝트 레퍼런스만 비교. 내부 데이터 변경까진 비교X)는 props와 state 안에 들어있는 데이터가, 최상위에 있는 데이터가 변하지 않으면 render 함수 호출X
+
+즉 re-rendering 안함
 
 <br />
 
