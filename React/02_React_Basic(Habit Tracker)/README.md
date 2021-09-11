@@ -1021,6 +1021,10 @@ state가 따로 없다면 함수형 컴포넌트 만들 수 있다
 
 **React Hooks:** https://reactjs.org/docs/hooks-intro.html
 
+리액트 훅은
+
+기존 함수형 컴포넌트에서 state와 라이프사이클 메소드를 잘 이용할 수 있게 만들어진 것
+
 <br />
 
 [목차로](#목차)
