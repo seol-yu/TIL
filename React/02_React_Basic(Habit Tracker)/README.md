@@ -991,7 +991,19 @@ componentWillUnmount <- 컴포넌트 지우기 전에 호출(ex. 정리, 리소�
 
 <br />
 
+클래스 컴포넌트는 rcc
 
+함수 컴포넌트는 rsi
+
+<br />
+
+클래서에서 PureComponent가 있다면
+
+함수에는 memo가 있다
+
+PureComponent처럼 props가 변경되지 않으면 안에 있는 함수 호출되지 않음
+
+state가 따로 없다면 함수형 컴포넌트 만들 수 있다
 
 <br />
 
@@ -1007,7 +1019,7 @@ componentWillUnmount <- 컴포넌트 지우기 전에 호출(ex. 정리, 리소�
 
 <br />
 
-
+**React Hooks:** https://reactjs.org/docs/hooks-intro.html
 
 <br />
 
