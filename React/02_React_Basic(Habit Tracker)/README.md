@@ -589,7 +589,27 @@ Habit 이라는 클래스 안에는 state라는 멤버변수가 있다
 
 <br />
 
+Object destructuring 문법
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+<br />
+
+여러 가지 습관을 관리할 수 있는 Habits(습관들) 컴포넌트를 만들자
+
+<br />
+
+![key](./imgs/key.png)
+
+리액트에서는 자식 컴포넌트가 있으면 고유한 키를 가지고 있어야 한다
+
+각각의 컴포넌트에 아이디를 부여 -> 성능 개선 위해 불필요한 렌더링 안함
+
+=> 리스트 안에서 쓰이는 자식 컴포넌트에게 아이디 부여하기
+
+key는 고유한 번호 써야하고 배열 인덱스 쓰면 절대 안된다
+
+![key2](./imgs/key2.png)
 
 <br />
 
