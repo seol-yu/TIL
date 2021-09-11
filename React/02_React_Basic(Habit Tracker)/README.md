@@ -965,7 +965,17 @@ shallow comparison 때문에 안에 데이터 수정하면 동일한 오브젝�
 
 <br />
 
+**State and Lifecycle**: https://reactjs.org/docs/state-and-lifecycle.html
 
+<br />
+
+![lifecycle](./imgs/lifecycle.png)
+
+componentDidMount <- 컴포넌트가 UI상에 등록이 되었을 때, 사용자에게 보여질 때 호출됨(ex. 타이머 시작하고 중지하고 실시간 채팅 대화 소켓 초기화)
+
+componentWillUnmount <- 컴포넌트 지우기 전에 호출(ex. 정리, 리소스 지우기)
+
+많이 씀
 
 <br />
 
