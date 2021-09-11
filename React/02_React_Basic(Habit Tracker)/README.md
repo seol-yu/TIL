@@ -501,7 +501,31 @@ Ctrl + p 가고자하는 파일명
 
 <br />
 
+컴포넌트에 실제로 필요한 데이터 count를 넣기 위해 State 이용
 
+<br />
+
+Habit 이라는 클래스 안에는 state라는 멤버변수가 있다
+
+그 변수는 오브젝트다
+
+오브젝트에는 count라는 데이터가 있다
+
+<br />
+
+그냥 오브젝트 안에 있는 데이터를 업데이트하면 리액트는 업데이트 여부를 모름
+
+그래서 state 업데이트할 땐
+
+리엑트에서 제공하는 setState 함수를 호출해야 한다
+
+![setState](./imgs/setState.png)
+
+<br />
+
+브라우저 Event, MDN: https://developer.mozilla.org/en-US/docs/Web/API/Event
+
+리액트 Handling Events: https://reactjs.org/docs/handling-events.html
 
 <br />
 
