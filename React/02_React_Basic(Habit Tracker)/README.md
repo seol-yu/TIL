@@ -541,7 +541,39 @@ Habit 이라는 클래스 안에는 state라는 멤버변수가 있다
 
 <br />
 
+1. State
 
+   컴포넌트 안에 컴포넌트 UI를 위한 데이터를 보관하는 state 오브젝트를 통해
+
+   데이터에 업데이트가 발생하면 리액트가 자동적으로 render 함수 호출
+
+2. Props
+
+   컴포넌트 밖에서 주어지는 데이터
+
+   컴포넌트 안에서 자체적으로 데이터를 정의해서 사용하는 State와 달리
+
+   Props는 컴포넌트 외부에서 데이터를 제공받는다
+
+   컴포넌트의 재사용성을 높이기 위해
+
+   상황에 따라 주어진 데이터를 받아서 그 데이터에 맞게 UI를 보여주기 위해 사용됨
+
+   <br />
+
+   부모 컴포넌트에서 LikeButton 컴포넌트 사용할 때
+
+   ```jsx
+   <LikeButton title={'Like'} onClick={this.handleClick} />
+   ```
+
+   title, onClick 같은 애들을 인자로 전달해줄 때
+
+   props 오브젝트에 묶여서 LikeButton 컴포넌트에 전달되어진다(LikeButton 컴포넌트 안에서 this.props로 할당되어짐. React Dev Tools에서 확인 가능)
+
+   <br />
+
+   LikeButton 안에서 this.props.title, this.props.onClick으로 각각 전달된 'Like'와 'this.handleClick' 함수에 접근 가능
 
 <br />
 
