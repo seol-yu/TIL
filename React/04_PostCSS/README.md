@@ -62,7 +62,31 @@ PostCSS는 모듈화가 되어서 복잡한 이름명 쓸 필요 없음
 
 <br />
 
+create react app 에서는 button1.module.css 이런식으로 작성하면 모듈화
 
+```jsx
+import styles from './button1.module.css';
+// 위와 같이 임포트하고
+
+<div className={styles.button}>
+	<span className={styles.text}></span>
+</div>
+// {styles.무엇무엇} 이런 식으로 씀
+```
+
+다른 컴포넌트에서 다른 이름을 썼는지 안썼는지 확인하지 않아도
+
+혹은 BEM 규칙을 따르지 않아도
+
+간편하게 작성 가능
+
+<br />
+
+컴포넌트에서 클래스 이름을 문자열로 쓰는 것이 아니라
+
+styles 임포트하고 {styles.~~} 이렇게 해야
+
+배포할 때 자동적으로 이름이 변환되어짐
 
 <br />
 
