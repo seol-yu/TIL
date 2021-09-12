@@ -225,7 +225,19 @@ Authentication, Realtime Database
 
 <br />
 
+https://cloudinary.com/
 
+사용자의 사진 업로드, 리사이징, Transformation, Filtering
+
+<br />
+
+사용자가 업로드한 이미지 파일을 원하는 사이즈로 재조정, 더 다양한 이미지/미디어 관련 것들 할 수 있다
+
+무료로 1GB정도 저장소 이용 가능
+
+<br />
+
+가입하고 설정 - upload - upload presets 에서 signed 말고 unsigned 추가해서 이용(가입하지 않아도 이용할 수 있는 API)
 
 <br />
 
@@ -241,7 +253,13 @@ Authentication, Realtime Database
 
 <br />
 
+https://cloudinary.com/documentation/image_video_and_file_upload
 
+![cloudinary](./imgs/cloudinary.png)
+
+![cloudinary2](./imgs/cloudinary2.png)
+
+![cloudinary3](./imgs/cloudinary3.png)
 
 <br />
 
