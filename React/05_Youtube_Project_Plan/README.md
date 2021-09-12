@@ -234,7 +234,33 @@ snippet <- 정보 단위
 
 <br />
 
+퍼블릭 API 이용할 때 유용한 포스트맨
 
+<br />
+
+![postman](./imgs/postman.png)
+
+![postman2](./imgs/postman2.png)
+
+Variables 에서는
+
+컬렉션에서 반복적으로 사용되어지는 값이 있을 때 유용한데
+
+유튭 플젝의 경우 컬렉션에서 공통적으로 베이스 url을 쓸 것이므로
+
+![postman3](./imgs/postman3.png)
+
+그 후
+
+리퀘스트 추가
+
+![postman4](./imgs/postman4.png)
+
+Query Params에 KEY, VALUE 넣고 Send
+
+![postman5](./imgs/postman5.png)
+
+![postman6](./imgs/postman6.png)
 
 <br />
 
