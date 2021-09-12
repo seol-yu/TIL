@@ -219,7 +219,7 @@ REACT_APP_YOUTUBE_API_KEY=AIzaSyDMQli6ZSdy2-m0driz8Cv0HAYaQpYamRw
 
 <br />
 
-
+https://developers.google.com/youtube/youtube_player_demo?hl=ko
 
 <br />
 
