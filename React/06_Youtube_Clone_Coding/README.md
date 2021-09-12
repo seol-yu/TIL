@@ -235,7 +235,7 @@ https://developers.google.com/youtube/youtube_player_demo?hl=ko
 
 <br />
 
-
+코드 참고
 
 <br />
 
@@ -251,7 +251,15 @@ https://developers.google.com/youtube/youtube_player_demo?hl=ko
 
 <br />
 
+콘솔에 나오는 에러, 경고 없애기
 
+<br />
+
+memo 사용
+
+memo <- 전달되는 props 변경되지 않으면 re-render 안되고 props가 바뀌면 다시 렌더링되는
+
+useCallback <- 이거는 조심해서 사용. 한번 만들면 메모리상에 계속 보관하므로 메모리에 많은 영향. 
 
 <br />
 
