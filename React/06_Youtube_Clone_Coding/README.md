@@ -130,7 +130,80 @@ webkit 이런건 PostCSS 쓰기에 필요없음
 
 <br />
 
+png to ico
 
+favicon.ico를 public 폴더에
+
+<br />
+
+postman에서 Search할 때 채널 제외하고 비디오만 검색결과로 나오게 하기 위해
+
+&type=video& 추가
+
+![search](./imgs/search.png)
+
+<br />
+
+리액트 <- 뷰 담당
+
+MVC 어플리케이션 만들 때 쓸 수 있는 디자인 패턴이 있다
+
+모델, 뷰, 컨트롤러
+
+<br />
+
+디자인 패턴 <- 어플리케이션에서 조금 더 역할에 맡게 세부적으로 레이어를 나누어서 한 가지의 것이 한 가지의 responsility(역할)를 가질 수 있도록 세분화, 구조적으로 나눠서 테스트, 유지보수, 개발 쉽게
+
+<br />
+
+리액트는 뷰 레이어 담담이므로
+
+사용자에게 데이터를 보여주고 이벤트 처리하는 뷰 관련 일만 함
+
+(네트워크 통신, 비즈니스 로직 처리 등 똑똑한 일 하게 하면 안됨)
+
+<br />
+
+app 컴포넌트 현재 문제
+
+1. 중요한 키가 코드 안에 들어있는 부분
+
+2. 컴포넌트 안에서 네트워크 통신하는 부분(<- 유닛테스트 돌릴 때마다 네트워크 통신 발생)
+
+   이런 네트워크 통신하는거는 따로 클래스 만들고
+
+   컴포넌트 안에다가 주입
+
+   dependency injection 해주고
+
+   나중에 유닛테스트할 때는 실제 네트워크 통신하는 클래스 아닌 네트워크 통신하는 척만 하는 더미 mock 클래스 전달해주기
+
+<br />
+
+https://create-react-app.dev/docs/adding-custom-environment-variables/
+
+최상위에 .env 만들고 변수 할당
+
+```
+REACT_APP_YOUTUBE_API_KEY=AIzaSyDMQli6ZSdy2-m0driz8Cv0HAYaQpYamRw
+```
+
+<br />
+
+.gitignore 에는
+
+```
+# API KEYs
+.env
+```
+
+<br />
+
+새로운 라이브러리 추가하거나 새로운 파일 추가해서 뭔가 잘 안되면
+
+실행 중인 프로세스 취소해주고
+
+다시 `yarn start`
 
 <br />
 
