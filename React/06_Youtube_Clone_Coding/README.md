@@ -299,7 +299,9 @@ https://caniuse.com/?search=fetch
 
 <br />
 
+React Development Tool 보면서 컴포넌트 확인 - 눈 모양 클릭하면 DOM요소로 이동
 
+확인 -> 계획 -> 검증 -> 코딩
 
 <br />
 
