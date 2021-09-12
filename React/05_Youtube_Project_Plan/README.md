@@ -116,7 +116,41 @@ settings.json 에다가
 
 <br />
 
+Youtube API 구글링
 
+https://developers.google.com/youtube/v3?hl=ko
+
+<br />
+
+플랫폼 쓰면서 불편하면 
+
+해당 플랫폼에서 API 지원되는지 보고 나만의 플랫폼 만들기
+
+<br />
+
+API 쓰기 위해 허용받고 관련 API 키를 받아야 한다
+
+Get started
+
+https://console.cloud.google.com/dcredirect?hl=ko&pli=1
+
+프로젝트 만들기
+
+대시보드 - API 및 서비스 가서
+
++API 및 서비스 사용 설정 => API 라이브러리로 이동
+
+YouTube Data API 사용 누르기
+
+사용자 인증 정보 만들기
+
+![youtube](./imgs/youtube.png)
+
+![youtube2](./imgs/youtube2.png)
+
+클립보드 복사하고 완료
+
+API 키는 안전한 장소에 보관하든가 개발자 콘솔와서 확인
 
 <br />
 
