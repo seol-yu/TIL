@@ -123,7 +123,41 @@ SPA의
 
 <br />
 
+예제 플젝 만들어보자
 
+`yarn create react-app router`
+
+<br />
+
+https://reactrouter.com/web/guides/quick-start
+
+`yarn add react-router-dom`
+
+<br />
+
+![router](./imgs/router.png)
+
+![router2](./imgs/router2.png)
+
+위와 같이 쓰면 성능 문제 있어서 안됨 
+
+![route3](./imgs/route3.png)
+
+자식 컴포넌트로 전달해야 한다
+
+React Hook의 useHistory 사용
+
+![route4](./imgs/route4.png)
+
+<br />
+
+리액트 라우팅을 이용하면 HTML에서 링크 쓰는 것과 달리
+
+기존 페이지 그대로 유지한 상태에서 해당 내용만 업데이트
+
+싱글페이지 어플리케이션이 제공하는 장점 그대로 유지하면서 
+
+라우팅 가능해서 성능이 좋다
 
 <br />
 
