@@ -166,7 +166,59 @@ API 키는 안전한 장소에 보관하든가 개발자 콘솔와서 확인
 
 <br />
 
+REST API(RESTful Web services)
 
+REST(Representational state transfer)
+
+백엔드와 클라이언트에서 커뮤니케이션 어떤 방식으로 할지 결정해 놓은 것
+
+<br />
+
+* GET <- 정보 읽을 때 (정보를 서버에서 받아올 때 이미 존재하는 사용자 정보 받아 온다면)
+
+  (?url param을 이용해서 받아옴)
+
+* POST <- 새로운 사용자 만들 때
+
+* PUT <- 이미 있는 사용자 정보 업데이트
+
+* DELETE <- 이미 존재하는 사용자 삭제
+
+* PATCH <- 통상적으로 REST API 중 하나로 간주안됨
+
+  ......
+
+<br />
+
+GraphQL을 이용하지 않으면 REST API 이용
+
+유튜브 API도 REST API임
+
+API는 문서화가 잘 되어있음
+
+<br />
+
+IFrame Embed Code 보기 위해선
+
+https://developers.google.com/youtube/youtube_player_demo
+
+플레이어 매개변수 표시
+
+https://developers.google.com/youtube/v3/docs/search/list?hl=ko%2F3%2Fgetting-started&apix=true#%EC%A7%81%EC%A0%91-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EC%84%B8%EC%9A%94
+
+위 주소 가면 try 해볼 수 있는데
+
+Google OAuth 2.0은 체크 해제하고 API Key만 사용할 것임
+
+<br />
+
+snippet <- 정보 단위
+
+? <- query param 시작
+
+<br />
+
+개발툴 - 네트워크 - Ctrl + R 리프레쉬(쉬프트 누르면서 하면 강제 리프레쉬)
 
 <br />
 
