@@ -173,7 +173,43 @@ React Hook의 useHistory 사용
 
 <br />
 
+Firebase + Crashlytics 
 
+<br />
+
+파이어베이스는
+
+어플리케이션 만들 때 빠르게 만들 수 있게 도와준다
+
+ex) Authentication, Cloud Firestore, Cloud Storage, Realtime Database(소켓 프로그래밍처럼 실시간 업데이트), Hosting, ML 등등 지원
+
+<br />
+
+SDK? software development kit 개발에 필요한 모든 것 들어있는
+
+우리가 어떻게 통신을 해야 되는지, 파이어베이스에는 어떤 API가 있는지
+
+어떤 것을 호출하고 어떤 순서로 설정해서 써야하는지 걱정X
+
+파이어베이스에서 자체 제공하는 SDK를 
+
+우리가 만드는 어플리케이션에 라이브러리처럼 포함해두면, 
+
+SDK에서 제공하는 API 함수들만 이용하게 되면 
+
+SDK가 알아서 자동으로 파이어베이스와 통신을 하게 된다
+
+dependence가 하나 추가되는 것이므로 필요한지 이득 생각하고 나서 추가
+
+<br />
+
+https://firebase.google.com/docs
+
+https://firebase.google.com/docs/auth
+
+우리가 사용할 것은
+
+Authentication, Realtime Database
 
 <br />
 
