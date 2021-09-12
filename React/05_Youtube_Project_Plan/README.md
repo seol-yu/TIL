@@ -1,0 +1,173 @@
+<br />
+<a href="https://github.com/seol-yu/TIL/tree/master/React">
+  <img src="https://github.com/seol-yu/TIL/raw/master/images/react-badge-logo.png?raw=true" height="30" style="max-width: 100%;">
+</a>
+<br />
+
+### 목차
+
+[프로젝트 Kick off 인사](#Kick_off)
+
+[유튜브 프로젝트 소개](#유튜브_프로젝트_소개)
+
+[프로젝트 셋업](#프로젝트_셋업)
+
+[API 키 설정하기](#API_키_설정)
+
+[Youtube APIs 살펴보기](#Youtube_APIs_살펴보기)
+
+[Postman_소개와_설정](#Postman_소개_설정)
+
+[프로젝트_계획](#프로젝트_계획)
+
+<br />
+
+---
+
+<br />
+
+### Kick_off
+
+<br />
+
+1. 구현 사항 정리 및 파악
+   - 기능, 구현 계획에 대해서 세울 수 있는데까지 정리
+2. 강의 보면서 따라 작성
+   * 콘솔 로그와 개발툴 적극 활용
+   * 앱의 전반적인 흐름과 코드와 리액트에 대한 흐름/이해력 높이기
+3. 강의 끝난 후, 다시 한번 스스로 만들어보기
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### 유튜브_프로젝트_소개
+
+<br />
+
+Youtube API 이용
+
+유튜브에서 가장 인기있는 영상 목록 보여주고
+
+사용자가 원하는 영상 클릭하면 비디오 디테일, 영상 재생 화면, 오른쪽에는 인기 목록
+
+비디오는 sticky로 유지
+
+검색해서 마찬가지로 비디오 디테일 들어오기
+
+반응형(오른편에 있던 검색 결과 밑으로)
+
+<br />
+
+문제 해결 연습
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### 프로젝트_셋업
+
+<br />
+
+다른 프로젝트와 구분하기 위해
+
+셋팅에 가서 
+
+User <- 모든 비쥬얼 스튜디오에 적용
+
+Workspace <- 지금 플젝에만 적용하기 위해
+
+Workspace - Workbench - Appearance - Color Customizations 가서
+
+settings.json 에다가
+
+```json
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#F54133",
+        "titleBar.inactiveBackground": "#F54133"
+    }
+}
+```
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### API_키_설정
+
+<br />
+
+
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### Youtube_APIs_살펴보기
+
+<br />
+
+
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### Postman_소개_설정
+
+<br />
+
+
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### 프로젝트_계획
+
+<br />
+
+
+
+<br />
+
+[목차로](#목차)
+
+<br />
