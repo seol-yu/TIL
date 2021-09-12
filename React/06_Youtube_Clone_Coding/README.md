@@ -98,7 +98,23 @@ setVideos를 받아온 result에 있는 items로 업데이트
 
 <br />
 
+props deconstructing 하기
 
+<br />
+
+index.css에는 
+
+```css
+* {
+  box-sizing: border-box;
+}
+```
+
+<br />
+
+box shadow generator
+
+webkit 이런건 PostCSS 쓰기에 필요없음
 
 <br />
 
