@@ -275,7 +275,38 @@ https://cloudinary.com/documentation/image_video_and_file_upload
 
 <br />
 
+VSCode 설정 - Workspace - Workbench - Appearance - Color Customizations
 
+```json
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#3F708D",
+        "titleBar.inactiveBackground": "#3F708D"
+    }
+}
+```
+
+<br />
+
+index.css 에서
+
+```css
+:root {
+    
+}
+```
+
+이런 식으로 해도 되지만
+
+PostCSS 활용해서
+
+src(소스) 안에 공통적으로 쓰이는 것을 작성
+
+src 안에 common 폴더 만들고 .. `@value 변수명: 값;`
+
+사용하고자 하는 css 파일 가서(index.module.css)
+
+`@value makerBlack from './common/colors.css';` 이렇게 하고 쓰면 됨
 
 <br />
 
