@@ -1,7 +1,6 @@
 <br />
 <a href="https://github.com/seol-yu/TIL/tree/master/React">
-  <img src="https://github.com/seol-yu/TIL/raw/master/images/react-badge-logo.png?raw=true" height="30" style="max-width: 100%;">
-</a>
+  <img src="https://github.com/seol-yu/TIL/raw/master/images/react-badge-logo.png?raw=true" height="30" style="max-width: 100%;"></a>
 <br />
 
 ### 목차
@@ -45,7 +44,11 @@
 
 <br />
 
+https://firebase.google.com/docs/auth
 
+인증 - 웹
+
+구글, 깃허브 .. 
 
 <br />
 
@@ -61,7 +64,16 @@
 
 <br />
 
+`yarn add firebase`
 
+![firebase](./imgs/firebase.png)
+
+.gitignore에
+
+```
+# API Keys
+.env
+```
 
 <br />
 
