@@ -11,10 +11,20 @@ class AuthService {
     this.googleProvider = new GoogleAuthProvider();
     this.githubProvider = new GithubAuthProvider();
   }
-  
+
   login(providerName) {
     const authProvider = this.getProvider(providerName);
     return signInWithPopup(this.firebaseAuth, authProvider);
+  }
+
+  logout() {
+    this.firebaseAuth.signOut();
+  }
+
+  onAuthChange(onUserChanged) {
+    this.firebaseAuth.onAuthStateChanged((user) => {
+      onUserChanged(user);
+    });
   }
 
   getProvider(providerName) {
