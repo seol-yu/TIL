@@ -81,6 +81,22 @@ https://firebase.google.com/docs/auth
 
 <br />
 
+firebase 콘솔에서 Authentication - 구글, 깃허브 enable
+
+![github](./imgs/github.png)
+
+주소 복사해서
+
+깃허브 - 셋팅 - Developer settings - OAuth Apps
+
+![github2](./imgs/github2.png)
+
+등록한 후 Client ID랑 Client secrets 복사해서
+
+파이어베이스 깃허브에 붙여넣기
+
+<br />
+
 [목차로](#목차)
 
 <br />
