@@ -13,11 +13,7 @@ function App({authService}) {
             <Login authService={authService} />
           </Route>
           <Route path="/maker">
-            <Maker
-              // FileInput={FileInput}
-              authService={authService}
-              // cardRepository={cardRepository}
-            />
+            <Maker authService={authService} />
           </Route>
         </Switch>
       </BrowserRouter>
