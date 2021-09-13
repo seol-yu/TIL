@@ -221,7 +221,9 @@ firebase 콘솔에서 Authentication - 구글, 깃허브 enable
 
 <br />
 
+상태를 업데이트할 때 map, for loop 성능에 좋지 않은 경우가 있는데
 
+object 특징 key, value 이용
 
 <br />
 
