@@ -15,8 +15,9 @@ const Maker = ({ authService }) => {
       title: 'Software Engineer',
       email: 'seolyu@seolyu.com',
       message: 'hi',
+      theme: 'dark',
       fileName: 'seolyu',
-      fileURL: 'seolyu.png'
+      fileURL: null,
     },
     {
       id: '2',
@@ -25,8 +26,9 @@ const Maker = ({ authService }) => {
       title: 'Software Engineer',
       email: 'seolyu@seolyu.com',
       message: 'hi',
+      theme: 'dark',
       fileName: 'seolyu',
-      fileURL: 'seolyu.png'
+      fileURL: null,
     },
     {
       id: '3',
@@ -35,8 +37,9 @@ const Maker = ({ authService }) => {
       title: 'Software Engineer',
       email: 'seolyu@seolyu.com',
       message: 'hi',
+      theme: 'dark',
       fileName: 'seolyu',
-      fileURL: 'seolyu.png'
+      fileURL: null,
     }
   ]);
   const history = useHistory();
