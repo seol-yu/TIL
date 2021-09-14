@@ -255,7 +255,22 @@ object 특징 key, value 이용
 
 <br />
 
+코드 참고
 
+Realtime Database 초반 설정 잘못해서
+
+Rules에서
+
+```
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+```
+
+이렇게 바꿈
 
 <br />
 
