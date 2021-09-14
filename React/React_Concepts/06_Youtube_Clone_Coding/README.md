@@ -1,5 +1,5 @@
 <br />
-<a href="https://github.com/seol-yu/TIL/tree/master/React">
+<a href="https://github.com/seol-yu/TIL/tree/master/React/React_Concepts">
   <img src="https://github.com/seol-yu/TIL/raw/master/images/react-badge-logo.png?raw=true" height="30" style="max-width: 100%;">
 </a>
 <br />
