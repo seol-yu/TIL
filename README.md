@@ -15,3 +15,8 @@
         <img src="https://github.com/seol-yu/TIL/blob/master/images/react-badge-logo.png?raw=true" height=30 />
     </p>
 </a>
+<a href="https://github.com/seol-yu/TIL/tree/master/Git" target="_blank">
+    <p align="left">
+        <img src="https://github.com/seol-yu/TIL/blob/master/images/git-badge-logo.png?raw=true" height=30 />
+    </p>
+</a>
