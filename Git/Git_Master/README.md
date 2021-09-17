@@ -6,5 +6,5 @@
     💻 tech stack
 </h2>
 <p align="center">
-    <img src="https://github.com/seol-yu/TIL/blob/master/images/git-badge-logo.png?raw=true" height=30 />
+    <a href="https://github.com/seol-yu/TIL/tree/master/Git" target="_blank"><img src="https://github.com/seol-yu/TIL/blob/master/images/git-badge-logo.png?raw=true" height=30 /></a>
 </p>
