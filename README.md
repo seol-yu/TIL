@@ -10,6 +10,11 @@
         <img src="https://github.com/seol-yu/TIL/blob/master/images/javascript-badge-logo.png?raw=true" height=30 />
     </p>
 </a>
+<a href="https://github.com/seol-yu/TIL/tree/master/TypeScript" target="_blank">
+    <p align="left">
+        <img src="https://github.com/seol-yu/TIL/blob/master/images/typescript-badge-logo.png?raw=true" height=30 />
+    </p>
+</a>
 <a href="https://github.com/seol-yu/TIL/tree/master/React" target="_blank">
     <p align="left">
         <img src="https://github.com/seol-yu/TIL/blob/master/images/react-badge-logo.png?raw=true" height=30 />
