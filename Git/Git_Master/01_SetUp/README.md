@@ -6,7 +6,7 @@
 
 [설정 및 셋팅](#Setting)
 
-[사용자 설정 및 필요한 셋팅들](#Setting)
+[사용자 설정 및 필요한 셋팅들](#Setting2)
 
 
 <br/>
@@ -53,7 +53,7 @@ GitKraken <- 화려한 UI
 
 <br />
 
-### Setting
+### Setting2
 
 <br />
 
