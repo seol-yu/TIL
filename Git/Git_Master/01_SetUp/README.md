@@ -204,7 +204,55 @@ Git 공식 사이트 - Documentation - Reference <- 깃에서 이용가능한 �
 
 <br />
 
+Git 은 어떤 폴더든 초기화해서 사용할 수 있다
 
+`cd projects` 프로젝트 폴더로
+
+`mkdir git` 디렉토리 만들기
+
+`cd git`
+
+`ls -al`  <- 아무 파일 없는거 확인
+
+`git init` <- 깃 초기화
+
+`ls -al`  <- .git 숨겨진 폴더 확인 가능
+
+`open .git`  <- 깃 관련 모든 정보들이 있는 것 확인, 윈도우는 start 명령어
+
+기본적으로 master branch 생성됨
+
+깃 삭제하고 싶다면 `rm -rf .git`
+
+<br />
+
+UI에서는 기존 것은 드래그하면 추가됨
+
+새로운 것은 New - 서버 or 로컬에 Create Repository
+
+<br />
+
+깃 상태를 볼 수 있는 `git status`
+
+이렇게 반복적으로 쓰이는 명령어를 조금 단축해서 쓰고 싶다면
+
+--global 안에 alias 라는 것 사용
+
+`git config --global alias.st status`
+
+이렇게 하면
+
+`git st`
+
+이렇게 사용 가능해짐
+
+<br />
+
+git에는 명령어와 그 명령어에서 쓸 수 있는 다양한 속성값들이 있는데 
+
+이런 것 확인해보고 싶을 땐 명령어 다음에 `--h` 라고 입력하면 정보 확인 가능
+
+Git 공식 사이트 Reference 탭에서도 확인 가능
 
 <br />
 
