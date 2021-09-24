@@ -14,6 +14,10 @@
 
 [파일 비교하기 diff](#diff)
 
+[버전 등록하기](#commit)
+
+[커밋할 때 팁](#commit_tip)
+
 <br/>
 
 ---
@@ -365,3 +369,84 @@ Y
 
 ---
 
+<br />
+
+### commit
+
+<br />
+
+파일 수정,변경하고 마음에 들면 staging area에 올리고
+
+첫번째 커밋(버전) 만들어보자
+
+<br />
+
+`git commit` <- staging area에 있는 변경사항을 Git repository에 옮겨주는 역할
+
+아무 옵션없이 하면 기본적인 템플릿 나옴
+
+보통은 commit에 있는 타이틀을 작성하고
+
+그 다음에 조금 더 자세한 디스크립션(상세설명) 적음
+
+저장하고 다시 파일 닫아보면
+
+첫번 쨰 줄 보면 master 브랜치에 해시코드 제일 앞 부분만 따서 나와있는데 해시코드 아이디와 타이틀이 표기가 되고
+
+히스토리를 확인하기 위해서 `git log` 를 이용해보면
+
+commit과 전체적인 해시코드 나옴
+
+누가 언제 했는지, 타이틀과 디스크립션
+
+<br />
+
+`echo add >> 텍스트파일`
+
+add 했었던 텍스트파일에 add 라는 문구 추가하고(수정)
+
+`git status -s` 해보면 M 뜨는거 확인
+
+`git add .`
+
+`git commit -m "second commit"` 메세지 옵션으로 간단히 커밋
+
+`git log` <- 커밋 확인
+
+<br />
+
+이렇게 수정하고 수정된 파일을 staging area로 옮긴 다음에 커밋해야 하는데
+
+나는 내 working directory에 있는 모든 변경 사항이 마음에 들어
+
+그럼 add 굳이 사용하지 않고도
+
+`git commit -am "third commit"`
+
+이렇게 am 옵션 써서(`git status` 해봐)
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### commit_tip
+
+<br />
+
+
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
