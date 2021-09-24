@@ -288,11 +288,80 @@ Staging area에 추가되었고 working directory 에는 M modified 수정 되�
 
 <br />
 
+`git status` 를 이용해서 어떤 파일이 수정되었고 staging area에 있는지 확인 가능하지만
 
+정확히 어떤 내용이 수정되었는지 확인 불가
+
+정확히 어떤 파일의 내용이 수정되었는지 확인해보려면 `git diff` 이용
+
+아무 옵션 없으면 working directory에 있는 것만 비교해서 볼 수가 있다
+
+<br />
+
+--git 커맨드를 이용해서 
+
+a는 이전 버전(working directory에 있는 파일이라면 이전에 commit된 버전을 가리키거나 staging area에 변경된 내용이 있다면 그것이 이전 버전일 수도 있다)을 의미
+
+지금 버전인 b와 비교
+
+index는 Git 내부적으로 파일들을 참고할 때 쓰는 것
+
+마이너스는 이전 파일
+
+새로 변경된 사항은 플러스
+
+그 밑에 마이너스는 이전파일, +1,2는 첫번째 줄에서 두번째 줄까지 확인 의미
+
+추가되면 초록색 삭제는 마이너스 빨간색으로 표시
+
+<br />
+
+키보드 q 눌러서 종료하고 
+
+`git diff` 이용하게 되면 working directory에 있는 변경사항들만 확인해 볼 수 있다
+
+`cat 파일` 해보면 내용 확인
+
+staging area에 있는 것 확인하려면 `git diff --staged`
+
+<br />
+
+`git diff -h`  <- 옵션 확인
+
+스테이지는 캐시란 말과 동의어로 사용되곤 함
+
+`git diff --cached`
+
+<br />
+
+`git config --global -e`
+
+한 후
+
+```
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+```
+
+diff 툴은 vscode 이용하고
+
+vscode의 명령어는 code 다음에 터미널에서 기다리고 diff를 이용하고 LOCAL과 REMOTE를 비교한다
+
+`git difftool`
+
+Y
+
+`git difftool --staged`
+
+Y
 
 <br />
 
 [목차로](#목차)
 
 <br />
+
+---
 
