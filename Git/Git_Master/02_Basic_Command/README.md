@@ -673,7 +673,47 @@ git checkout 명령어 다음에 원하는 해시코드를 입력하게 되면 �
 
 <br />
 
+git log 를 볼 때 더 이쁘게 우리가 원하는 정보 가질 수 있도록 포맷팅
 
+`git log --pretty` <- --pretty 옵션을 이용해 원하는 대로 꾸밀 수 있다
+
+<br />
+
+`git log --pretty=oneline`
+
+`git log --pretty=format:"%h %an"`
+
+`git log --pretty=format:"%h %an %ar %s`
+
+<br />
+
+https://git-scm.com/docs/git-log
+
+레퍼런스 - log 아래가보면 확인
+
+<br />
+
+`git checkout fix` <- fix 라는 브랜치로 이동
+
+HEAD는 fix를 가리키고 있는데 어디서부터 어떤 커밋이 fix에 해당하는지 확인이 힘들다
+
+이 때
+
+`git log --oneline --graph --all`
+
+<br />
+
+`git log --graph --all --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(white)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --date=short`
+
+<br />
+
+원하는 방식으로 포맷을 지정할 수 있다
+
+이렇게 긴 명령어.. alias 로
+
+<br />
+
+`git config --global alias.seolyu "log --graph --all --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(white)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --date=short"`
 
 <br />
 
