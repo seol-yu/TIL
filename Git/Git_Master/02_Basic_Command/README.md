@@ -10,6 +10,7 @@
 
 [ignore](#ignore)
 
+[현재 상태 확인 status](#status)
 
 <br/>
 
@@ -176,6 +177,66 @@ Staging area에 옮겨진 것 확인
 <br />
 
 ### ignore
+
+<br />
+
+프로젝트 안에서 다양한 형태의 파일들이 있다면
+
+`echo styling > style.css`
+
+`echo log > log.log`
+
+`ls`
+
+`git status`
+
+<br />
+
+`git add *.css` <- css 파일만 추가
+
+`git status`
+
+<br />
+
+프로젝트 하다가 부수적으로 생겨난 파일들, 트래킹하고 싶지 않은 애들, 깃/깃허브에 올리고 싶지 않은 애들은
+
+.gitignore
+
+`echo *.log > .gitignore`
+
+<br />
+
+`ls -al`
+
+.git <- 깃 관련 모든 정보를 가지고 있는 숨겨진 .git 폴더
+
+.gitignore <- 추가하고 싶지 않은 애들
+
+<br />
+
+`open .gitignore` <- 윈도우는 open 대신 start
+
+`git status` <- 해보면 더 이상 log파일(깃이그노어)은 보이지 않는 것 확인
+
+모든 log 추가하고 싶지 않으면 *.log
+
+특정 디렉토리 추가하고 싶지 않으면 build/
+
+build 안에 있는 log들만 트래킹하고 싶지 않다면
+
+build/.log <- build/*.log
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### status
 
 <br />
 
