@@ -12,6 +12,8 @@
 
 [현재 상태 확인 status](#status)
 
+[파일 비교하기 diff](#diff)
+
 <br/>
 
 ---
@@ -240,7 +242,37 @@ build/.log <- build/*.log
 
 <br />
 
+`git status` <- 작업하고 있는 모든 내용들 간단히 확인
 
+`-h` 옵션(help)으로 더 자세히, 함께 실행할 수 있는 모든 옵션들에 대해 확인 가능
+
+<br />
+
+옵션 없이 `git status` 라고 작성하면 기본적으로 `--long` 이라는 옵션이 적용되어진다
+
+`-s` 붙이면 조금 더 간단하게 확인 가능
+
+`-b` 라고 붙이면 branch에 관련된 정보들을 확인 가능
+
+<br />
+
+터미널에서 윈도우라면 컨트롤, Mac 이라면 커맨드를 누른 상태에서 K를 타이핑하면 터미널이 깨끗하게 지워진다(안되는데)
+
+이 상태에서 `git status -s` 하면 short 간단한 버전으로 확인 가능
+
+알 수 없는 알파벳
+
+초록색은 staging area에 추가된 정보들을 볼 수 있다
+
+A 는 파일이 추가가 되었고 staging area에 들어가 있는 것을 확인할 수 있다
+
+.gitignore 는 아직 트래킹되지 않는 working directory 에만 있는 것을 볼 수가 있다
+
+<br />
+
+만약 `echo` 명령어로 파일 수정하고 다시 확인해보면 AM 이라고 뜨는 것을 볼 수 있다
+
+Staging area에 추가되었고 working directory 에는 M modified 수정 되었다 정보 확인 가능
 
 <br />
 
@@ -249,4 +281,18 @@ build/.log <- build/*.log
 <br />
 
 ---
+
+<br />
+
+### diff
+
+<br />
+
+
+
+<br />
+
+[목차로](#목차)
+
+<br />
 
