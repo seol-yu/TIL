@@ -8,6 +8,8 @@
 
 [로컬 파일들 추가하기 add](#add)
 
+[ignore](#ignore)
+
 
 <br/>
 
@@ -80,6 +82,100 @@ unmodified는 이전 버전과 비교해서 수정되지 않았기 때문에
 <br />
 
 ### add
+
+<br />
+
+`echo hello world! > a.txt`
+
+`echo hello world! > b.txt`
+
+`echo hello world! > c.txt`
+
+`open .` <- 윈도우는 start. 폴더 열기
+
+`ls`
+
+<br />
+
+`git status` <- 현재 파일 상태 확인
+
+GIT이 트래킹하게 하려면 Staging area에 옮기려면 `git add` 명령어
+
+`git add a.txt`
+
+이렇게 한 후
+
+`git status` 해보면 커밋할 준비가 되어있는 변경사항 확인 가능
+
+add 명령어 이용하면 이 파일은 준비가 되었다, Staging area로 옮겨야지
+
+`git add *.txt` <- 존재하는 txt 파일 모두 add
+
+<br />
+
+`echo seolyu >> a.txt`
+
+이렇게 하고 `git status` 해보면
+
+a.txt 수정된 것 확인
+
+<br />
+
+Staging area에 있는 파일은 `git add` 명령어 이용해서 추가할 당시 그 상태의 파일들이 저장되어져 있다
+
+staging 된 이후 수정하면 unstaged files 에 나오게 된다
+
+Git이 트래킹하고 있기 때문에 modified 라고 나온다
+
+`git add a.txt`
+
+`git status`
+
+해보면 
+
+Staging area에 옮겨진 것 확인
+
+<br />
+
+`git rm --cached` 이용해서 다시 Staging area에서 working directory 로 옮겨갈 수 있다
+
+`git rm --cached *`
+
+하고 `git status` 해보면
+
+파일들 Untracked 된 것 확인
+
+<br />
+
+`git add *` <- 디렉토리에 있는 모든 파일들 staging area로 옮겨감
+
+만약 여기서 a 파일 삭제되었다면 `rm a.txt`
+
+`ls` <- working directory 에는 a 파일이 없는 것을 볼 수 있다
+
+이 상태에서 
+
+`git add *`
+
+`git status` 해보면
+
+삭제된 a 파일은 디렉토리에 없었기 때문에 git staging area에 추가되지 않은 것을 확인
+
+이럴 경우
+
+`git add .` 쓰면 모든 파일들을 포함해서 git staging area에 추가된 것을 확인할 수 있다
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### ignore
 
 <br />
 
