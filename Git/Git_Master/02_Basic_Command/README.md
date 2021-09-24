@@ -22,6 +22,8 @@
 
 [파일 변경시 유용한 팁](#rm_tip)
 
+[버전들 목록 보기](#log)
+
 <br/>
 
 ---
@@ -508,6 +510,54 @@ init, add, fix 이런 애들
 <br />
 
 ### rm_tip
+
+<br />
+
+파일 변경시 유용한 팁
+
+파일을 `rm` 을 이용해서 텍스트 파일을 삭제하면 
+
+파일이 삭제된 내용은 아직 staging area에 포함이 되지 않기 때문에 
+
+이것을 commit 하기 위해서는 `git add` 를 이용해서 추가해 준 다음 `commit` 해야함
+
+<br />
+
+하지만 Git에서 제공하는 `rm` 명령어를 이용하면 간편하게 바로 staging area에 추가됨
+
+`git rm 삭제할파일`
+
+<br />
+
+즉, 그냥 삭제를 한 경우에는 staging area에 자동으로 포함되지 않지만
+
+git 에서 제공하는 `rm` 이용하면 자동으로 staging area에 포함
+
+<br />
+
+마찬가지로
+
+그냥 파일의 이름 변경하면 git status에 포함 안된다
+
+but
+
+`git mv style.css f.css` 이런식으로 하면
+
+`git status` 해보면
+
+이름이 변경된 것이 staging area에 포함된 것 확인
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### log
 
 <br />
 
