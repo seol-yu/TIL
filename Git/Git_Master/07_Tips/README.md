@@ -56,7 +56,51 @@ VSCode에서는 gitlens라는 익스텐션 설치
 
 <br />
 
+bisect  <- 버그 잡는 시간 줄여줄 명령어
 
+디버깅 툴, 성능 분석 했음에도 잘 문제가 파악되지 않았고 이전에는 잘 동작했다면
+
+`git bisect`
+
+커밋 히스토리 보면서 
+
+특정 부분은 good 최근은 bad
+
+빠르게 문제 커밋을 발견
+
+<br />
+
+`git checkout 문제없었던시점커밋해시코드`  <- 문제 없는지 다시 확인
+
+`git bisect start`
+
+B 심볼 생겨난 것 확인
+
+`git bisect good`
+
+`git checkout master`  <- 다시 최신 master 포인터로 돌아가서
+
+다시 한번 최신버전에서 문제 발생하는지 확인해보고 문제 발생하면
+
+`git bisect bad`
+
+<br />
+
+bisecting 시작
+
+이진탐색 알고리즘으로
+
+문제 발생하는지 확인해보고
+
+`git bisect good`
+
+`git bisect bad`
+
+체크해나가기..
+
+<br />
+
+나쁜 커밋 알려줌
 
 <br />
 
