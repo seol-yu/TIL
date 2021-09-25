@@ -412,7 +412,29 @@ history는 서버에서 가져온 c라는 커밋을 가지고 있지만 여전�
 
 <br />
 
+서버에 새로운 커밋 추가하고
 
+로컬에 와서
+
+`git fetch` 해보면
+
+서버 히스토리 가져옴
+
+origin/main과 origin/HEAD는 최신 커밋(서버에서 가져온) 가리키지만
+
+나의 local HEAD는 여전히 내 로컬에서의 최신 커밋 가리키는 것 확인
+
+<br />
+
+즉, 작업하고 있는 HEAD 그대로 유지하면서
+
+server에 업데이트된 history 정보만 가지고 올 때 `git fetch`
+
+<br />
+
+`git fetch 서버의이름`
+
+`git fetch 서버의이름 특정브랜치명`
 
 <br />
 
