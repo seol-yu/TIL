@@ -613,7 +613,87 @@ p4merge 다운 받고
 
 <br />
 
+three-way merge에서 커밋 히스토리 더럽게 안남기는 방법 fast-forward 할 수 있는 방법은 rebase
 
+<br />
+
+featureA 브랜치가 파생된 시점 즉 
+
+feature A의 첫번째 커밋이 가리키고 있는 마스터 브랜치의 커밋이 
+
+featureA 브랜치가 파생된 커밋인데
+
+featureA의 첫번째 커밋이 마스터브랜치의 최신 커밋을 가리키게 변경하면
+
+fast-forward 가능
+
+<br />:warning:혼자하면 괜찮은데 다른 개발자와 함께 featureA에서 작업하고 있었다면 조금 위험
+
+그 이유는
+
+rebase를 하게 되면 
+
+featureA 브랜치의 첫번째 커밋이 가리키고 있는 포인터를 변경하는건데 
+
+이렇게 포인터 정보를 변경하게 되면 기존 커밋을 유지하는 것이 아니라
+
+featureA 브랜치에서 새로운 커밋을 만들게 된다
+
+겉으로는 같아 보여도
+
+실제로 featureA의 커밋들은 다른 커밋들
+
+<br />
+
+만약 다른 개발자가 동일한 브랜치에서 작업하고 있었다면 
+
+내가 rebase를 하고 push를 해서 서버에 변경된 정보를 업데이트하게 된다면 
+
+다른 개발자가 가지고 있는 feature A의 커밋들은 전혀 다른 커밋이기에 
+
+나중에 머지충돌 발생할 수 있다
+
+그러므로
+
+rebase는 유용하나 다른 개발자와 함께 브랜치 위에서 작업 중이고
+
+이미 히스토리가 서버에 업로드되어 있는 경우라면
+
+업로드된 히스토리는 절대 rebase하면 안됨
+
+서버에 업데이트되지 않은 나의 로컬에 있는 커밋에 한에서는 rebase 자유
+
+<br />
+
+fast-forward 하려면 merge commit을 만들고 싶지 않다면,
+
+feature-b(머지할) 브랜치를 최신 master branch에 rebase 해놓으면 간단히 fast-forward 가능
+
+먼서 feature-b 브랜치로 이동한 후
+
+`git checkout feature-b`
+
+현재 브랜치인 feature-b를 마스터 브랜치에 rebase
+
+`git rebase master`
+
+<br />
+
+feature-b 브랜치는 최신 master branch에서 계속 파생되어져 온 것 확인
+
+이 상태에서 다시 마스터 브랜치 가서 `git merge` 이용해 feature-b 브랜치를 fast-forward 할 수 있다
+
+`git checkout master`
+
+`git merge feature-b`
+
+<br />
+
+머지된 모든 브랜치 삭제해주면
+
+`git branch -d 삭제할브랜치명`
+
+깔끔하게 마스터 브랜치에 모든 커밋이 있다
 
 <br />
 
