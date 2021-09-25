@@ -170,7 +170,11 @@ stash 적용하면서 목록 그대로 유지하려면 `apply`
 
 <br />
 
+stash 버튼
 
+Stashes
+
+다시 working directory에 적용하고 싶다면 더블클릭
 
 <br />
 
