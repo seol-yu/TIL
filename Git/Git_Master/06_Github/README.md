@@ -194,7 +194,23 @@ Manage access에 협업할 개발자 추가 가능
 
 <br />
 
+나의 커밋을 서버에 저장
 
+`echo add > add .txt`
+
+`git add .`
+
+`git commit -m 'Add new file'`
+
+`git push`  <- 로컬 히스토리를 서버에 업데이트
+
+아이디 / 비번 입력
+
+<br />
+
+`git config --global -e`
+
+깃허브 사용자 이름과 이메일로 설정
 
 <br />
 
