@@ -154,7 +154,31 @@ Manage access에 협업할 개발자 추가 가능
 
 <br />
 
+깃 클론 <- 최신 커밋도 가져옴
 
+다운로드는 현재 서버에 있는 버전의 코드가 다운로드
+
+<br />
+
+깃 클론 명령어 다음에 원하는 이름 적어도 됨
+
+<br />
+
+`git remote`  <- 서버에 있는 애 이름 나옴. 기본 설정은 origin
+
+`git remote -v`  <- 오리진이 어떤거 가리키는지 정확한 정보 확인 가능, 현재 있는 폴더에서 다른 깃허브 링크 추가하고 싶다면 나중에 오픈소스 플젝에 참가할 때 fork한 리포지토리에서는 다수의 origin 설정 가능, 그럴 땐
+
+`git remote add 다른이름써도되고 다른githublink`
+
+`git remote -v`  해보면 추가된거 확인
+
+다수의 원격 설정
+
+<br />
+
+`git remote show` 해보면 
+
+`git remote show origin`  <- 해당 리모트 정보 자세히 
 
 <br />
 
