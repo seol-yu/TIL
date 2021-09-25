@@ -376,7 +376,65 @@ git merge 이용하면,
 
 <br />
 
+merge conflict 은 Git이 merge를 할 때 무언가 문제가 있어서 자동적으로 해결이 안된 무언가 충돌이 났을 때 발생
 
+두 가지 브랜치에서 동일한 파일을 수정했다면 Git이 '도대체 어떤 내용을 추가해야 되지' '어떤 내용을 받아들여야 되지' 혼동스러울 떄 conflict 이 발생
+
+직접 수정해줘야함
+
+<br />
+
+`git merge 브랜치명`
+
+merge conflict 발생
+
+<br />
+
+`git status` 해보면
+
+main.txt(머지 충돌 발생한 파일)에 동시에 두개가 수정되었다고 에러 확인
+
+`cat main.txt` 해보면 알 수 없는 문자열 추가된 것 보이는데
+
+Git 에서 머지 conflict 어디서 발생했는지 정보를 주기 위해 자동 삽입된 문자열
+
+<br />
+
+해결 위해 수동적으로 혹은 외부 merge 툴 이용
+
+<br />
+
+수동은
+
+`open main.txt`  <- 윈도우는 start 명령어
+
+열어서 수동으로
+
+.. 중요한 포인트는 merge conflict 해결하는 것. 
+
+이것만 하지 다른 것 변경사항 넣지 말자
+
+<br />
+
+`git merge --abort`  <- 머지 취소할 때 쓰면 됨
+
+<br />
+
+앞서 충돌난 파일 수정했으니까
+
+`git status`  <- 이거 해보면 conflict 다 해결했으면 다 해결했다고 알려주기 위해 `git add` 이용해라고 나옴
+
+<br />
+
+`git add main.txt` 한 후
+
+`git status` 해보면
+
+모든 준비 되었으니 이제 merge 하자
+
+`git merge --continue`
+
+fast-forward merge가 아니라서 merge commit 만들어지고 타이틀 입력 후 파일 끄면 merge 완료
 
 <br />
 
