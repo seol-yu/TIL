@@ -438,6 +438,12 @@ server에 업데이트된 history 정보만 가지고 올 때 `git fetch`
 
 <br />
 
+server에 있는 history 정보 업데이트해서
+
+server에서 어떤 일들이 지금 발생하고 있는지, 누가 어떤 일을 했는지 확인하고 싶은 경우에 쓴다
+
+<br />
+
 [목차로](#목차)
 
 <br />
@@ -450,7 +456,85 @@ server에 업데이트된 history 정보만 가지고 올 때 `git fetch`
 
 <br />
 
+server에 있는 내용 받아와서 나의 local 버전도 server와 함께 동일하게 만들고 싶다면,
 
+`git pull` 명령 이용
+
+내 로컬에 있는 HEAD와 server에 있는 HEAD들이 동일한 commit 가리키게 됨
+
+로컬과 서버 synchronized
+
+로컬 정보 최신으로 업데이트
+
+<br />
+
+로컬과 서버에 각각 동일한 파일 수정해서 서로 새로운 커밋있다면??
+
+`echo local >> add.txt`
+
+`git commit -am "local change"`
+
+위와 같이 로컬에 새 커밋 만들고 깃허브에도 커밋을 하나 만든다
+
+<br />
+
+서버에도 같은 파일 수정해서 로컬과 서버 각각 새로운 커밋이 생겼다
+
+<br />
+
+`git pull` 해보면 머지충돌난다
+
+<br />
+
+`git mergetool`  <- 원하는 내용 병합 저장 종료 후 terminal에서도 ctrl + C를 눌러 종료한 후
+
+`git add .`  <- 모두 staging area로 옮긴다
+
+`git merge --continue`
+
+새로운 커밋 메세지가 만들어지는데 저장종료하고 보면
+
+병합해서 새 커밋 생긴 것을 확인
+
+<br />
+
+이렇게 pull 명령어 쓰면 기본적으로 merge 발생
+
+merge 싫고 rebase 사용하고 싶다면..
+
+`git reflog` 이용해서 `git reset --hard 돌아가고자하는곳의해시코드`
+
+서버 리모트 커밋 가지고 있고
+
+로컬은 local change 발생했을 때 상황으로 돌아가기
+
+<br />
+
+`git pull --rebase`
+
+rebase 옵션을 사용했으므로
+
+server에 있는 commit을 가지고 와서
+
+그 상태에서 local에서 만든 commit을 위에다가 적용하기 위해서 진행
+
+동일 파일 수정했으므로 내 local change commit 적용할 때 conflict 발생
+
+`git mergetool`
+
+수정저장종료 Ctrl + C
+
+`git rebase --continue`
+
+커밋메세지 저장 종료
+
+히스토리 보면,
+
+서버에 있는 커밋들은 그대로 가지고 오고
+
+나의 기존 로컬 커밋만 rebase 했기에 그 커밋만 새로운 커밋이 된 것 확인
+
+`git push`
 
 <br />
 
