@@ -530,7 +530,58 @@ main.txt.orig 이런 파일이 생기는데 merge conflict 내용 포함된 내�
 
 <br />
 
+많은 개발자들이 쓰는 막강한 머지툴
 
+p4merge 다운 받고
+
+`git merge 브랜치명`
+
+충돌나면
+
+`git config --global -e`  <- 지금 VSCode로 설정되어있으니까 새로운 머지툴 추가하자
+
+```
+[merge]
+	tool = p4merge
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[mergetool]
+	keepBackup = false
+[mergetool "p4merge"]
+	path = "/Applications/p4merge.app/Contents/MacOS/p4merge"
+```
+
+윈도우 사용자면 C:/ProgramFiles 안에 찾아서 경로 지정
+
+`git mergetool`
+
+<br />
+
+오른쪽 초록색은 로컬, 대체로 지금 작업하고 있는 브랜치
+
+왼쪽에는 리모트, 내 작업환경이 아닌 merge하고자 하는 브랜치
+
+가운데는 두 가지 변경사항 없는 베이스 내용
+
+<br />
+
+밑에 파란색은 리모트 변경
+
+초록색은 로컬 유지
+
+두개 다 유지하렬면 shift 누르면서 클릭하면 둘 다 선택됨
+
+저장 후 나가면 터미널에서 여전히 명령어 수행 중인 것 볼 수 있다
+
+터미널 명령어 종료 Ctrl + C
+
+<br />
+
+`git status`
+
+`git merge --continue`
+
+커밋 메시지 저장 후 종료하면 머지 완료
 
 <br />
 
