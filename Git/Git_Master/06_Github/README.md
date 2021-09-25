@@ -226,7 +226,37 @@ Manage access에 협업할 개발자 추가 가능
 
 <br />
 
+푸시를 간편하게 하기
 
+SSH key
+
+푸시할 때마다 아이디/비번 쓰는건 번거로우니까
+
+secure shell protocol
+
+터미널과 서버간 아이디 비번 유지해주는 방법
+
+<br />
+
+서버에는 public key 제공
+
+내 컴퓨터에는 private key 생성해서
+
+<br />
+
+깃허브 페이지에서 아바타 선택하면 계정 옵션들
+
+셋팅가서
+
+SSH and GPG keys 들어가서
+
+가이드 보고 키 생성해서 등록하기
+
+<br />
+
+title에는 seolyu-Mac 이런식으로 하고..
+
+그 후엔 검증된 유저로 커밋해나갈 수 있다
 
 <br />
 
