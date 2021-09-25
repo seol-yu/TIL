@@ -46,6 +46,10 @@
 
 <br />
 
+cf) WIP 은 Working In Progress 아직 일이 진행 중이다
+
+<br />
+
 [목차로](#목차)
 
 <br />
@@ -58,7 +62,49 @@
 
 <br />
 
+`git checkout` 은 해시코드, 브랜치, 태그로 전환할 때 쓰임
 
+`git checkout -- file` 파일도 초기화 가능
+
+but, 명령어 하나로 다양한 기능하는 것은 직관적이지 않다
+
+그래서
+
+깃 2.23 이후에는 특정 기능별로 새로운 명령어가 생김
+
+<br />
+
+브랜치 전환할 때 `git switch` 
+
+`git restore 파일이름` 
+
+`git restore .`  <- 프로젝트 전체 안에 있는 working directory에 있는 파일들 초기화
+
+<br />
+
+git add 해서 staging area로 파일 가져간거 다시 working directory로 가져오려면
+
+`git restore --staged 파일`
+
+<br />
+
+`git reset HEAD .`  <- reset은 내가 가고자 하는 포인터 가리킬 수 있다. 특정 포인터(HEAD) 해당 버전에 맞게 초기화 해달라. staging area에서 working directory로 가져옴
+
+<br />
+
+`git restore --staged .`  <- 모든 파일을 다시 working directory로 옮기기
+
+`git restore .`  <- 아무 옵션없이 전체 디렉토리로 하면 깨끗하게 정리가 된다
+
+<br />
+
+`git restore --source=`  <- 어떤 커밋으로부터 파일을 초기화할 것인지 설정 가능. 해시코드 작성해도 되고 HEAD 포인터를 써도 된다
+
+참고로 `git show 해시코드`   <- 커밋 정보 확인
+
+예를 들어 `git restore --source=HEAD~2 payment-ui.txt`
+
+`git status` 해보면 해당 파일 삭제된 것 확인
 
 <br />
 
