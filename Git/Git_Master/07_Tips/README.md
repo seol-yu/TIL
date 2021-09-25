@@ -10,6 +10,8 @@
 
 [터미널 UI 인터페이스](#터미널_UI_인터페이스)
 
+[깃 설정](#깃_설정)
+
 <br/>
 
 ---
@@ -161,6 +163,84 @@ VIM 명령어 이용해서 확인 가능
 g 명령어 이용해서 grab 이용 가능
 
 / 이용해서 문자열 검색 가능
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### 깃_설정
+
+<br />
+
+로컬 작업 내용 초기화하고 싶을 때, 로컬 내용 모두 다 무시하고 싶을 때
+
+`git reset --hard HEAD`
+
+이걸 이용하는데
+
+`gh` 만 이용해서 쓸 수 있도록 설정하기
+
+<br />
+
+로컬 작업 내용을 stash에 세이브 할 때
+
+`git stash save`
+
+하는데 `gss` 라고 간단히 설정해보기
+
+<br />
+
+리스트 볼 땐 `gsl`
+
+`gsa`  <- 최근 stash가 된 아이 적용
+
+<br />
+
+`git cad`   <- 빠르게 . 이용해서 커밋하기
+
+<br />
+
+깃 커밋할 때도
+
+`git ca "message"` 이런 식으로
+
+자주 쓰는 명령어들을 alias나 터미널 단축키로 -> 생산성 향상
+
+<br />
+
+`start ~/.gitconfig` 
+
+`git config --global -e`
+
+이용해서 VSCode 열어서
+
+자주 쓰는 명령어와 옵션 컴비네이션 등록해두고 쓰기
+
+```
+[alias]
+	s = status
+	co = checkout
+	c = commit
+	b = branch
+		list = stash list
+		save = stash save
+```
+
+<br />
+
+위처럼 설정한 alias 는 항상 git 다음에 써야하는데
+
+그냥 `gs` 이런 식으로 쓰기 위해선
+
+terminal에서 설정
+
+쉘 자체에 있는 alias를 이용해서 ..
 
 <br />
 
