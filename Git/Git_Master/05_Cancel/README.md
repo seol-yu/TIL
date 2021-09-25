@@ -464,7 +464,65 @@ rebase할 때 충돌나면(해당 파일을 뒤에 이어지는 commit에서 수
 
 <br />
 
+아직 서버에 올리지 않은 커밋 나눠보기(파일 두개 수정했던 커밋)
 
+<br />
+
+보통 프로젝트에 필요한 라이브러리 추가한다면 
+
+어떤 dependency가 추가된다면 
+
+새로 추가되는 dependency를 하나의 커밋으로 하는 것이 바람직
+
+나중에 그 dependency 제거하거나 해당 버전 알맞지 않으면 그 부분만 revert
+
+commit 하나에는 한가지만
+
+라이브러리 하나 추가
+
+기능 하나 추가
+
+버그를 하나 수정
+
+두가지 버그 같이 수정하거나 두가지 dependency 추가하지말고 한가지! 
+
+히스토리 관리 쉽고 문제 발견에도, revert에도 쉽다
+
+<br />
+
+그 이전 해시코드 
+
+`git rebase -i 이전해시코드`
+
+해당 커밋 pick대신 e 쓰고 저장 종료
+
+HEAD가 수정하고자 하는 곳에 머물러있다
+
+<br />
+
+일단 커밋을 working directory로 가져와야한다
+
+`git reset --mixed HEAD~1`  <- --mixed는 생략 가능, 헤드 이전으로 포인터 돌리기
+
+이렇게 해보면,
+
+두 가지 파일 수정된게 나의 working directory로 온 것 확인
+
+<br />
+
+일단 파일1을 staging area로 옮기자
+
+`git add 파일1`
+
+이렇게하면 파일1만 커밋할 수 있다
+
+커밋 하고
+
+이제 파일2도 add, commit
+
+변경사항 마음에 들면
+
+`git rebase --continue`
 
 <br />
 
