@@ -418,7 +418,37 @@ rebase 끝나있다
 
 <br />
 
+필요없는 커밋 삭제하기
 
+rebase를 하고자 하는 그 이전 커밋의 해시코드, 혹은 HEAD 물결 이용해서
+
+`git rebase -i HEAD~2`  <- 이런식
+
+커밋을 완전히 history에서 삭제하는 것
+
+drop 쓴다
+
+pick 대신 d 쓰고 저장 종료
+
+<br />
+
+rebase할 때 충돌나면(해당 파일을 뒤에 이어지는 commit에서 수정하는 등)
+
+수동적으로 관리 해줘야함
+
+이어지는 커밋에서 삭제된 파일 수정사항 발생해서 충돌나면
+
+`git status`  <- 확인해보자
+
+`git add .`
+
+`git status`  <- 새로운 파일 생김
+
+`git rebase --continue`
+
+변경사항 생겨서 커밋 메시지 수정 기회 생김
+
+저장 종료
 
 <br />
 
