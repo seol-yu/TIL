@@ -130,7 +130,15 @@ rebase를 이용해 나의 repository를 최신 버전으로 즉, 오픈소스 �
 
 <br />
 
+깃허브 repository public으로 만들 때 라이센스 .. 보통은 아파치 많이 씀
 
+각각 찾아보고 뭘 원하는지 골라쓰기
+
+셋팅은 언제든 변경 가능
+
+<br />
+
+Manage access에 협업할 개발자 추가 가능
 
 <br />
 
