@@ -206,7 +206,35 @@ checkout 이용하면 언제든지 원하는 버전으로, 원하는 브랜치�
 
 <br />
 
+fast-forward merge <- 마스터 브랜치에서 새로운 브랜치가 생성된 이후 master branch의 변동사항이 없다면 merge 를 할 떄 단순히 마스터 브랜치가 가리키고 있는 포인터를 옮기면 됨
 
+그리고 브랜치 삭제하면 깔끔하게 fast-forward merge 발생
+
+<br />
+
+fast-forward의 단점은 
+
+히스토리에 merge가 되었다는 사실이 남지 않음 커밋으로 안남아서 정말 순수하게 모든 것들을 히스토리에 남기길 좋아한다면 따로 merge commit 만들어라
+
+<br />
+
+예시
+
+master 브랜치에서 각각 feature-a, feature-b 브랜치가 파생되었고 두가지의 커밋이 있는 상황(feature-a 브랜치에는 파일 두개 더 생성된 상황)
+
+브랜치 파생된 이후 마스터 브랜치엔 다른 커밋 없는 상태인 경우,
+
+마스터 브랜치에서
+
+`git checkout master`  <- 마스터 브랜치로 가기
+
+`git merge feature-a`  <- 머지할 브랜치명
+
+이렇게 머지했으면
+
+더이상 feature-a 브랜치 필요 없으니까
+
+`git branch -d feature-a`
 
 <br />
 
