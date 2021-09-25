@@ -260,6 +260,24 @@ title에는 seolyu-Mac 이런식으로 하고..
 
 <br />
 
+`ssh-keygen -t rsa -C "leeseolyu@gmail.com" -f "leeseolyu"`
+
+~/.ssh/config 수정
+
+```
+# leeseolyu - Mac
+Host github.com-leeseolyu
+		HostName github.com
+		User git
+		IdentityFile ~/.ssh/leeseolyu
+```
+
+깃헙-셋팅스-SSHandGPGkeys-키등록(leeseolyu.pub)
+
+`git clone git@github.com-leeseolyu:leeseolyu/testgit.git`
+
+<br />
+
 [목차로](#목차)
 
 <br />
