@@ -320,7 +320,13 @@ Host github.com-leeseolyu
 
 나의 로컬 히스토리를 서버에 맞게 업데이트 후
 
-나의 커밋들을 rebase, push
+나의 커밋들을 rebase하고 push
+
+<br />
+
+간혹 기존 git history를 rebase를 이용해서 변경하거나 history 변경했다면
+
+부득이하게 force 옵션 이용해서 push
 
 <br />
 
@@ -336,7 +342,21 @@ Host github.com-leeseolyu
 
 <br />
 
+이미 만들어진 플젝 깃허브에 추가하기
 
+<br />
+
+먼저 깃허브에서 새로운 repository 만든다
+
+<br />
+
+기존 플젝에서 `git remote add origin 링크`
+
+`git remote` 확인해보면 origin 나옴
+
+`git push`
+
+로컬에 있는 커밋들이 서버에 올라감
 
 <br />
 
