@@ -590,7 +590,11 @@ s 쓴 애들은 squash가 되면서 그 이전에 있는 커밋 즉 처음 나�
 
 <br />
 
+위와 마찬가지로
 
+소스트리에서도 rebase는 그 이전을 가리켜야함 
+
+그 이전 커밋 우클해서 Rebase children of .... interactively ...
 
 <br />
 
