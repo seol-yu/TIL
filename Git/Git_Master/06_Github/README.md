@@ -372,7 +372,31 @@ Host github.com-leeseolyu
 
 <br />
 
+git에서 로컬과 서버와 함께 연동해서 작업하는 경우
 
+나의 로컬에서는 서버에 있는 branch를 origin이라고 붙여서 표기
+
+여기에서 server에 새로운 commit이 발생했다면
+
+fetch를 이용하는 경우에는
+
+server에 있는 git history를 받아와서 나의 git history를 업데이트
+
+origin/master가 서버에서 가져온 새로운 커밋을 가리킴
+
+즉, fetch는 히스토리를 업데이트하지만 
+
+내가 현재 바라보고 있는 작업 환경 HEAD는 그대로 유지
+
+history는 서버에서 가져온 c라는 커밋을 가지고 있지만 여전히 나의 local master branch는 내 로컬의 최신 커밋 b 가리킴
+
+<br />
+
+반대로 pull 이라는 명령어는 server에 있는 history를 가지고 오면서
+
+나의 local에 있는 내용을 함께 merge
+
+서버의 커밋 히스토리 c를 받음과 동시에 origin master와 나의 master가 동시에 서버에서 가져온 커밋 c를 가리킴
 
 <br />
 
