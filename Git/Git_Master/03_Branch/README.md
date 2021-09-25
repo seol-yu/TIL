@@ -597,22 +597,6 @@ p4merge 다운 받고
 
 <br />
 
-
-
-<br />
-
-[목차로](#목차)
-
-<br />
-
----
-
-<br />
-
-### Rebase_tip
-
-<br />
-
 three-way merge에서 커밋 히스토리 더럽게 안남기는 방법 fast-forward 할 수 있는 방법은 rebase
 
 <br />
@@ -694,6 +678,68 @@ feature-b 브랜치는 최신 master branch에서 계속 파생되어져 온 것
 `git branch -d 삭제할브랜치명`
 
 깔끔하게 마스터 브랜치에 모든 커밋이 있다
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### Rebase_tip
+
+<br />
+
+rebase --onto 옵션
+
+<br />
+
+브랜치에서 또 브랜치 만드는 등의 상황에서 
+
+브랜치 상의 브랜치만을 마스터 브랜치에 머지하고 싶다면
+
+그 브랜치가 마스터 브랜치를 가리키고 있으면 편리
+
+<br />
+
+그래서 `git rebase --onto` 옵션을 써서 마스터 브랜치에 rebase를 할건데 
+
+브랜치에서 파생된 브랜치만 마스터 브랜치에 rebase할거야
+
+`git rebase --onto master 브랜치 파생된브랜치`
+
+<br />
+
+rebase를 하고나면
+
+커밋이 비슷해보이지만
+
+실제로는 새로 만들어진 새로운 커밋이 생성되는 걸 확인 가능
+
+<br />
+
+이것도 rebase와 마찬가지로
+
+다른 개발자와 함께 일하고 있는 브랜치이고
+
+서버에 이미 히스토리가 올라가 있다면
+
+즉 브랜치의 파생된 브랜치의 커밋들이 이미 서버에 올라가 있는 상황이라면
+
+rebase를 쓸 때는 조금 조심
+
+<br />
+
+`git rebase --onto master 브랜치 파생된브랜치`  <- 브랜치의 파생된 브랜치가 마스터 브랜치에서 파생되도록 rebase 한 후,
+
+`git checkout master`  <- master 브랜치 가서
+
+`git merge 파생된브랜치`
+
+이렇게 하면 fast-forward 머지됨
 
 <br />
 
