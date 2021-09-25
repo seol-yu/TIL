@@ -250,7 +250,47 @@ master 브랜치에서 각각 feature-a, feature-b 브랜치가 파생되었고 
 
 <br />
 
+fast-forward merge는
 
+feature-a 브랜치가 있었고 거기서 작업했었고 머지된거란 사실이 히스토리에 남지 않는다
+
+<br />
+
+이런걸 선호하지 않는다면,
+
+feature-c 만들어서 커밋 하나 만들어보자
+
+`git checkout -b feature-c`
+
+`echo cc > c.txt`
+
+`git add .`
+
+`git commit -m 'c branch'`
+
+`git checkout master`
+
+`git seolyu`
+
+여기서 그냥 `git merge` 하면 feature-c는 최신 마스터 브랜치에서 파상되었고 그 이후로 마스터 브랜치에는 다른 커밋이 없으므로 자동으로 fast-forward merge가 되어버린다
+
+<br />
+
+근데 난 fast-forward merge 가 싫다
+
+히스토리에 무조건 남기고 싶다
+
+`git merge --no-ff feature-c`  <- fast-forward merge 하지 말란 옵션 넣어서
+
+commit 메세지 입력하라고 나온다
+
+원하는거 작성하고(기본적으로 Merge branch 'feature-c' into master)
+
+머지 완료되면
+
+`git branch -d feature-c` 머지한 브랜치 삭제해준다
+
+히스토리 보면 feature-c가 있었고 마스터 브랜치에 머지되었구나 확인 가능
 
 <br />
 
