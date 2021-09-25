@@ -120,7 +120,33 @@ git add 해서 staging area로 파일 가져간거 다시 working directory로 �
 
 <br />
 
+커밋 메시지를 실수로 잘못 작성했을 때
 
+`git commit --amend -m "Add new file"`
+
+이런식으로 변경
+
+<br />
+
+그런데 파일 내용을 잘못 썼거나 내용 충분히 수정 못했다면
+
+`vim` 혹은 `open`(윈도우는 start) 써서 파일 수정하고
+
+`git add .`
+
+`git commit --amend`
+
+이렇게 하면 된다
+
+그럼 에디터 열리면서 ..
+
+저장, 파일 종료하고 히스토리 보면 커밋 메시지는 그대로이지만
+
+`git show HEAD` 파일이 원하는대로 수정된 것 확인
+
+최신 커밋에서 타이틀, 수정 내용 업데이트는 `amend` 이용
+
+당연히 깃 푸시 안했을 때 이용할 수 있는 유용한 기능
 
 <br />
 
