@@ -128,7 +128,39 @@ git bisect 다음에 reset 이용해서
 
 <br />
 
+터미널 + UI
 
+tig
+
+brew 있다면 `brew install tig` 로 설치 가능
+
+<br />
+
+tig 이용하면 간단히 history 확인 가능
+
+commit에서 enter치면
+
+commit 안에 있는 내용 확인 가능
+
+commit title과 description 볼 수 있다
+
+<br />
+
+수정된 파일들도 확인 가능
+
+파일에서 enter 치면
+
+파일 안에서도 내용 확인 가능
+
+<br />
+
+Q 누르면 이전 메인 창으로 이동
+
+VIM 명령어 이용해서 확인 가능
+
+g 명령어 이용해서 grab 이용 가능
+
+/ 이용해서 문자열 검색 가능
 
 <br />
 
