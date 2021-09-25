@@ -258,6 +258,28 @@ reflog는 feference log, log를 참조한다는 뜻
 
 <br />
 
+만약 커밋을 하지 않았는데 내가 local에 작성한 것을 실수로 git reset hard를 했다면
+
+유용한 extension
+
+intelliJ 에는 기본적으로 local history가 포함되어져 있다
+
+그래서 로컬에서 작업하고 있는 파일들을 시간별로, 분별로 히스토리가 자동 저장
+
+실수로 파일을 지우거나 잘못해서 reset 하는 경우 언제든 local history 이용해서 예전 버전으로 돌아갈 수 있다
+
+<br />
+
+VSCode에도 local history라는 extension이 있다
+
+이것을 설치하게 되면
+
+local history를 이용해 언제든지 몇 분 전에 작업한 내용들로 돌아갈 수 있다
+
+git reset hard를 이용해 실수로 파일 내용 지워버렸을 때 언제든지 예전으로 돌아갈 수 있다
+
+<br />
+
 [목차로](#목차)
 
 <br />
