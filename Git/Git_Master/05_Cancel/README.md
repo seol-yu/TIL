@@ -162,7 +162,55 @@ git add 해서 staging area로 파일 가져간거 다시 working directory로 �
 
 <br />
 
+특정한 커밋으로 모든 것을 초기화시켜주는 명령어
 
+<br />
+
+만약 최근 커밋 두개 마음에 안든다면
+
+HEAD에서 2번째 것 가리키면 될 것이다(최근 두개 없어지도록)
+
+`git reset HEAD~2`
+
+초기화한 커밋은 히스토리에서 사라졌지만 작업하고 있던 것은 working directory에 남아있음
+
+`git reset --mixed` 이 옵션 쓴 명령어와 비슷하다. 커밋은 히스토리에서 사라졌지만 작업하고 있던 내용들은 working directory에 남아있는
+
+<br />
+
+`git restore .`  <- 일단 작업 내용 지우고
+
+새로 추가된 파일은 restore로 지워지지 않으므로
+
+`git clean -fd`
+
+이 상태에서
+
+`git reset --soft HEAD~1`  <- 작업하고 있던 내용들이 staging area로 들어와있음
+
+<br />
+
+즉 커밋 히스토리 삭제하면서 내 working directory 로 가지고 오고 싶다면 --mixed 옵션을,
+
+staging area로 가지고 오고 싶다면 --soft 옵션을
+
+내 local에도 가지고 오지 말고 commit 에서도 지워주고 그냥 완전히 삭제하려면
+
+git reset hard 내가 마지막으로 커밋한 이후에 수정한 모든 local에 파일들을 초기화한다는 것과 동일하다
+
+`git reset --hard HEAD`  <- 로컬에서 작업하던 모든 파일들의 내용이 없어진, 초기화된 것 확인
+
+`git reset --hard HEAD~2`   <- 이런식으로 쓰면 working directory랑 staging area에 파일없이 커밋 지움
+
+<br />
+
+이처럼
+
+reset은 특정 커밋으로 초기화할 수 있고
+
+초기화할 때 변경했던 모든 내용들을 다시 local에 가지고 오거나 완전히 삭제하거나
+
+`reset --hard HEAD` 를 이용하면 local 에서 작업하고 있는 내용들 깔끔하게 초기화해줌
 
 <br />
 
