@@ -907,7 +907,91 @@ fix <- 기존에 존재하는 기능에서 오류 수정을 했을 때 성능이
 
 <br />
 
+`git seolyu`
 
+`git log --graph --all --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(white)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --date=short`
+
+<br />
+
+`git tag 원하는문자열`
+
+`git seolyu` 해보면 태그된 것 확인할 수 있다
+
+<br />
+
+만약 특정한 커밋에 태그 달고 싶다면?
+
+특정 커밋 해시코드 복사해서
+
+`git tag 원하는문자열 해시코드` <- 이런식으로
+
+예를 들어 `git tag v1.0.0 0ad2dbb`
+
+<br />
+
+태그를 달아서 특정 포인트를 기억하기 쉽고 눈에도 잘 들어오게
+
+<br />
+
+간단히 태그 이름만 작성해도 되고
+
+릴리즈에 관련된 이 태그에 관련된 릴리즈 정보 포함하고 싶다면
+
+버전에 어떤 기능들이 포함되어 있는지 상세하게 작성하고 싶다면
+
+옵션 써야함
+
+`git tag 버전 특정해시코드 -a -m "릴리즈정보작성"`  <-  a 는 annotate의 약자. 이 태그에 정보를 조금 더 추가하겠다
+
+예를 들어 `git tag v1.0.1 328708d -am "Release note..."`
+
+히스토리 보면 히스토리상에는 태그 이름만 나오고 메세지는 나오지 않는데
+
+확인해보려면 이런식으로
+
+`git show v1.0.1`
+
+<br />
+
+repository 에 있는 태그 확인하려면
+
+`git tag`
+
+<br />
+
+태그 리스트 중에 특정 문자열 들어있는 것만 확인하려면
+
+`git tag -l "v1.0.*"`
+
+`git tag -l "v2.*"`
+
+위처럼 와일드카드 사용
+
+<br />
+
+실수로 만든 태그 삭제는
+
+`git tag -d v1.0.1` 
+
+<br />
+
+`git checkout 태그이름`  <- 그 태그로 이동 가능
+
+<br />
+
+tag를 checkout 하면서 새로운 branch 만들고 싶다면 `git checkout -b 만들고자하는브랜치이름 해당하는태그`
+
+예를 들어 `git checkout -b testing v2.0.0`
+
+<br />
+
+내가 만든 태그를 서버에도 업로드 해두고 싶다면 서버와 싱크
+
+`git push origin v1.0.1` 이런 식으로
+
+`git push origin --tags`  <- 모든 태그들을 싱크하려면
+
+`git push origin --delete v1.0.0`  <- 특정 태그 삭제
 
 <br />
 
