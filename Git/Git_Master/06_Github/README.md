@@ -612,11 +612,12 @@ Merge pull request - Confirm merge
 
 <br />
 
+pull push fetch 해보기
 
+pull의 경우 merge 대신에 rebase 이용하려면 따로 체크해주기
 
 <br />
 
 [목차로](#목차)
 
 <br />
-
