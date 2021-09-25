@@ -550,7 +550,53 @@ server에 있는 commit을 가지고 와서
 
 <br />
 
+Fork해온다
 
+프로젝트 깃클론해와서
+
+새로운 브랜치 만든다
+
+`git switch -C fix`
+
+마음에 들지 않는 부분 수정
+
+<br />
+
+처음부터 거창한 기능 만들겠다 보단
+
+플젝 안 오타, 코멘트 수정하는 일부터 시작
+
+조금씩 기여
+
+프로젝트에 친숙해진 후 작은 이슈 먼저 해결
+
+<br />
+
+`git commit -am "Fix"`
+
+`git push origin fix`  <- fix 브랜치 업로드
+
+플젝 가보면 배너가 생겨있는 것 볼 수 있다 풀리퀘스트(Compare & pull request)
+
+PR 가능한 자세히 정확히 어떤걸 고치고 리팩토링, 어떤걸 추가했는지 작성
+
+디스크립션 <- 마크다운 지원
+
+변경사항 정확한지 확인
+
+<br />
+
+오픈 소스 프로젝트 오너 입장에서는
+
+요청 온 PR 보고,
+
+Finish your review
+
+comment <- 코멘트만 남기고 싶다
+
+approve <- 요청한 사항이 그렇게 중요하지 않기 때문에 그냥 승인
+
+Merge pull request - Confirm merge
 
 <br />
 
