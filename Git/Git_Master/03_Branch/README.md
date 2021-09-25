@@ -106,7 +106,91 @@ Git은 commit과 마찬가지로
 
 <br />
 
+브랜치 생성, 이동, 삭제, 확인 등
 
+<br />
+
+`git seolyu`
+
+`git log --graph --all --pretty=format:'%C(yellow)[%ad]%C(reset) %C(green)[%h]%C(reset) | %C(white)%s %C(bold red){{%an}}%C(reset) %C(blue)%d%C(reset)' --date=short`
+
+<br />
+
+`git branch`  <- 현재 리포지토리에 있는 브랜치 확인 가능
+
+위 명령어는 내 컴퓨터 안에만 있는 브랜치들
+
+<br />
+
+원격 Github과 같은 서버에 있는 브랜치들까지 보려면
+
+`git branch --all`
+
+<br />
+
+`git branch new-branch`  <- new-branch 라는 이름의 브랜치 만들어진다
+
+새로운 브랜치는 무언가가 새로 만들어진게 아니라
+
+new-branch 라는 새로운 포인터가 동일한 커밋을 가리키고 있는 것 확인
+
+현재 브랜치는 여전히 마스터 브랜치
+
+<br />
+
+새로 만든 브랜치로 이동하고 싶다면
+
+`git switch 이동하고자하는브랜치명`
+
+<br />
+
+만약 새 브랜치 만들고 그 브랜치로 이동하고자 한다면
+
+`git switch -C 새로운브랜치명`
+
+<br />
+
+`switch` 와 비슷한 명령어 `checkout`
+
+`git checkout 해시코드`  <- 해당하는 커밋으로 이동
+
+checkout 이용하면 언제든지 원하는 버전으로, 원하는 브랜치로
+
+`git checkout master`
+
+<br />
+
+`git checkout -b 원하는브랜치명`  <- 브랜치 만들면서 동시에 이동
+
+<br />
+
+`git branch`  <- 브랜치 목록 보기
+
+`git branch -v`  <- 간단하게 최신 commit 확인
+
+`git branch --merged`  <- 현재 브랜치에 merge가 된 브랜치들 확인 
+
+`git branch --no-merged`  <- master branch에 merge가 되지 않은 즉, master branch에서 파생된 다른 변경사항, 다른 commit이 있는 경우
+
+<br />
+
+`git branch -d 삭제하고자하는브랜치명`  <- 브랜치 삭제
+
+`git push origin --delete 삭제하고자하는브랜치명`  <- 원격 Repository에도 브랜치 삭제
+
+<br />
+
+`git branch --move 이름바꿀브랜치명 새로운브랜치명`  <- 브랜치명 바꾸기
+
+`git push --set-upstream origin 새로운브랜치명`  <- 원격에도 업데이트
+
+<br />
+
+`git log master..원하는브랜치`  <- master 와 원하는 브랜치 사이의 commit log만 확인 가능
+
+`git seolyu master..원하는브랜치`
+
+코드 보고싶으면 `git diff master..원하는브랜치`
 
 <br />
 
