@@ -450,7 +450,71 @@ fast-forward merge가 아니라서 merge commit 만들어지고 타이틀 입력
 
 <br />
 
+VSCode 이용해서 간편하게 Merge Conflict 해결할 수 있는 방법
 
+diff 툴과 마찬가지로 `git config` 에 있는 글로벌 세팅값을 edit 모드로 열어보면
+
+`git config --global -e`
+
+```
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+```
+
+4줄 추가
+
+<br />
+
+`git merge 브랜치명` 했을 때 conflict 발생했을 때
+
+`git mergetool` 
+
+VSCode 열림
+
+버튼 이용해서 간단히 해결
+
+1. Accept Current Change  <- 현재 있는 브랜치 내용 받아들이자
+2. Accept Incoming Change  <- 머지하고자 하는 브랜치 내용 받아들이자
+3. Accept Both Changes  <- 둘다
+4. Compare Changes  <- 정확하게 어떤게 다른지 확인 / Current 왼쪽 Incoming 오른쪽
+
+저장하고 파일 끄면 머지 완료
+
+<br />
+
+`git status` 해보면 충돌났었던 파일은 해결되어서 자동적으로 커밋할 준비 되었다고 나옴
+
+main.txt.orig 이런 파일이 생기는데 merge conflict 내용 포함된 내용
+
+이런 파일 생기는거 번거로우면
+
+`git config --global mergetool.keepBackup false`
+
+<br />
+
+머지를 취소해보자
+
+`git merge --abort`
+
+그래도
+
+`git status` 해보면 그래도 main.txt.orig 남아있는데
+
+`git clean -fd`
+
+다시 
+
+`git merge 브랜치명`
+
+`git mergetool` 한 후..
+
+`git status` 했을 때 오리진 파일 생성 안되는 것 확인
+
+`git merge --continue`
+
+커밋 메시지 저장하고 종료하면 끝
 
 <br />
 
