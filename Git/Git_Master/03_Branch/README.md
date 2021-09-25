@@ -306,7 +306,61 @@ commit 메세지 입력하라고 나온다
 
 <br />
 
+머지의 중요한 컨셉, three-way merge
 
+<br />
+
+fast-forward merges에서 히스토리 남길 원하거나(새로운 commit 만들기)
+
+fast-forward가 불가능한 상황
+
+feature A 브랜치가 마스터 브랜치에서 파생된 후 마스터 브랜치에 새로운 커밋이 생긴다면
+
+fast-forward 불가능
+
+<br />
+
+만약 master의 포인터를 feature-A 브랜치의 최신 커밋으로 가리키게 된다면 
+
+master는 그 커밋을 가리키고 해당 커밋은 그 전 커밋(feature-A 브랜치의)을 가리키고 
+
+그 커밋은 feature-A가 파생될 당시 커밋을 가리키기에
+
+마스터브랜치의 새로운 커밋 변경사항을 잃게됨
+
+<br />
+
+그래서 브랜치가 파생한 그 원래의 브랜치에서 새로운 커밋이 발생했다면 
+
+fast-forward는 불가능
+
+Three-way merge 이용해야함
+
+<br />
+
+즉, 베이스 branch인 마스터 브랜치와 파생된 feature-a 브랜치의 변동사항 모두 합해서 
+
+merge commit을 만든 다음에 master branch에 commit을 해야한다
+
+<br />
+
+git merge 이용하면,
+
+아무 옵션 없이 사용하면 fast-forward가 가능하면 merge commit 만들지 않고 fast-forward merge 진행
+
+만약 fast-forward가 불가능한 상황이라면 commit 메세지 입력하도록 진행된다
+
+<br />
+
+`git seolyu`
+
+`git merge feature-b` 하면(fast-forward 안되는 상황)
+
+마스터 브랜치와 feature-b 브랜치 동시에 묶어주는 merge commit이 만들어진다
+
+`git seolyu` 해보면
+
+새로운 merge 커밋이 만들어진 것 확인
 
 <br />
 
