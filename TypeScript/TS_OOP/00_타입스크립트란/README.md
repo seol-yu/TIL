@@ -223,7 +223,23 @@ https://github.com/microsoft/TypeScript
 
 <br />
 
+JS에 타입을 더해서 확장한 언어
 
+안전하게 프로그래밍 할 수 있고 가독성 높여줌
+
+JS 동작하는 곳 어디서든 동작 가능
+
+<br />
+
+자바스크립트 코드에서 빠르게 에러 catch 가능
+
+<br />
+
+JavaScript and More
+
+A Result You Can Trust
+
+Gradual Adoption
 
 <br />
 
