@@ -169,7 +169,27 @@ Faster
 
 <br />
 
+VSCode
 
+터미널 <- ex) iTerm2 cmder
+
+node.js(자바스크립트 런타임 환경) - npm(패키지 매니져) 때문에 필요
+
+TS <- npm으로 설치, TS를 JS로 컴파일해주는 컴파일러
+
+<br />
+
+`node -v` 설치 확인 nodejs.org에서 LTS 버전 다운로드
+
+`npm -v`
+
+typescriptlang.org/download 가보면 다운로드 방법 나옴
+
+`npm install -g typescript`
+
+<br />
+
+`tsc -v`
 
 <br />
 
