@@ -83,7 +83,53 @@ TS에선 class, interface, generics, types 활용 가능해서 객체지향 프�
 
 <br />
 
+JS는 프로그램이 동작할 때 타입이 결정되지만(위험)
 
+TS는 타입이 정적으로 결정(Statically Typed), 즉 코딩할 때 타입 결정됨(즉각적 타입 에러 볼 수 있다)
+
+<br />
+
+프로그래밍 언어 타입 결정 언제 되냐에 따라
+
+1. dynamically typed - 런타임 환경 때 타입이 결정
+
+   파이썬, 루비, 자바스크립트 등등
+
+   ```python
+   let age = 10;
+   age = 'hi';  # no type at programming time and compile time
+   ```
+
+   가독성(readability) 떨어짐, 사용자가 사용할 때야 에러남 bugs
+
+2. statically typed - 컴파일 시간에 타입이 결정
+
+   TS, 자바, 고 등등
+
+   ```javascript
+   let age:number = 10;  // type of variable is known at compile time
+   age = 'hi';  // 다른 타입 할당하면 컴파일 시간(코딩할 때)에 에러남
+   ```
+
+   실시간 에러 검사
+
+   안정적, 확장성있는 소프트웨어 만들 수 있다
+
+cf) 코드 -> 컴파일러가 컴파일 -> 런타임
+
+<br />
+
+강력한 객체지향 프로그래밍(Object-Oriented Programming) 가능
+
+modern programming paradigm으로 알려진 객체지향 프로그래밍 OOP
+
+객체 위주로 modularity(모듈성), reusability(재사용성), extensible(확장성), maintainability(유지보수성) 높다
+
+Productivity 생산성
+
+higher-quality
+
+Faster
 
 <br />
 
