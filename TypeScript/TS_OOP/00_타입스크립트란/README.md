@@ -205,7 +205,9 @@ typescriptlang.org/download 가보면 다운로드 방법 나옴
 
 <br />
 
+https://www.typescriptlang.org/
 
+https://github.com/microsoft/TypeScript
 
 <br />
 
