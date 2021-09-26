@@ -255,7 +255,13 @@ Gradual Adoption
 
 <br />
 
+https://www.typescriptlang.org/
 
+Playground 가서 코딩해보기
+
+<br />
+
+TS Config 탭에서 컴파일러 설정할 수 있다
 
 <br />
 
