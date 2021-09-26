@@ -277,7 +277,55 @@ TS Config 탭에서 컴파일러 설정할 수 있다
 
 <br />
 
+![1](./imgs/1.png)
 
+node에서는 TS 코드 다 이해할 수 없음
+
+브라우져도 마찬가지
+
+![2](./imgs/2.png)
+
+![3](./imgs/3.png)
+
+<br />
+
+TS를 JS로 변환해야 함
+
+`tsc main.ts`
+
+JS 코드 생성됨
+
+`node main.js`
+
+이렇게 해보면 되는 것 확인
+
+index.html 에도 main.js로
+
+<br />
+
+공부, 빠르게 결과 보고 싶을 때 JS로 변환하지 않고 바로 실행해주는 툴(내부적으론 JS로 변환해서 node 실행하는 것이지만)
+
+`npm install -g ts-node`
+
+`ts-node main.ts`
+
+에러나서
+
+`npm install @types/node --save-dev`
+
+<br />
+
+`tsc -h`
+
+가능한 모든 옵션 보기
+
+<br />
+
+`tsc main.ts` 하면 main.ts에서 코드 업데이트 했을 때 main.js에는 반영 안되어서 매번 컴파일 해줘야함
+
+`tsc main.ts -w`
+
+watch 옵션 쓰면 ts 파일에서 변환한거 저장하면 js 파일 코드에도 자동 반영
 
 <br />
 
