@@ -332,7 +332,25 @@ File - Preferences - Keyboard Shortcuts 단축키 찾기
 
 <br />
 
+파이썬 구성요소 기초
 
+- 인코딩(입/출력)
+- 변수
+- 조건문
+- 함수, 클래스, 인스턴스(객체)
+- 정보 출력
+
+<br />
+
+![importthis](./imgs/importthis.png)
+
+![utf8](./imgs/utf8.png)
+
+Python3 버전에서는 입출력 기본이 utf-8
+
+<br />
+
+[section02-2.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section02-2.py)
 
 <br />
 
