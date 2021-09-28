@@ -316,6 +316,10 @@ File - Preferences - Keyboard Shortcuts 단축키 찾기
 
 <br />
 
+[section02-1.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section02-1.py)
+
+<br />
+
 [목차로](#목차)
 
 <br />
