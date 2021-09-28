@@ -7,7 +7,7 @@
 <p align="center">
     <img src="https://github.com/seol-yu/TIL/blob/master/images/html-badge-logo.png?raw=true" height=30 />
     <img src="https://github.com/seol-yu/TIL/blob/master/images/css-badge-logo.png?raw=true" height=30 />
-    <img src="https://github.com/seol-yu/TIL/blob/master/images/javascript-badge-logo.png?raw=true" height=30 />
+    <a href="https://github.com/seol-yu/TIL/tree/master/JavaScript" target="_blank"><img src="https://github.com/seol-yu/TIL/blob/master/images/javascript-badge-logo.png?raw=true" height=30 /></a>
 </p>
 <br/>
 <h2 align="center">
