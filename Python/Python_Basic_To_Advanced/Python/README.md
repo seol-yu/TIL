@@ -605,7 +605,17 @@ print 함수로 결과 출력
 
 <br />
 
+IF(조건문)
 
+- 조건문 기본 형식
+- 관계 연산자 실습(>, >=, <, <=, ==, !=)
+- 논리 연산자 실습(and, or, not)
+- 다중 조건문(if elif, else)
+- 중첩 조건문
+
+<br />
+
+[section05-1.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section05-1.py)
 
 <br />
 
