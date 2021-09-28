@@ -500,7 +500,22 @@ code
 
 <br />
 
+문자열 및 연산자
 
+<br />
+
+문자열 관련 연산자
+
+- 문자열 생성, 길이
+- 이스케이프 문자
+- 문자열 연산
+- 문자열 형 변환
+- 문자열 함수
+- 문자열 슬라이싱:sparkles:
+
+<br />
+
+[section04-2.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section04-2.py)
 
 <br />
 
