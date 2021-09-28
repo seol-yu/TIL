@@ -531,7 +531,17 @@ code
 
 <br />
 
+파이썬 자료구조(List, Tuple)
 
+- 리스트 특징
+- 튜플 특징
+- 인덱싱
+- 슬라이싱
+- 삽입, 삭제, 함수 사용
+
+<br />
+
+[section04-3.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section04-3.py)
 
 <br />
 
