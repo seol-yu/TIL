@@ -308,7 +308,11 @@ File - Preferences - Keyboard Shortcuts 단축키 찾기
 
 <br />
 
-
+- 가장 기본적인 Output(출력) 함수
+- 기본 출력
+- Separator, End 옵션 사용
+- Format 형식 출력
+- Escape Code 사용법
 
 <br />
 
