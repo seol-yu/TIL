@@ -444,7 +444,47 @@ Python3 버전에서는 입출력 기본이 utf-8
 
 <br />
 
+파이썬 데이터 타입 종류
 
+- Boolean
+- Numbers
+- String
+- Bytes
+- Lists
+- Tuples
+- Sets
+- Dictionaries
+
+<br />
+
+cmd
+
+가상환경 폴더 들어가서
+
+```
+cd Scripts
+activate
+code
+```
+
+<br />
+
+파이썬 숫자형 및 연산자
+
+```
++ : 더하기
+- : 빼기
+* : 곱하기
+/ : 나누기
+// : 나누기(몫)
+% : 나누기(나머지)
+** : 지수(제곱)
+단항 연산자
+```
+
+<br />
+
+[section04-1.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section04-1.py)
 
 <br />
 
