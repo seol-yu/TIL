@@ -557,7 +557,17 @@ code
 
 <br />
 
+파이썬 자료구조(Dictionary, Set) <- JSON파일에 쓰임
 
+- 딕셔너리 특징
+- 딕셔너리 추가
+- 집합 특징
+- 집합 자료형 함수
+- 자료형 변환
+
+<br />
+
+[section04-4.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section04-4.py)
 
 <br />
 
