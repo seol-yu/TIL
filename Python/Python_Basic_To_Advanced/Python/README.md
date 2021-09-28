@@ -631,7 +631,23 @@ IF(조건문)
 
 <br />
 
+For, while
 
+- 파이썬 코딩의 핵심
+- 시퀀스 타입 반복
+- Continue, Break
+- For - else 구문
+- 자료구조 변환
+
+<br />
+
+[section05-2.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section05-2.py)
+
+<br />
+
+퀴즈
+
+[section05-3.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section05-3.py)
 
 <br />
 
