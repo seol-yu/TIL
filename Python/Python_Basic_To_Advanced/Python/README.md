@@ -366,7 +366,69 @@ Python3 버전에서는 입출력 기본이 utf-8
 
 <br />
 
+| 프로젝트 A | 프로젝트 B        | 프로젝트 C |
+| ---------- | ----------------- | ---------- |
+| Python 3.5 | Python 2.x        | Python 3.6 |
+| Django     | Numpy, Tensorflow | PyQT5      |
+| Web        | Data Analysis     | GUI APP    |
 
+환경 변수 잘 관리했다면 상관없으나
+
+한 운영체제에 이것저것 버전 다르게 설치하면 어플리케이션 충돌, 호환 문제 생기고 포맷해야하고 그러한데
+
+가상환경 상에서 작업을 하면
+
+별개의 가상환경 통해 효율적으로 여러 프로젝트 관리할 수 있다
+
+<br />
+
+파이썬 가상환경 명령어
+
+* 가상환경 생성
+
+  명령 프롬프트가서
+
+  `cd` 명령어로 기존에 가상환경 만든 폴더 python_basic의 상위 폴더  가서 만들어본다
+
+  `python -m venv 절대경로써도되고가상환경폴더이름`
+
+  `python -m venv python_basic`
+
+  가상환경 실행시켜주면 필요한 것 마음대로 설치, 테스트할 수 있다
+
+* 가상환경 실행/해제 -> (윈도우: Script, 맥: Bin)폴더
+
+  `cd 가상환경폴더`
+
+  `dir`
+
+  `cd Scripts`
+
+  `activate.bat`  <- 가상환경 활성화
+
+  `deactivate.bat`  <- 가상환경 빠져나오기
+
+* 패키지 검색, 설치, 업그레이드 및 삭제
+
+  `pip search simplejson` <- simplejson 있는지 검색(명령어 에러남)
+
+  `pip search simple*`
+
+  `pip install simplejson`
+
+  `pip install --upgrade simplejson`
+
+  `pip uninstall simplejson` <- simplejson 삭제
+
+  `pip show simplejson` <- simplejson 에 대하여 보여주기
+
+* 패키지 리스트 출력
+
+  `pip list`
+
+<br />
+
+[section03.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section03.py)
 
 <br />
 
