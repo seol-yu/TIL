@@ -74,6 +74,10 @@ Windows가서 64버전 다운로드
 
 Add Python 3.9 to Path 클릭 - Install now(설치 후 재부팅 필요)
 
+명령 프롬프트에서 `python` 해보면 뭔가 나옴
+
+나올 땐 `exit()`
+
 <br />
 
 code.visualstudio.com 가서 Download for Windows 클릭해서 다운받기
@@ -83,6 +87,8 @@ code.visualstudio.com 가서 Download for Windows 클릭해서 다운받기
 3. code로 열기 작업을 Windows 탐색기 디렉터리의 상황에 맞는 메뉴에 추가
 
 추가로 체크
+
+명령 프롬프트에서 `code` 엔터해보면 VSCode 실행됨
 
 <br />
 
@@ -166,7 +172,7 @@ Tasks: Configure Default Build Task
 
 Create tasks.json file from template
 
-아무거나 클릭클릭
+아무거나 클릭클릭 Others 클릭
 
 하면 tasks.json 나오는데
 
@@ -205,7 +211,9 @@ Create tasks.json file from template
 
 <br />
 
-tasks.json은 .vscode 폴더(이게 python_basic 폴더 안에 있어야하는 것 같아서(밖에 생겨버림) 안에 넣음) 내부에 들어오게 됨
+tasks.json은 .vscode 폴더(이게 python_basic 폴더 안에 있어야하는 것 같아서(밖에 생겨버림) 안에 넣음) 내부에 들어오게 됨..
+
+다음 강의 들어보니까 안에 넣는 것이 아닌 것 같고 task.json에 "command": "python", 으로 하니까 실행됨
 
 settings.json
 
@@ -245,7 +253,46 @@ Python > Terminal: Activate Environment 클릭해제 (Ctrl + Shift + B 실행 in
 
 <br />
 
+프레임워크, 오픈소스 활용
 
+<br />
+
+파이썬 장점
+
+* 문법 간결
+
+* 다양한 운영체제 지원
+
+* GUI(마우스로 아이콘 클릭해서 프로그램 실행시킬 수 있는 환경) Application 개발(PyQT)
+
+* 방대한 라이브러리 지원(프레임워크, 오픈소스 - 이미 잘 만들어진 라이브러리 깃허브에서 찾아서 설치해서 즉시 이용)
+
+* 범용 언어(네트워크, 웹, 데이터분석, 기계학습 등)
+
+<br />
+
+공부 방법
+
+* 반드시 직접 코딩 실습
+* 어려우면 패스하고 숙련도 쌓이면 해결
+* 복습 코딩 및 응용 실습
+* 천천히 확실하게 학습
+
+<br />
+
+VSCode 언어 변경(영어로 쓰는게 좋음)
+
+익스텐션(View - Extensions)에서 korean
+
+컨트롤 쉬프트 P - Configure Display Language
+
+강의상에서는 locale.json 이 생성되는데 "locale":"en" 여기 en 말고 ko로 바꾸고 재실행하는데
+
+나는 Configure Display Language 누르자마자 재실행 메세지 나와서 바로 됨
+
+<br />
+
+File - Preferences - Keyboard Shortcuts 단축키 찾기
 
 <br />
 
