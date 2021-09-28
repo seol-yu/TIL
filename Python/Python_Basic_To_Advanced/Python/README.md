@@ -504,7 +504,7 @@ code
 
 <br />
 
-문자열 관련 연산자
+문자형 관련 연산자
 
 - 문자열 생성, 길이
 - 이스케이프 문자
@@ -583,7 +583,13 @@ code
 
 <br />
 
+모르는 함수 검색
 
+print 함수로 결과 출력
+
+<br />
+
+[section04-5.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section04-5.py)
 
 <br />
 
