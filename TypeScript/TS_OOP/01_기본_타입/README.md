@@ -93,7 +93,7 @@ TYPES <- 명확히 어떤 기능하는지 어떤 데이터 담고 있는지를 �
 
 <br />
 
-
+[1-1-basic.ts 코드 참고](https://github.com/seol-yu/TIL/blob/master/TypeScript/TS_OOP/01_%EA%B8%B0%EB%B3%B8_%ED%83%80%EC%9E%85/1-types/1-1-basic.ts)
 
 <br />
 
