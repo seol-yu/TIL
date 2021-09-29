@@ -743,7 +743,29 @@ For, while
 
 <br />
 
+모듈, 패키지
 
+- 패키지 설정
+- 모듈 사용 및 Alias 설정
+- 패키지 사용 장점
+
+<br />
+
+파일(독립적 기능 제공 - 논리적으로 코드 묶어놓은 것) 하나 하나 단위를 모듈로 볼 수 있고
+
+그 파일들을 가지고 있는 폴더를 패키지 형태로 볼 수 있다
+
+즉,
+
+모듈들을 디렉토리 구조로 구조적으로 관리하는 것을 패키지
+
+<br />
+
+목적에 맞는 것들을 잘 모아서 폴더에 넣어놔야 나중에 수정, 성능 개선 쉽다
+
+<br />
+
+[section08.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section08.py)
 
 <br />
 
