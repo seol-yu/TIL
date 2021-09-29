@@ -930,7 +930,15 @@ DB 생성 등은 명령 프롬프트 우클 관리자 권한으로 실행(에러
 
 <br />
 
+테이블 수정, 삭제
 
+- UPDATE
+- DELETE
+- DB 사용 권장 이유
+
+<br />
+
+[section12-3.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section12-3.py)
 
 <br />
 
