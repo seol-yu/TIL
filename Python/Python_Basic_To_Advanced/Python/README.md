@@ -781,7 +781,18 @@ For, while
 
 <br />
 
+파일 읽기, 파일 쓰기
 
+파일 Read, Write
+
+- Open 함수
+- 파일 모드의 이해
+- 파일 읽기 실습
+- 파일 쓰기 실습
+
+<br />
+
+[section09.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section09.py)
 
 <br />
 
