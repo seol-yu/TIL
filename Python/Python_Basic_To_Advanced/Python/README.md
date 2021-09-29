@@ -808,7 +808,16 @@ For, while
 
 <br />
 
+다양한 Exceptions
 
+- 파이썬 예외 종류
+- 문법적 에러 발생 실습
+- 런타임 에러 발생 실습
+- Try-except-else-finally
+
+<br />
+
+[section10.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section10.py)
 
 <br />
 
