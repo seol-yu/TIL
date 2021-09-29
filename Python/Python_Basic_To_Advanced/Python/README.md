@@ -716,7 +716,18 @@ For, while
 
 <br />
 
+클래스 상속, 다중 상속
 
+- 클래스 상속
+- 클래스 다중 상속
+
+<br />
+
+상속을 통해 코딩 -> 코드 재사용, 중복 코드 최소화 -> 코드의 생산성, 유지보수성, 가독성 좋아짐 
+
+<br />
+
+[section07-2.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section07-2.py)
 
 <br />
 
