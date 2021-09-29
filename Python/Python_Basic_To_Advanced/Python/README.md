@@ -860,7 +860,30 @@ Excel, CSV 처리
 
 <br />
 
+파이썬 데이터베이스 연동
 
+<br />
+
+SQLite 연동, 테이블 생성, 데이터 삽입
+
+<br />
+
+데이터베이스 및 테이블 생성
+
+- SQLite 기본 사용법
+- 테이블 생성
+- 데이터 삽입
+- 기본 SQL 사용 예제
+
+데이터베이스 생성 등은 에러나면 명령 프롬프트 우클 관리자 권한으로 실행
+
+<br />
+
+DB 생성 등은 명령 프롬프트 우클 관리자 권한으로 실행(에러난다면)
+
+<br />
+
+[section12-1.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section12-1.py)
 
 <br />
 
