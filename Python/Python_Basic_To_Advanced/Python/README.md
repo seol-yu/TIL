@@ -954,7 +954,29 @@ DB 생성 등은 명령 프롬프트 우클 관리자 권한으로 실행(에러
 
 <br />
 
+타이핑 게임 제작, 기본 완성
 
+- 단어 리스트 로드
+- 총 게임 시간 측정
+- 정답 개수 체크
+
+<br />
+
+[section13-1.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section13-1.py)
+
+<br />
+
+타이핑 게임 제작, 효과음 적용, DB 연동
+
+타이핑 게임 최종 완성
+
+- 기록 결과 DB 저장
+- 효과음 적용
+- 최종 테스트
+
+<br />
+
+[section13-2.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section13-2.py)
 
 <br />
 
