@@ -663,7 +663,17 @@ For, while
 
 <br />
 
+함수 및 람다(lambda) 사용
 
+- 함수 선언
+- 함수 다양한 사용
+- 다양한 반환 값
+- *args, **kwargs
+- 람다 함수
+
+<br />
+
+[section06.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section06.py)
 
 <br />
 
