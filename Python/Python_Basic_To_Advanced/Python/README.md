@@ -899,7 +899,22 @@ DB 생성 등은 명령 프롬프트 우클 관리자 권한으로 실행(에러
 
 <br />
 
+파이썬 데이터베이스 연동
 
+테이블 조회, 조건 조회
+
+<br />
+
+다양한 테이블 조회
+
+- SQLite 기본 사용법
+- Selete
+- Where
+- Tuple, Dictionary Mapping
+
+<br />
+
+[section12-2.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section12-2.py)
 
 <br />
 
