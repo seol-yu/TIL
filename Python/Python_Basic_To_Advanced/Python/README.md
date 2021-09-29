@@ -689,7 +689,18 @@ For, while
 
 <br />
 
+클래스 - Self, 클래스 변수, 인스턴스 변수
 
+클래스 선언 및 Self 의 이해
+
+- 클래스 선언
+- 클래스 네임스페이스 Self
+- 클래스, 인스턴스 변수
+- Self
+
+<br />
+
+[section07-1.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_basic/section07-1.py)
 
 <br />
 
