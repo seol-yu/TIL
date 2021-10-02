@@ -104,7 +104,31 @@ ex) 링크드인, 넷플릭스, 카카오톡, 쿠팡, 네이버, 레딧, 페이�
 
 <br />
 
+1. 자바스크립트 런타임 환경
 
+   V8에서 사용하는 자바스크립트 엔진은 C++로 작성된 성능 좋은 오픈소스 프로젝트
+
+2. Single Thread
+
+   프로세스 vs 쓰레드
+
+   프로그램마다 프로세스가 할당됨(프로그램 = 프로세스)
+
+   OS 상에서 병렬적으로 처리되는 효과
+
+   각각의 프로세스에는 Code, Stack, Heap, Data
+
+   프로세스 안에는 여러 쓰레드가 존재하고(파일 주고 받는 쓰레드, 스트리밍하는 쓰레드 등등) 이들은 순차적으로 시간 할당받아서 동시 실행되는 것처럼
+
+   Multithreading(cf) Java - cuncurrency API)
+
+   자바스크립트는 Single Thread라 하나 다 끝나야 다음 동작으로 넘어가는 동기적인 언어
+
+   but, 자바스크립트 런타임 환경에서 제공하는 Non-Blocking I/O(Non-Blocking은 asynchronous 비동기적이란 것)와 Event-Driven(이벤트를 통해서 등록한 콜백 호출하게) 특징 덕분에 여러 일을 동시다발적, 효율적으로 할 수 있다
+
+3. Non-Blocking I/O
+
+4. Event-Driven
 
 <br />
 
