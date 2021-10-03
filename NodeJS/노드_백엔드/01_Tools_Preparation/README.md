@@ -85,7 +85,15 @@ add(3, 4)
 
 <br />
 
+node 폴더 만들고
 
+VSCode로 열기
+
+main.js 파일 만들어서 `console.log('Hello World!');`
+
+코드 쓰고
+
+`node main`
 
 <br />
 
