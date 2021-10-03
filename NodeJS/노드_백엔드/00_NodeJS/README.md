@@ -144,7 +144,59 @@ ex) 링크드인, 넷플릭스, 카카오톡, 쿠팡, 네이버, 레딧, 페이�
 
 <br />
 
+NodeJS Runtime 환경에 소스코드 동작시키면
 
+실제론 Node.JS App 형태/레벨에서 동작하게 된다
+
+여기엔 Memory Heap, Call Stack이 있다
+
+Node.JS는 Non-Blocking Event-Driven 방식
+
+cf) Event Loop
+
+<br />
+
+자바스크립트로 만들어진 어플리케이션은 Single Thread이지만
+
+Node.JS API 런타임 환경은 Multi Threading 가능
+
+<br />
+
+Node.js 어플리케이션은 Main Single Thread가 있고
+
+Node.js가 제공하는 APIs를 통해 할 수 있는 일들은
+
+이벤트 발생시 콜백 형태로 전달해서 Node.js 내부적으로 병렬적으로 일 처리(Multi Threading)
+
+Node.js 내부에는 V8(자바스크립트 엔진), Libuv(Non-Blocking I/O 가능, 여러 운영체제 모두 가능), llhttp(Http parsing), Open SSL(tls, crypto), c-ares(async DNS request), zlib(compression and decompresion) ....
+
+<br />
+
+Non-Blocking I/O
+
+Event-Driven 방식
+
+콜백 형태로 원하는 것을 처리할 수 있다
+
+<br />
+
+:star:어플리케이션은 Main Single Thread에서 동작
+
+등록한 callback 함수는 결국 여기서 동작하므로 가벼운 일들만 처리해야 한다
+
+<br />
+
+그래서
+
+I/O 처리는 좋은데
+
+CPU에서는 적합하지 않다
+
+but, Node.js 12+ 이상에서는 worker threads API 활용 가능해서
+
+무거운 계산(이미지 사이징, 비디오 인코딩 등)할 때 사용
+
+but, 멀티 쓰레딩은 주의해서 써야 한다(메모리 많이 잡아먹고 성능 영향가서) 
 
 <br />
 
