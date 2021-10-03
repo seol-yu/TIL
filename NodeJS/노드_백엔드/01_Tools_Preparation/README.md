@@ -22,7 +22,15 @@
 
 <br />
 
+Terminal (iTerm2, cmder <- 윈도우 분할이 됨)
 
+Editor (Visual Studio Code)
+
+Node (nodejs.org/en/ 에서 LTS 버전 설치. `node -v`)
+
+Git (git-scm.com `git --version`)
+
+Postman (Rest API 만들 때 API 테스트, 자동화툴로 여러 테스트)
 
 <br />
 
