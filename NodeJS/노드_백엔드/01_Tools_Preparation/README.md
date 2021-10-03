@@ -46,7 +46,30 @@ Postman (Rest API 만들 때 API 테스트, 자동화툴로 여러 테스트)
 
 <br />
 
+Read Eval Print Loop
 
+사용자에게 인풋을 받아서 계산을 한 후 계산된 결과를 프린트하고 이걸 무한 반복
+
+<br />
+
+`node`
+
+`console.log('hello')`
+
+`const x = 0;`
+
+`x`
+
+```javascript
+function add (x, y) {
+	return x + y;
+}
+add(3, 4)
+```
+
+<br />
+
+종료는 `Ctrl + C` or `Ctrl + D` or `.exit` 
 
 <br />
 
