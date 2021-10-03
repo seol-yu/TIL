@@ -1,5 +1,4 @@
-<br />
-## Today I Learned :memo:
+# Today I Learned :memo:
 <br />
 <a href="https://github.com/seol-yu" target="_blank">
     <p align="left">
