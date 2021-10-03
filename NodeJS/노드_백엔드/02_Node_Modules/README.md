@@ -146,7 +146,13 @@ node.js에서는 global 이 글로벌 객체
 
 <br />
 
+`npm init --yes`
 
+![2](./imgs/2.png)
+
+<br />
+
+[코드 참고](https://github.com/seol-yu/TIL/blob/master/NodeJS/%EB%85%B8%EB%93%9C_%EB%B0%B1%EC%97%94%EB%93%9C/02_Node_Modules/5-module/app.js)
 
 <br />
 
