@@ -270,7 +270,39 @@ node.js에서는 global 이 글로벌 객체
 
 <br />
 
+streaming: 서버에서 동영상 전체가 아닌 잘게 나눈 데이터를 조금씩 보내주는 것
 
+Progressive Download
+
+<br />
+
+사용자가 동영상을 보는 속도 < 다운 받는 속도 - Buffering 이용해서 버퍼 채울 수 있다
+
+<br />
+
+사용자가 동영상을 보는 속도 > 다운 받는 속도 - 쌓여있는 버퍼가 없음
+
+<br />
+
+ex) Twitch - 실시간 게임 생중계 서비스
+
+게임 장면 실시간 녹화해서 조금씩 데이터를 스트리밍
+
+서버에서는 스트리밍된 데이터를 버퍼링을 했다가
+
+작은 단위 mp4 파일을 시청자에게 보내줌
+
+(HLS player 기술 이용하는 애들만 작은 단위 동영상 파일 볼 수 있다)
+
+<br />
+
+컴퓨터에서도 큰 파일 읽을 때
+
+작은 단위 데이터 buffer를 streaming해서 조금씩 메모리로 가져고 옴
+
+<br />
+
+Buffer와 Stream은 Memory efficiency, Time efficiency
 
 <br />
 
