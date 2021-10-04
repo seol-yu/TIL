@@ -342,7 +342,7 @@ buffer는 문자열, 숫자 .. 데이터를 raw 형태로 메모리에 있는 �
 
 <br />
 
-
+[코드 참고](https://github.com/seol-yu/TIL/blob/master/NodeJS/%EB%85%B8%EB%93%9C_%EB%B0%B1%EC%97%94%EB%93%9C/02_Node_Modules/12-stream/app-stream.js)
 
 <br />
 
