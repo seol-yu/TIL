@@ -220,7 +220,9 @@ node.js에서는 global 이 글로벌 객체
 
 <br />
 
+운영체제별로 경로 표기하는 방법이 다르므로 운영체제별로 잘 동작하게 하려면
 
+[코드 참고](https://github.com/seol-yu/TIL/blob/master/NodeJS/%EB%85%B8%EB%93%9C_%EB%B0%B1%EC%97%94%EB%93%9C/02_Node_Modules/9-path/app.js)
 
 <br />
 
