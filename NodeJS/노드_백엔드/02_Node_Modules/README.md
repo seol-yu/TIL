@@ -318,7 +318,15 @@ Buffer와 Stream은 Memory efficiency, Time efficiency
 
 <br />
 
+파일을 읽을 때 따로 인코딩을 지정하지 않으면 파일에 있는 데이터가 버퍼에 있는 내용 그대로 읽혀짐
 
+<br />
+
+buffer는 문자열, 숫자 .. 데이터를 raw 형태로 메모리에 있는 데이터 형태로,  byte 단위로 처리할 수 있게 해준다
+
+<br />
+
+[코드 참고](https://github.com/seol-yu/TIL/blob/master/NodeJS/%EB%85%B8%EB%93%9C_%EB%B0%B1%EC%97%94%EB%93%9C/02_Node_Modules/11-buffer/app.js)
 
 <br />
 
