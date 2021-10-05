@@ -6,11 +6,7 @@
 
 ### 목차
 
-[Object Reference1](#ObjectReference1)
-
-[Object Reference2](#ObjectReference2)
-
-[Object Reference3](#ObjectReference3)
+[Object Reference](#ObjectReference)
 
 <br />
 
@@ -18,7 +14,7 @@
 
 <br />
 
-### ObjectReference1
+### ObjectReference
 
 <br />
 
@@ -31,39 +27,7 @@
 
 <br />
 
-[chapter05_01.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python/python_advanced/chapter05_01.py)
-
-<br />
-
-[목차로](#목차)
-
-<br />
-
----
-
-<br />
-
-### ObjectReference2
-
-<br />
-
-
-
-<br />
-
-[목차로](#목차)
-
-<br />
-
----
-
-<br />
-
-### ObjectReference3
-
-<br />
-
-
+[chapter05_01.py 참고](https://github.com/seol-yu/TIL/blob/master/Python/Python_Basic_To_Advanced/Python_Advanced/python_advanced/chapter05_01.py)
 
 <br />
 
