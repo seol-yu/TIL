@@ -5,7 +5,7 @@
     <img src="https://github.com/seol-yu/TIL/blob/master/images/css-badge-logo.png?raw=true" height=30 /></a>
 </p>
 
- 
+
 ### 목차
 
 [HTML 왜 중요한가](#HTML_왜_중요)
