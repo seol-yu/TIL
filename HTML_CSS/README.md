@@ -5,5 +5,5 @@
 
 ---
 
-[BBC Interactive Page 클론코딩](https://github.com/seol-yu/TIL/tree/master/HTML_CSS/BBC_Interactive_Page)
-
+[BBC Interactive Page 클론코딩](./BBC_Interactive_Page)
+[재미있는 HTML과 CSS](./HTML_CSS)
