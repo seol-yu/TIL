@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gmail Inbox</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                "Helvetica Neue", sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #1f2d3d;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            background-color: pink;
+        }
+
+        body::after {
+            content: "seolyu©";
+            display: block;
+            margin-top: 50px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .sr-only {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            z-index: -1;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            visibility: hidden;
+        }
+
+        .inbox {
+            max-width: 1140px;
+            border-collapse: collapse;
+            border-radius: 4px;
+            background-color: #fff;
+            font-size: 13.5px;
+            color: #212529;
+            white-space: nowrap;
+        }
+
+        .inbox thead {
+            position: absolute;
+            z-index: -1;
+        }
+
+        .inbox tr {
+            transition: box-shadow 150ms ease-in-out;
+        }
+
+        .inbox tr:not(:last-child) {
+            box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .inbox tr:hover {
+            box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.14);
+        }
+
+        .inbox tr.unread {
+            font-weight: 700;
+        }
+
+        .inbox tr.unread span {
+            font-weight: 400 !important;
+        }
+
+        .inbox span:not(:nth-child(2)) {
+            opacity: 0.75;
+        }
+
+        .inbox th,
+        .inbox td {
+            padding: 8px 16px;
+        }
+
+        .inbox th:nth-child(3),
+        .inbox td:nth-child(3) {
+            padding-right: 64px;
+        }
+
+        .inbox th:last-child,
+        .inbox td:last-child {
+            font-size: 12px;
+        }
+
+        .inbox a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .inbox-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .inbox-actions > * {
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            margin: 0 2px;
+        }
+
+        .inbox-star,
+        .inbox-checkbox::after {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: none;
+            background-color: transparent;
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition: opacity 100ms;
+        }
+
+        .inbox-star:hover,
+        .inbox-checkbox:hover::after {
+            opacity: 0.75;
+        }
+
+        .inbox-star:focus,
+        .inbox-checkbox:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .inbox-star {
+            background-image: url(./assets/icon-star-border.svg);
+        }
+
+        .inbox-star.active {
+            background-image: url(./assets/icon-star.svg);
+        }
+
+        .inbox-checkbox::after {
+            content: "";
+            background-size: 90% auto;
+            background-image: url(./assets/icon-checkbox-outlined.svg);
+        }
+
+        .inbox-checkbox.active::after {
+            background-image: url(./assets/icon-checkbox-checked.svg);
+        }
+
+        .inbox-checkbox {
+            position: relative;
+            top: 1px;
+            overflow: hidden;
+        }
+
+        .inbox-checkbox input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="inbox">
+        <thead class="sr-only">
+            <tr>
+                <th scope="col">
+                    Actions
+                </th>
+                <th scope="col">
+                    Sender
+                </th>
+                <th scope="col">
+                    Title
+                </th>
+                <th scope="col">
+                    Timestamp
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="unread">
+                <td>
+                    <div class="inbox-actions">
+                        <div class="inbox-checkbox">
+                            <input type="checkbox" id="inbox-1" />
+                            <label for="inbox-1" class="sr-only">Select this email</label>
+                        </div>
+                        <button type="button" class="inbox-star">
+                            <span class="sr-only">Add to favorites</span>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    Google
+                </td>
+                <td>
+                    <a href="#">
+                        <strong class="sr-only">Unread</strong>
+                        <strong>
+                            Offer of Employment with Google Inc.
+                        </strong>
+                        <span>
+                            - Dear Seolyu: On behalf of Google Inc., I am pleased to offer you the exempt position ...
+                        </span>
+                    </a>
+                </td>
+                <td>
+                    3:34 PM
+                </td>
+            </tr>
+            <tr class="read">
+                <td>
+                    <div class="inbox-actions">
+                        <div class="inbox-checkbox">
+                            <input type="checkbox" id="inbox-1" />
+                            <label for="inbox-1" class="sr-only">Select</label>
+                        </div>
+                        <button type="button" class="inbox-star">
+                            <span class="sr-only">Add to favorites</span>
+                        </button>
+                    </div>
+                </td>
+                <td>
+                    Apple
+                </td>
+                <td>
+                    <a href="#">
+                        <strong class="sr-only">Read</strong>
+                        <span>
+                            Dear Seolyu (World Top Developer)
+                        </span>
+                        <span>
+                            - Congratulations Seolyu (World Top Developer) 🎉🎉🎉 I am pleased to offer you the ...
+                        </span>
+                    </a>
+                </td>
+                <td>
+                    3:34 PM
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        var inboxCheckboxes = document.querySelectorAll(".inbox-checkbox")
+        var inboxStars = document.querySelectorAll(".inbox-star")
+
+        inboxCheckboxes.forEach(function(item) {
+            item.addEventListener("click", toggle)
+            item.active = false
+        })
+
+        inboxStars.forEach(function(item) {
+            item.addEventListener("click", toggle)
+            item.active = false
+        })
+
+        function toggle() {
+            if (this.active) {
+                this.classList.remove("active")
+            } else {
+                this.classList.add("active")
+            }
+
+            this.active = !this.active
+        }
+    </script>
+</body>
+
+</html>

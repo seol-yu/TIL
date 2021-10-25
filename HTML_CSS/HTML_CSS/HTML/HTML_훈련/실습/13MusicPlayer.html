@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+        @font-face {
+            font-family: "Cafe24SsurroundAir";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: "Cafe24SsurroundAir";
+            font-size: 16px;
+            line-height: 1.5;
+            color: #1f2d3d;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            background-color: pink;
+        }
+
+        body::after {
+            content: "🎹🎻©";
+            display: block;
+            margin-top: 50px;
+            color: #1f2d3d;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        ul,
+        li {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .sr-only {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            z-index: -1;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            visibility: hidden;
+        }
+
+        .music-player {
+            width: 100%;
+            max-width: 540px;
+            padding: 20px;
+            border-radius: 4px;
+            background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+        }
+
+        .music-play-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+        }
+
+        .music-album-cover {
+            width: 50px;
+            height: 50px;
+            border-radius: 3px;
+            margin-right: 16px;
+        }
+
+        .music-info {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            padding: 8px 0;
+            border-top: 1px solid #e5e5e5;
+            cursor: pointer;
+        }
+
+        .music-info * {
+            transition: opacity 120ms;
+        }
+
+        .music-info:hover * {
+            opacity: 0.6;
+        }
+
+        .music-play-item:last-child .music-info {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .music-info-detail * {
+            font-weight: 400;
+        }
+
+        .music-info-detail h1 {
+            font-size: 16px;
+            line-height: 1.2;
+            color: #001732;
+        }
+
+        .music-info-detail strong {
+            display: block;
+            font-size: 14px;
+            color: #824563;
+        }
+
+        .music-playtime {
+            font-size: 14px;
+            color: #133f77;
+        }
+    </style>
+</head>
+
+<body>
+    <ol class="music-player">
+        <li class="music-play-item">
+            <img 
+                src="https://m.media-amazon.com/images/I/81pl1ryPJAL._AC_UY218_.jpg" 
+                alt="한스 짐머" 
+                lang="ko"
+                class="music-album-cover" 
+            />
+            <div class="music-info">
+                <div class="music-info-detail">
+                    <h1>
+                        <span lang="ko">한스 짐머</span>
+                        Hans Zimmer
+                    <h1>
+                    <strong lang="ko">
+                        End Credits
+                    </strong>
+                </div>
+                <span class="music-playtime">
+                    <span class="sr-only">Duration</span>
+                    01:57
+                </span>
+            </div>
+            <audio src="./assets/music-1.mp3" class="music-audio"></audio>
+        </li>
+        <li class="music-play-item">
+            <img 
+                src="https://m.media-amazon.com/images/I/818O3JB2t9L._AC_UY218_.jpg"
+                alt="피아노 가이즈" 
+                lang="ko"
+                class="music-album-cover" 
+            />
+            <div class="music-info">
+                <div class="music-info-detail">
+                    <h1>
+                        <span lang="ko">피아노 가이즈</span>
+                        The Piano Guys
+                    <h1>
+                    <strong lang="en">
+                        All Of Me
+                    </strong>
+                </div>
+                <span class="music-playtime">
+                    <span class="sr-only">Duration</span>
+                    03:03
+                </span>
+            </div>
+            <audio src="./assets/music-2.mp3" class="music-audio"></audio>
+        </li>
+    </ol>
+
+    <script>
+        var musicPlayItems = document.querySelectorAll(".music-play-item")
+
+        musicPlayItems.forEach(function(item) {
+            item.isPlaying = false
+            item.audio = item.querySelector("audio")
+
+            item.addEventListener("click", function() {
+                if (this.isPlaying) {
+                    item.audio.pause()
+                    item.audio.currentTime = 0
+                } else {
+                    item.audio.play()
+                }
+
+                item.isPlaying = !item.isPlaying
+            })
+        })
+    </script>
+</body>
+
+</html>
