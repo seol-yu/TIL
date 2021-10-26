@@ -4,7 +4,7 @@
 
 ### 목차
 
-[이벤트 이해하기 및 종류](#Events?)
+[이벤트 이해하기 및 종류](#Events)
 
 [Bubbling & capturing](#Bubbling_capturing)
 
@@ -22,7 +22,7 @@
 
 <br />
 
-### Events?
+### Events
 
 <br />
 
