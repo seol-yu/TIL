@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #212529;
+}
+
+.pseudo::before {
+    content: '😊';
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.pseudo::after {
+    content: '!';
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    font-style: italic;
+    background-color: pink;
+}

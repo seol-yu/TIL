@@ -1,0 +1,38 @@
+p {
+    /* color: blue; */
+}
+
+p {
+    /* 이게 적용됨 */
+    /* color: hotpink; */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+#text {
+    color: #0066ff;
+}
+
+/* .a.b.c.d.e.f.g.h.i.j.k.l.m.n.o {
+    color: #ff4949;
+} */
+
+p.box {
+    color: crimson;
+}
+
+p {
+    /* color: purple; */
+}
+
+p {
+    color: firebrick !important;
+}

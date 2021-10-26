@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 3000px;
+}
+
+.grandparent {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #1f2d3d;
+}
+
+.parent {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #eff2f7;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.red {
+    background-color: #ff4949;
+    /* position: absolute; */
+    position: fixed;
+    /* left: 30px; */
+    /* bottom: 20px; */
+    /* right: 20px; */
+}
+
+.yellow {
+    background-color: #ffc82c;
+    /* position: absolute; */
+}
+
+.blue {
+    background-color: #0066ff;
+    /* position: absolute; */
+}

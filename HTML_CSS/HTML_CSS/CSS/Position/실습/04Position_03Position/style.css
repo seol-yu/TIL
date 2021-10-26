@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #273444;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+/* 이미지 태그는 파일 자체 사이즈 있어서 inline임에도 width, height 가짐 */
+.user-card {
+    width: 240px;
+    padding: 8px 12px;
+    border: 1px solid #E5EAEF;
+    border-radius: 4px;
+}
+
+.user-card::after {
+    content: '';
+    display: block;
+    clear: left;    
+}
+
+.user-photo,
+.user-status {
+    float: left;
+}
+
+.user-photo {
+    margin-right: 12px;
+    position: relative;
+}
+
+.user-photo img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.user-status {
+    /* position absolute 하면 자동 block 됨 */
+    /* 자신의 조상 중 static 아닌 애 기준으로 함 */
+    /* user-photo에게 relative 주기 */
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    /* display: block; */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* background-color: #21D891; */
+    background-color: #e64358;
+}
+
+/* .user-status {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #21D891;
+    box-sizing: content-box;
+} */
+
+.user-name {
+    padding: 8px 0;
+}

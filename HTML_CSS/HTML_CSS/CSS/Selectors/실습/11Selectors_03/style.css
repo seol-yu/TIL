@@ -1,0 +1,19 @@
+li:first-child {
+    color: #0066ff;
+}
+
+li:last-child {
+    color: #ffc82c;
+}
+
+li:nth-child(3) {
+    color: #ff4949;
+}
+
+li:nth-child(2n) {
+    color: orange;
+}
+
+li:nth-child(2n-1) {
+    color: rebeccapurple;
+}

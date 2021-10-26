@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    /* font-family: serif; */
+    /* font-family: "Poppins", sans-serif; */
+    color: #212529;
+}
+
+p {
+    line-height: 1.5rem;
+    /* font-size: 1.5em; */
+    /* font-size: 3rem; */
+    letter-spacing: -0.01em;
+}
+
+.parent {
+    /* font-size: 20px; */
+    font-size: 1rem;
+    font-weight: 700;
+    color: hotpink;
+}
+
