@@ -22,9 +22,9 @@
 
 <br />
 
-React <- 페이스북 사에서 만든 자바스크립트 라이브러리 중 하나
+:sparkles:`React` <- 페이스북 사에서 만든 자바스크립트 라이브러리 중 하나
 
-A library for creating user interfaces (사용자에게 보여지는 유저 인터페이스를 만들 수 있게 도와주는 라이브러리)
+A `library` for creating `user interfaces` (사용자에게 보여지는 유저 인터페이스를 만들 수 있게 도와주는 라이브러리)
 
 Renders UI and responds to events (UI 보여주고 이벤트 처리)
 
@@ -36,17 +36,17 @@ MVC 패턴(디자인 패턴 중 하나)
 
 어플리케이션을 모델, 뷰, 컨트롤러 각각의 레이어로 나누어서 코딩해나가기
 
-Model
+`Model`
 
-View <- 리액트가 담당
+`View` <- 리액트가 담당
 
-Controller
+`Controller`
 
 <br />
 
 프레임워크와 라이브러리의 차이
 
-* 프레임워크
+* `프레임워크`
 
   정해진 골격 안에서 원하는 기능 구현해야 함
 
@@ -56,7 +56,7 @@ Controller
 
   ex) 앵귤러. UI뿐 아니라 라우팅, 스테이트 관리할 수 있는 방식, HTTP Clients 등 다양한 기능들이 한번에 제공
 
-* 라이브러리
+* `라이브러리`
 
   부품들
 
@@ -66,7 +66,7 @@ Controller
 
   작은 단위, 작은 도메인 안에서 원하는 작은 부분 구현한 것
 
-  ex) 리액트(UI 담당 라이브러리)
+  ex) `리액트(UI 담당 라이브러리)`
 
 뷰는 프레임워크에 해당하지만 스테이트 관리, Http clients가 포함 안되어있어서 프레임워크와 라이브러리 중간 상태
 
@@ -96,11 +96,11 @@ Controller
 
 <br />
 
-user interface를 만들 수 있는 라이브러리
+`user interface를 만들 수 있는 라이브러리`
 
-즉, 웹 UI를 만드는 라이브러리
+즉, `웹 UI를 만드는 라이브러리`
 
-컴포넌트들
+`컴포넌트들`
 
 컴포넌트(한가지 기능을 수행하는 UI 단위. 서로 독립적 independent, 고립 isolated, 재사용 가능 reusable)로 이루어진 UI 라이브러리
 
@@ -108,15 +108,15 @@ user interface를 만들 수 있는 라이브러리
 
 각각의 리액트 어플리케이션은 하나 이상의 컴포넌트로 이루어져 있음
 
-리액트 어플리케이션 <- 각각의 독립적인 컴포넌트를 서로 조립해서 만듦
+리액트 어플리케이션 <- `각각의 독립적인 컴포넌트를 서로 조립해서 만듦`
 
 <br />
 
-제일 상위 컴포넌트: Root
+제일 상위 컴포넌트: `Root`
 
 cf) 작성한 웹페이지(HTML 태그들) -> DOM(Document Object Model) Tree -> 브라우저가 이해
 
-리액트도 돔트리처럼 컴포넌트 트리 형식으로 만들어져 있다
+리액트도 돔트리처럼 `컴포넌트 트리 형식`으로 만들어져 있다
 
 (ex. Root 컴포넌트 안에 Navbar와 Content 있고, Navbar 안에는 Logo, Button들이 Content 안에는 Article들이)
 
@@ -154,8 +154,8 @@ export default LikeButton;
 
 컴포넌트 클래스 안에는 state 부분과 rendering 하는 부분이 있다
 
-* state 스테이트 <- 이 컴포넌트에 들어 있는 데이터를 나타내는 오브젝트
-* render 함수 <- 어떻게 사용자에게 표기될건지. jsx. 사용자에게 표기할 수 있는 render 함수
+* `state 스테이트` <- 이 컴포넌트에 들어 있는 데이터를 나타내는 오브젝트
+* `render 함수` <- 어떻게 사용자에게 표기될건지. `jsx`. 사용자에게 표기할 수 있는 render 함수
 
 <br />
 
@@ -167,7 +167,7 @@ export default LikeButton;
 
 <br />
 
-리액트 Virtual DOM Tree(가상 돔 트리) <- 리액트 컴포넌트들이 메모리상에 보관되어져 있다
+리액트 `Virtual DOM Tree(가상 돔 트리)` <- 리액트 컴포넌트들이 메모리상에 보관되어져 있다
 
 리액트 모든 구조들이 돔트리에 업데이트 되는 것이 아니고
 
@@ -175,7 +175,7 @@ export default LikeButton;
 
 리액트는 이전 버츄얼 돔트리와 비교해서 정말 실질적으로 업데이트 되어야 하는 부분 계산 후 
 
-필요한 부분만 돔트리에 업데이트(한번에 다 같이)
+`필요한 부분만 돔트리에 업데이트`(한번에 다 같이)
 
 렌더 함수 호출 많이 되어도 실질적으로 보여지는 데이터가 변동 안되면 돔트리에는 영향X
 
@@ -183,7 +183,7 @@ export default LikeButton;
 
 <br />
 
-Re-render the whole app on every update
+`Re-render the whole app on every update`
 
 리액트는 데이터가 변경 될 때마다 어플리케이션 전체를 다시 렌더링
 
@@ -192,6 +192,8 @@ Re-render the whole app on every update
 스테이트에 맞게 렌더 함수에 어떻게 표기될건지 한번만 정리해두면 
 
 모든 것은 알아서 리액트가 상태 변경되면 렌더함수 다시 호출
+
+<br />
 
 사용자가 부드럽게 웹 어플리케이션 이용하기 위해 60 frames per seconds (60fps) 유지
 
@@ -203,11 +205,11 @@ Re-render the whole app on every update
 
 테스팅(유닛 테스트)하기 좋다 = 테스트 어빌리티가 좋다
 
-Components <- 데이터를 가지고 있는 state가 있고 사용자에게 어떻게 보여줄지 정의하는 render 함수가 있다
+`Components` <- 데이터를 가지고 있는 state가 있고 사용자에게 어떻게 보여줄지 정의하는 render 함수가 있다
 
-Re-render(state, render()) <- 상태가 변할 때마다 렌더 함수가 계속 호출
+`Re-render(state, render())` <- 상태가 변할 때마다 렌더 함수가 계속 호출
 
-V(virtual)DOM <- 성능이 괜찮은 이유. 리액트 내부에 가상의 VDOM이 있기 때문
+`V(virtual)DOM` <- 성능이 괜찮은 이유. 리액트 내부에 가상의 VDOM이 있기 때문
 
 <br />
 
@@ -229,7 +231,7 @@ V(virtual)DOM <- 성능이 괜찮은 이유. 리액트 내부에 가상의 VDOM�
 
 <br />
 
-React는 Declarative(선언적) 하다
+React는 `Declarative(선언적)` 하다
 
 스테이트와 랜덤함수를 통해서 명료하게 코드를 봤을 때 바로 이해 가능
 
@@ -265,7 +267,7 @@ https://stackblitz.com/edit/react-xrl9nn
 - Next.js <- Server Side 렌더링
 - Gatsby <- 정적인 사이트
 
-Create React App <- 간단한 스트립트. 많은 리액트 개발자들이 공통적으로 사용, 설정해서 쓰는 프로젝트 환경 한번에 바로 설치해서 쓸 수 있도록
+`Create React App` <- 간단한 스트립트. 많은 리액트 개발자들이 공통적으로 사용, 설정해서 쓰는 프로젝트 환경 한번에 바로 설치해서 쓸 수 있도록
 
 https://github.com/facebook/create-react-app
 

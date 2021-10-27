@@ -64,7 +64,7 @@
 
 <br />
 
-* 클래스 컴포넌트
+* `클래스 컴포넌트`
 
   ```react
   import React from 'react';
@@ -83,23 +83,23 @@
   export default LikeButton;
   ```
 
-  리액트에서 제공하는 컴포넌트라는 클래스를 extends 상속해서 만들 수 있다
+  리액트에서 제공하는 `컴포넌트라는 클래스를 extends (상속)`해서 만들 수 있다
 
-  컴포넌트가 스테이트가 있고 그 상태에 따라 컴포넌트가 주기적으로 업데이트 되어야하면 클래스 컴포넌트 씀
-
-  <br />
-
-  클래스(<- 관련 데이터 함수들이 묶여져 있는 것)에는 컴포넌트에서 가지고 있는 상태, 데이터를 담을 수 있는 스테이트라는 오브젝트가 들어 있다
-
-  그래서 스테이트가 변경되면 렌더 함수가 호출 되면서 업데이트된 내용이 사용자에게 보여짐
+  **컴포넌트가 스테이트가 있고 그 상태에 따라 컴포넌트가 주기적으로 업데이트 되어야하면 클래스 컴포넌트** 씀
 
   <br />
 
-  lifecycle methods 라이프 사이클 메소드(컴포넌트가 사용자에게 보여질 때, 돔트리에 올라갔을/나왔을 때, 컴포넌트가 업데이트 되었을 때 등등 다양한 컴포넌트 상태에 따라 구현해 놓은 함수 알아서 불러주는)
+  클래스(<- 관련 데이터 함수들이 묶여져 있는 것)에는 컴포넌트에서 가지고 있는 `상태, 데이터를 담을 수 있는 스테이트라는 오브젝트`가 들어 있다
+
+  그래서 **스테이트가 변경되면 렌더 함수가 호출 되면서 업데이트된 내용이 사용자에게 보여짐**
+
+  <br />
+
+  `lifecycle methods 라이프 사이클 메소드` (컴포넌트가 사용자에게 보여질 때, 돔트리에 올라갔을 / 나왔을 때, 컴포넌트가 업데이트 되었을 때 등등 다양한 컴포넌트 상태에 따라 구현해 놓은 함수 알아서 불러주는)
 
 <br />
 
-* 함수(function) 컴포넌트
+* `함수(function) 컴포넌트`
 
   ```react
   function App() {
@@ -109,31 +109,31 @@
 
   간단하게 함수로 만들 수 있다
 
-  컴포넌트에 상태가 없고 항상 정적으로 데이터가 표기될 경우 함수 컴포넌트 씀
+  **컴포넌트에 상태가 없고 항상 정적으로 데이터가 표기될 경우 함수 컴포넌트** 씀
 
   <br />
 
   스테이트, 라이프사이클 메소드 없음
 
-  함수(<- 한 가지 기능을 수행하는 단위)
+  **함수(<- 한 가지 기능을 수행하는 단위)**
 
   <br />
 
-  리액트 16.8 버전부터는 함수에서도 클래스에서 했던 것처럼(스테이트, 라이프사이클 메소드) 할 수 있는 리액트 훅 도입  <- 클래스가 어려우니까. 클래스는 멤버 변수 접근할 때 항상 this 붙임. 클래스에서 함수 이용하면 바인딩 이슈 있음.  functional programming
+  :sparkles: 리액트 16.8 버전부터는 함수에서도 클래스에서 했던 것처럼(스테이트, 라이프사이클 메소드) 할 수 있는 `리액트 훅` 도입  <- 클래스가 어려우니까. 클래스는 멤버 변수 접근할 때 항상 this 붙임. 클래스에서 함수 이용하면 바인딩 이슈 있음.  `functional programming`
 
   <br />
 
   클래스 컴포넌트에는 라이프 사이클 메소드가 있다
 
-  컴포넌트가 마운트/언마운트/업데이트 되었을 때 세부적으로 함수가 나뉘어져있어서 중복된 코드 작성해야 하는 경우가 있었지만 리액트 훅 이용하면 중복 줄일 수 있다
+  컴포넌트가 마운트 / 언마운트 / 업데이트 되었을 때 세부적으로 함수가 나뉘어져있어서 중복된 코드 작성해야 하는 경우가 있었지만 **리액트 훅 이용하면 중복 줄일 수 있다**
 
 <br />
 
-- React.Component
-  - React.PureComponent
-- function
-  - memo(function) <- 함수형 컴포넌트. Higher Order Component(고차 컴포넌트)라고 부르기도 함.
-  - React Hook
+- `React.Component`
+  - `React.PureComponent`
+- `function`
+  - `memo(function)` <- 함수형 컴포넌트. Higher Order Component(고차 컴포넌트)라고 부르기도 함.
+  - `React Hook`
 
 cf) JSK, State, Props, SyntheticEvents, refs, Lifecycle methods, Lists and keys, developer tools, techniques
 
@@ -205,7 +205,7 @@ public에는 static(정적)한 애들
 
 <br />
 
-public - index.html
+public - index.html 에서
 
 apple-touch-icon 이거는 PWA(Progressive Web App)에 필요한 것으로 지워줌
 
@@ -215,9 +215,11 @@ manifest.json도 지움
 
 <br />
 
+title 바꿔주고
+
 noscript는 사용자가 브라우저에서 자바스크립트를 enable(활성화)하지 않았을 때 보여주는 메세지
 
-리액트는 자바스크립트만으 이용해서 동적으로 만드는 애라서 사용자가 자바스크립트 쓰지 않으면 어플리케이션이 돌아가지 않으므로 이렇게 경고문을 보여주는 것이다
+리액트는 자바스크립트만을 이용해서 동적으로 만드는 애라서 사용자가 자바스크립트 쓰지 않으면 어플리케이션이 돌아가지 않으므로 이렇게 경고문을 보여주는 것이다
 
 놔둔다
 
@@ -243,13 +245,22 @@ index.js에서는 serviceWorker(난 reportWebVitals) import하는 부분 지운�
 
 App.js에서 return 안에 다 지우고
 
-`<h1>Hello :)</h1>`
+```javascript
+// import React from 'react';
+import './App.css';
+
+function App() {
+  return <h1>♪ *҉＼( ˆᴗˆ )ﾉ✩😋💻🐾 ✌︎('ᴗ'✌︎ ) ✌︎('ᴗ')✌︎ ( ✌︎'ᴗ')✌︎</h1>;
+}
+
+export default App;
+```
 
 <br />
 
 소스(src) 안에 공통적으로 사용하는 컴포넌트를 폴더(components)를 만들어 따로 넣는다
 
-파일 이름 소문자로 시작하도록 변경(app.css / app.jsx)
+파일 이름 소문자로 시작하도록 변경 (app.css / app.jsx)
 
 순수 자바스크립트 클래스, 파일과 구분하고 예쁜 아이콘 갖기 위해 App.js -> app.jsx 쓰기
 
@@ -291,9 +302,9 @@ Ctrl + C 프로세스 중지
 
 브라우저는 HTML, CSS, 순수 자바스크립트만을 이해 가능
 
-바벨(Babel)을 이용해 순수 JS로 변환됨
+**바벨(Babel)을 이용해 순수 JS로 변환됨**
 
-변환된 컴포넌트를 HTML과 연결하는 작업을 하게 해주는 것이 react-dom
+변환된 컴포넌트를 HTML과 연결하는 작업을 하게 해주는 것이 `react-dom`
 
 <br />
 
@@ -309,7 +320,9 @@ react-dom 이라는 라이브러리에서 ReactDOM 클래스를 import
 
 가져온 ReactDOM 이라는 클래스에 있는 render 함수 이용해서 document 페이지에 id가 root 라는 요소(index에 있는 아이디가 root인 div) 가지고와서 그 요소에 root 컴포넌트 연결
 
-=> root 라는 아이디를 가진 요소에 제일 상위에 있는 App 이라는 컴포넌트를 연결하는 것이다(개발툴로 확인 가능)
+=> root 라는 아이디를 가진 요소에 제일 상위에 있는 App 이라는 컴포넌트를 연결하는 것이다 (개발툴로 확인 가능)
+
+=> 즉, 리액트 컴포넌트는 결국 HTML로 변환이 되어서 브라우저에 표기
 
 <br />
 
@@ -319,7 +332,7 @@ App 이라는 것은
 
 <br />
 
-index.js에 <React.StrictMode></React.StrictMode>
+index.js에 `<React.StrictMode></React.StrictMode>`
 
 StrictMode는 자바스크립트 쓸 때 'use strict' 이용해 엄격한 모드로 코딩하고
 
@@ -355,9 +368,9 @@ React.StrictMode 모드 이용
 
 컴포넌트 구조
 
-State(컴포넌트에서 가지고 있는 데이터)
+`State (컴포넌트에서 가지고 있는 데이터)`
 
-Props(내 컴포넌트에서 가지고 있는 State가 아닌 부모로부터 받아온 데이터. properties(속성))
+`Props (내 컴포넌트에서 가지고 있는 State가 아닌 부모로부터 받아온 데이터. properties(속성))`
 
 확인 가능
 
@@ -375,7 +388,7 @@ Props(내 컴포넌트에서 가지고 있는 State가 아닌 부모로부터 �
 
 <br />
 
-JSX <- 엄밀히 말하면 자바스크립트 코드
+`JSX` <- 엄밀히 말하면 자바스크립트 코드
 
 https://reactjs.org/docs/introducing-jsx.html
 
