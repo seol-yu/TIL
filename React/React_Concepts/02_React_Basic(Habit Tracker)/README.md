@@ -410,11 +410,11 @@ function App() {
 }
 ```
 
-형제 노드 쓸 수 없고 JSX는 한 가지 태그로 감싸줘야해서 두 가지 자식 노드 이용할 땐
+형제 노드 쓸 수 없고 **JSX는 한 가지 태그로 감싸줘야해서** 두 가지 자식 노드 이용할 땐
 
-Fragment 이용해서 묶기(<- 이렇게 하면 요소 검사 했을 때 부모 태그 없음)
+`<React.Fragment></React.Fragment>` 이용해서 묶기(<- 이렇게 하면 요소 검사 했을 때 부모 태그 없음)
 
-<></> 이것과 같음 <- 의미없이 그룹 묶어줄 때 사용
+`<></>` 이것과 같음 <- 의미없이 그룹 묶어줄 때 사용
 
 ```react
 function App() {
@@ -434,7 +434,7 @@ function App() {
 
 ![map](./imgs/map.png)
 
-=> JSX는 HTML처럼 간편하게 마크업할 수 있고 비즈니스 로직 자바스크립트 코드와 함께 섞어서 사용 가능
+=> **JSX는 HTML처럼 간편하게 마크업할 수 있고 비즈니스 로직 자바스크립트 코드와 함께 섞어서 사용 가능**
 
 <br />
 
@@ -508,6 +508,16 @@ Ctrl + p 가고자하는 파일명
 
 <br />
 
+app.css 내용 다 지우기
+
+<br />
+
+윈도우 ctrl 키
+
+맥은 옵션키 누른 상태로 다중 선택
+
+<br />
+
 [목차로](#목차)
 
 <br />
@@ -517,6 +527,16 @@ Ctrl + p 가고자하는 파일명
 <br />
 
 ### State
+
+<br />
+
+React 는 `synthetic event` <- 일반 DOM 요소에서 발생하는 이벤트 오브젝트와는 좀 다른 개념
+
+브라우저에서 발생할 수 있는 모든 이벤트는 이벤트 오브젝트
+
+이벤트 오브젝트 안에는 관련 이벤트와 관련 정보들이 들어있다
+
+리액트는 그 이벤트를 한 단계 더 감싸는 자신만의 이벤트 클래스 `synthetic event` 쓴다
 
 <br />
 
@@ -536,7 +556,7 @@ Habit 이라는 클래스 안에는 state라는 멤버변수가 있다
 
 그래서 state 업데이트할 땐
 
-리엑트에서 제공하는 setState 함수를 호출해야 한다
+리엑트에서 제공하는 `setState` 함수를 호출해야 한다
 
 ![setState](./imgs/setState.png)
 
@@ -560,13 +580,13 @@ Habit 이라는 클래스 안에는 state라는 멤버변수가 있다
 
 <br />
 
-1. State
+1. `State`
 
    컴포넌트 안에 컴포넌트 UI를 위한 데이터를 보관하는 state 오브젝트를 통해
 
    데이터에 업데이트가 발생하면 리액트가 자동적으로 render 함수 호출
 
-2. Props
+2. `Props`
 
    컴포넌트 밖에서 주어지는 데이터
 
@@ -588,7 +608,7 @@ Habit 이라는 클래스 안에는 state라는 멤버변수가 있다
 
    title, onClick 같은 애들을 인자로 전달해줄 때
 
-   props 오브젝트에 묶여서 LikeButton 컴포넌트에 전달되어진다(LikeButton 컴포넌트 안에서 this.props로 할당되어짐. React Dev Tools에서 확인 가능)
+   `props 오브젝트에 묶여서 LikeButton 컴포넌트에 전달되어진다`(LikeButton 컴포넌트 안에서 this.props로 할당되어짐. React Dev Tools에서 확인 가능)
 
    <br />
 
@@ -723,7 +743,7 @@ habits라는 배열 안에 있는 아이템들을 하나하나씩 새로운 배�
 
 안에 들어있는 아이템들은 그대로 하나하나 복사해온다
 
-... <- spread syntax
+... <- `spread syntax`
 
 <br />
 
@@ -803,7 +823,7 @@ Open Keyboard Shortcuts 에서
 
 DOM 요소를 직접적으로 쓰지 않으므로
 
-리액트에서 다른 리액트의 요소에 접근하려면 Ref 쓴다
+리액트에서 다른 리액트의 요소에 접근하려면 `Ref` 쓴다
 
 **Refs and the DOM**: https://reactjs.org/docs/refs-and-the-dom.html
 
@@ -857,9 +877,9 @@ React <- 리액트는 Component들이다. 데이터가 조금이라도 업데이
 
 리액트의 중요한 컨셉
 
-* Components
-* Re-render <- state, render()
-* VDOM <- virtual
+* `Components`
+* `Re-render` <- state, render()
+* `VDOM` <- virtual
 
 <br />
 
@@ -867,17 +887,17 @@ React <- 리액트는 Component들이다. 데이터가 조금이라도 업데이
 
 - 클래스로 만들 수 있는 컴포넌트
 
-  React.Component
+  `React.Component`
 
-  React.PureComponent
+  `React.PureComponent`
 
 - 함수로 만들 수 있는 컴포넌트
 
-  function
+  `function`
 
-  memo(function)
+  `memo(function)`
 
-  React Hook 쓰면 함수 쓰면서 클래스 컴포넌트와 같이 state와 라이프사이클 메소드 이용 가능
+  `React Hook` 쓰면 함수 쓰면서 클래스 컴포넌트와 같이 state와 라이프사이클 메소드 이용 가능
 
 <br />
 
@@ -885,7 +905,7 @@ React <- 리액트는 Component들이다. 데이터가 조금이라도 업데이
 
 리액트 어플리케이션은 state가 변화되면 전체적으로 Render가 호출이 되는데
 
-Virtual DOM(메모리 상에 트리 보관) 때문에
+`Virtual DOM`(메모리 상에 트리 보관) 때문에
 
 실제로 필요한 부분만 DOM 요소에 업데이트
 
@@ -894,7 +914,6 @@ Virtual DOM(메모리 상에 트리 보관) 때문에
 <br />
 
 ```jsx
-
 componentDidUpdate() {
 
 }
@@ -918,7 +937,7 @@ Components 탭에서 Settings 누르고 체크박스 선택
 
 이걸 방지하는 것이
 
-pureComponent와 memo인데
+`pureComponent`와 `memo`인데
 
 이들은 Component에 state나 props에 변화가 없다면 render 함수가 불려지지 않음
 
@@ -926,7 +945,7 @@ cf) VSCode에서 단어 선택 후 Ctrl + D 누르면 다중선택
 
 ![pureComponent](./imgs/pureComponent.png)
 
-PureComponent(shouldComponentUpdate()을 구현. 컴포넌트를 업데이트 해야할지 안해야할지 알아보는 함수. 얇게 비교. 오브젝트 안 오브젝트 안 오브젝트.. 이런 식으로 트리처럼 뻗어나갈 수 있는데.. 오브젝트 레퍼런스만 비교. 내부 데이터 변경까진 비교X)는 props와 state 안에 들어있는 데이터가, 최상위에 있는 데이터가 변하지 않으면 render 함수 호출X
+`PureComponent`(shouldComponentUpdate()을 구현. 컴포넌트를 업데이트 해야할지 안해야할지 알아보는 함수. `얇게 비교`. 오브젝트 안 오브젝트 안 오브젝트.. 이런 식으로 트리처럼 뻗어나갈 수 있는데.. 오브젝트 레퍼런스만 비교. 내부 데이터 변경까진 비교X)는 props와 state 안에 들어있는 데이터가, 최상위에 있는 데이터가 변하지 않으면 render 함수 호출X
 
 즉 re-rendering 안함
 
@@ -946,7 +965,7 @@ PureComponent(shouldComponentUpdate()을 구현. 컴포넌트를 업데이트 �
 
 shallow comparison 때문에 안에 데이터 수정하면 동일한 오브젝트라고 판단해서 업데이트 안됨
 
-그래서 전체적인 오브젝트 업데이트 함 this.setState({ habit });
+그래서 전체적인 오브젝트 업데이트 함 `this.setState({ habit });`
 
 <br />
 
@@ -960,7 +979,7 @@ shallow comparison 때문에 안에 데이터 수정하면 동일한 오브젝�
 
 2. 근본적인 문제는 오브젝트 전체 업데이트하지 않고 오브젝트 안에 있는 데이터 변경해서이다
 
-   cf) deconstructing 오브젝트
+   cf) `deconstructing 오브젝트`
 
    ![deconstructing](./imgs/deconstructing.png)
 
@@ -984,9 +1003,9 @@ shallow comparison 때문에 안에 데이터 수정하면 동일한 오브젝�
 
 ![lifecycle](./imgs/lifecycle.png)
 
-componentDidMount <- 컴포넌트가 UI상에 등록이 되었을 때, 사용자에게 보여질 때 호출됨(ex. 타이머 시작하고 중지하고 실시간 채팅 대화 소켓 초기화)
+`componentDidMount` <- 컴포넌트가 UI상에 등록이 되었을 때, 사용자에게 보여질 때 호출됨(ex. 타이머 시작하고 중지하고 실시간 채팅 대화 소켓 초기화)
 
-componentWillUnmount <- 컴포넌트 지우기 전에 호출(ex. 정리, 리소스 지우기)
+`componentWillUnmount` <- 컴포넌트 지우기 전에 호출(ex. 정리, 리소스 지우기)
 
 많이 씀
 
@@ -1004,15 +1023,15 @@ componentWillUnmount <- 컴포넌트 지우기 전에 호출(ex. 정리, 리소�
 
 <br />
 
-클래스 컴포넌트는 rcc
+클래스 컴포넌트는 `rcc`
 
-함수 컴포넌트는 rsi
+함수 컴포넌트는 `rsi`
 
 <br />
 
-클래서에서 PureComponent가 있다면
+`클래서에서 PureComponent`가 있다면
 
-함수에는 memo가 있다
+`함수에는 memo`가 있다
 
 PureComponent처럼 props가 변경되지 않으면 안에 있는 함수 호출되지 않음
 
