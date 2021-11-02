@@ -46,9 +46,9 @@
 
 위 2가지 방식은 시간이 오래 걸리고 팀플로 하기에 적합
 
-개인 플젝할 땐
+<br />
 
-:sparkles:
+:sparkles:개인 플젝할 땐
 
 3. 사용자에게 조금이라도 도움이 되는 기능, 대표적인 기능이 뭘까
 
@@ -257,9 +257,9 @@ https://developers.google.com/youtube/youtube_player_demo?hl=ko
 
 memo 사용
 
-memo <- 전달되는 props 변경되지 않으면 re-render 안되고 props가 바뀌면 다시 렌더링되는
+`memo` <- 전달되는 props 변경되지 않으면 re-render 안되고 props가 바뀌면 다시 렌더링되는
 
-useCallback <- 이거는 조심해서 사용. 한번 만들면 메모리상에 계속 보관하므로 메모리에 많은 영향. 
+`useCallback` <- 이거는 조심해서 사용. 한번 만들면 메모리상에 계속 보관하므로 메모리에 많은 영향. 
 
 <br />
 
