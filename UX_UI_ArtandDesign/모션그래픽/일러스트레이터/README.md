@@ -20,6 +20,8 @@
 
 <img src="./imgs/cool.png" width="100" height="40">
 
+<img src="./imgs/AnimalCamping.png" width="400" height="400">
+
 일러스트레이터의 기본 인터페이스  이해
 
 : 일러스트레이터의 기본 인터페이스 구조인 `Tool bar`, `Control panel`, `Menu bar`, `Panels`, `Status bar`, `Artboard` 이해
@@ -121,6 +123,36 @@ https://fonts.adobe.com
 :heavy_check_mark: `Blend`와 `3D Bevel&Extrude`로 입체감있는 글자를 만든다
 
 :heavy_check_mark: Blend와 3D extrude한 글자는 반드시 `Expand` 해준다
+
+<br />
+
+---
+
+<br />
+
+명암이 있는 라인 일러스트레이션 그리기
+
+Pathfinder 기능으로 빛과 그림자 디테일 만들기
+
+Transparency 기능 활용
+
+Effect 효과를 활용해 형태에 변화주기
+
+<br />
+
+---
+
+<br />
+
+:heavy_check_mark: Pathfinder의 Minos front, Intersect로 빛과 그림자의 영역을 만든다
+
+:heavy_check_mark: Joint를 사용해 오브젝트를 연결
+
+:heavy_check_mark: Wave 기능으로 형태에 변화를 주고 Expand appearance 해준다
+
+:heavy_check_mark: Transparency 패널에서 블렌딩 모드와 투명도 설정
+
+:heavy_check_mark: 같은 그룹에 속하는 레이어는 Grouping해서 레이어 정리
 
 <br />
 
