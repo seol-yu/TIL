@@ -22,6 +22,10 @@
 
 <img src="./imgs/AnimalCamping.png" width="400" height="400">
 
+<img src="./imgs/Character.png" width="60" height="150">
+
+<img src="./imgs/RunningOutdoor.png" width="400" height="300">
+
 일러스트레이터의 기본 인터페이스  이해
 
 : 일러스트레이터의 기본 인터페이스 구조인 `Tool bar`, `Control panel`, `Menu bar`, `Panels`, `Status bar`, `Artboard` 이해
@@ -158,3 +162,16 @@ Effect 효과를 활용해 형태에 변화주기
 
 ---
 
+<br />
+
+:heavy_check_mark: 기본 캐릭터를 설정을 기반으로 다양한 응용 동작과 디자인 만들기
+
+:heavy_check_mark: Stroke 활용해 캐릭터의 팔, 다리 만들기
+
+:heavy_check_mark: Stroke으로 캐릭터의 신체, 옷, 장식 요소 만들기
+
+:heavy_check_mark: 배경 제작시 카메라 무브먼트를 고려해 배경 요소 제작
+
+:heavy_check_mark: Pathfinder의 Divide, Intersect로 그림자 영역을 만들고 디테일 더하기
+
+<br />
