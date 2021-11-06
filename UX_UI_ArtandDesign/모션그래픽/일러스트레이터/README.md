@@ -26,6 +26,8 @@
 
 <img src="./imgs/RunningOutdoor.png" width="400" height="300">
 
+<img src="./imgs/CitypopIsometric.png" width="400" height="400">
+
 일러스트레이터의 기본 인터페이스  이해
 
 : 일러스트레이터의 기본 인터페이스 구조인 `Tool bar`, `Control panel`, `Menu bar`, `Panels`, `Status bar`, `Artboard` 이해
@@ -175,3 +177,44 @@ Effect 효과를 활용해 형태에 변화주기
 :heavy_check_mark: Pathfinder의 Divide, Intersect로 그림자 영역을 만들고 디테일 더하기
 
 <br />
+
+---
+
+<br />
+
+그리드를 활용한 아이소메트릭 아트웍 제작
+
+<br />
+
+:heavy_check_mark: 아이소메트릭 그리드라인 만들기
+
+:heavy_check_mark: 그리드에 맞춰 아트웍 오브젝트 제작
+
+<br />
+
+Citypop
+
+밝고 선명한 컬러톤. 푸른 계열. 명암차이가 나는 색을 그림자로 사용
+
+<br />
+
+Isometric projection
+
+<br />
+
+:heavy_check_mark: Selection tool의 Copy 기능으로 일정한 간격의 그리드 라인 만들기
+
+:heavy_check_mark: Clipping mask를 사용해 보여질 영역만 설정
+
+:heavy_check_mark: 그리드 라인을 기준으로 아이소메트릭 오브젝트 그리기
+
+:heavy_check_mark: 여러 점을 Align panel을 사용해 정렬 방식을 정하고 위치 맞추기
+
+:heavy_check_mark: 기존 레이어를 복제해 오브젝트의 두께감을 만들거나 그림자 주기
+
+<br />
+
+---
+
+<br />
+
