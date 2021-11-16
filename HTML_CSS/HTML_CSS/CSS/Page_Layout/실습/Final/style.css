@@ -70,6 +70,26 @@ p {
     opacity: 0.5;
 }
 
+.section {
+    padding: 80px 0;
+}
+
+.section-category {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+.section-title {
+    margin-bottom: 24px;
+    font-size: 34px;
+    line-height: 1.0588235294;
+    letter-spacing: -0.04em;
+    color: #2b292d;
+}
+
 /* Landing */
 .landing {
     background: rgb(112, 56, 74);
@@ -122,8 +142,61 @@ p {
     margin-bottom: 16px;
     font-size: 22px;
     line-height: 1.3636363636;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.03em;
     color: #2b292d;
+}
+
+/* Program */
+.program .row:first-child {
+    margin-bottom: 32px;
+}
+
+.program .col-md-4 {
+    margin-bottom: 20px;
+}
+
+.program .col-md-4:last-child {
+    margin-bottom: 0;
+}
+
+.program .section-category {
+    color: #009b4d;
+}
+
+.program-card {
+    display: block;
+    padding: 24px 0 32px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05),
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+.program-card:hover {
+    background-color: rgba(183, 108, 158, 1);
+    box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07),
+    0px 13px 18px rgba(0, 0, 0, 0.15);
+}
+
+.program-card:hover strong {
+    color: #fff;
+}
+
+.program-card img {
+    display: block;
+    width: auto;
+    height: 195px;
+    margin: 0 auto 16px;
+}
+
+.program-card strong {
+    font-size: 18px;
+    line-height: 1.3333333333;
+    letter-spacing: -0.02em;
+    transition: color 500ms ease-in-out;
 }
 
 /* >= 768px (Desktop) */
@@ -139,6 +212,22 @@ p {
         height: 56px;
         font-style: 18px;
         line-height: 1.5555555556;
+    }
+
+    .section {
+        padding-bottom: 96px;
+    }
+
+    .section-category {
+        margin-bottom: 16px;
+        font-size: 22px;
+        line-height: 1.0909090909;
+    }
+
+    .section-title {
+        margin-bottom: 32px;
+        font-size: 56px;
+        line-height: 1;
     }
 
     /* Landing */
@@ -169,6 +258,24 @@ p {
     .service-title {
         font-size: 26px;
         line-height: 1.3076923077;
+    }
+
+    /* Program */
+    .program {
+        text-align: center;
+    }
+
+    .program .row:first-child {
+        margin-bottom: 72px;
+    }
+
+    .program-card img {
+        margin-bottom: 24px;
+    }
+
+    .program-card strong {
+        font-size: 20px;
+        line-height: 1.2;
     }
 }
 
