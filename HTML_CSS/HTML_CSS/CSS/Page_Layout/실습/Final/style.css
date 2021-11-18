@@ -227,6 +227,78 @@ p {
     color: #2b292d;
 }
 
+/* Subscription */
+.subscription {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f2f8fa;
+}
+
+.subscription-image {
+    padding: 25px 0;
+}
+
+.subscription-image img {
+    display: block;
+    width: auto;
+    height: 190px;
+    margin: 0 auto;
+}
+
+.subscription-title {
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #2b292d;
+}
+
+.subscription-desc {
+    margin-bottom: 24px;
+}
+
+.subscription .input-group {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.subscription .input-group input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #2b292d;
+    transition: border-color 250ms ease-in-out;
+}
+
+.subscription .input-group input::placeholder {
+    color: #7b7b7e;
+}
+
+.subscription .input-group input:focus {
+    border-color: rgba(158, 63, 26, 0.5);
+}
+
+.subscription .input-group .fill-button {
+    width: 100%;
+}
+
+.subscription-form .form-notice {
+    font-size: 13px;
+    line-height: 1.5384615385;
+    letter-spacing: 0;
+    color: #7b7b7e;
+}
+
+.subscription-form .form-notice a {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
     /* Reset CSS */
@@ -333,6 +405,49 @@ p {
     .curriculum-detail-desc {
         font-size: 18px;
         line-height: 1.4444444444;
+    }
+
+    /* Subscription */
+    .subscription {
+        padding: 80px 0;
+        text-align: left;
+    }
+
+    .subscription-image {
+        padding: 8px 0;
+    }
+
+    .subscription-image img {
+        height: 285px;
+        margin-left: 0;
+    }
+
+    .subscription-title {
+        font-size: 40px;
+    }
+
+    .subscription .input-group {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .subscription .input-group input {
+        height: 56px;
+        margin-right: 8px;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    .subscription .input-group .fill-button {
+        flex-shrink: 0;
+        width: 160px;
+    }
+
+    .subscription-form .form-notice {
+        font-size: 14px;
+        line-height: 1.7142857163;
     }
 }
 
