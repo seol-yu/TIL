@@ -299,6 +299,26 @@ p {
     text-decoration: underline;
 }
 
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, rgb(47, 36, 39) 0%, rgb(97, 48, 79) 52%, rgba(183, 108, 158, 1) 100%);
+    padding: 24px 0;
+}
+
+.footer-link {
+    margin-bottom: 8px;
+}
+
+.footer-link:last-child {
+    margin-bottom: 0;
+}
+
+.footer-link a {
+    font-size: 14px;
+    line-height: 1.7142857143;
+    color: #dbaacc;
+}
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
     /* Reset CSS */
@@ -448,6 +468,25 @@ p {
     .subscription-form .form-notice {
         font-size: 14px;
         line-height: 1.7142857163;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 16px 0;
+    }
+
+    .footer-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-link {
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .footer-link:last-child {
+        margin-right: 0;
     }
 }
 
