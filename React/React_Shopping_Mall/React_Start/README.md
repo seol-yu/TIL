@@ -143,7 +143,12 @@ CSR vs SSR
 
 <br />
 
-
+* Node.js <- LTS 다운
+  * Installer
+  * nvm <- `nvm install 버전` `nvm use 버전` `nvm alias default 버전`
+* Browser (Chrome)
+* Git
+* VSCode
 
 <br />
 
@@ -159,7 +164,71 @@ CSR vs SSR
 
 <br />
 
+리액트의 핵심 모듈 2개
 
+```jsx
+// 1. 리액트 컴포넌트 => HTMLElement 연결하기
+import ReactDOM from 'react-dom';
+
+// 2. 리액트 컴포넌트 만들기
+import React from 'react';
+```
+
+<br />
+
+{ React 컴포넌트 } - JS, JSX => < HTMLElement >
+
+"만들어진 리액트 컴포넌트"를 실제 HTMLElement에 연결할 때 ReactDOM 라이브러리 이용
+
+https://reactjs.org/docs/react-dom.html
+
+https://ko.reactjs.org/docs/react-dom.html
+
+<br />
+
+{ React Component } 만들기
+
+리액트 컴포넌트 만들 때 사용하는 API 모음
+
+https://reactjs.org/docs/react-api.html
+
+https://ko.reactjs.org/docs/react-api.html
+
+<br />
+
+Use React, ReactDOM Library with CDN
+
+CDN을 통한 리액트 라이브러리 사용
+
+https://reactjs.org/docs/cdn-links.html
+
+https://ko.reactjs.org/docs/cdn-links.html
+
+<br />
+
+폴더 만들고 `npm init -y`
+
+`npx serve` <- 이 폴더를 마치 파일 서버처럼 운영할 수 있게 해주는 명령어
+
+[코드 참고](./what-is-react/index.html)
+
+<br />
+
+고전 프론트엔드
+
+HTML로 문서 구조를 잡고 CSS로 스타일을 입히고 JavaScript로 DOM 조작
+
+<br />
+
+컴포넌트를 활용한 프론트엔드
+
+컴포넌트를 정의하고 실제 DOM에 컴포넌트를 그려준다
+
+<br />
+
+브라우저 지원 - React는 Internet Explorer 9과 상위 버전을 포함한 모든 주요 브라우저를 지원하지만 IE 9과 IE 10과 같은 구형 브라우저는 폴리필(polyfill)이 필요
+
+주의) ES5 메서드를 지원하지 않는 구형 브라우저를 지원하지 않지만, 페이지에 es5-shim과 es5-sham과 같은 폴리필 포함한다면 앱이 구형 브라우저에서도 동작 가능..
 
 <br />
 
