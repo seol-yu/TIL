@@ -222,7 +222,36 @@ Props와 State가 변경되면 컴포넌트 다시 그린다
 
 <br />
 
+HTML DOM에 클릭하면 이벤트 발생하면 그에 맞는 변경이 일어나도록 해야함
 
+JSX에 이벤트 설정 가능
+
+```jsx
+class Comp extends React.Component {
+    render() {
+        return (
+            <div>
+                <button onClick={() => {
+                    console.log('clicked');
+                }}>클릭</button>
+            </div>
+        );
+    }
+}
+```
+
+<br />
+
+* 이벤트명은 camelCase 로만 사용 가능
+  * onClick, onMouseEnter
+* 이벤트에 연결된 자바스크립트 코드는 함수
+  * 이벤트={함수} 와 같이 씀
+* 실제 DOM 요소들에만 사용 가능
+  * 리액트 컴포넌트에 사용하면 그냥 props 로 전달
+
+<br />
+
+[코드 참고](./Event_Handling/index.html)
 
 <br />
 
