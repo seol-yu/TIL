@@ -102,7 +102,15 @@ const FunctionComponent = () => <div>Hello</div>;
 
 <br />
 
+```react
+React.createElement(
+	type, // 태그 이름 문자열 | 리액트 컴포넌트 | React.Fragment
+    [props],  // 리액트 컴포넌트에 넣어주는 데이터 객체
+    [...children]  // 자식으로 넣어주는 요소들
+);
+```
 
+[코드 참고](./react-createElement/index.html)
 
 <br />
 
