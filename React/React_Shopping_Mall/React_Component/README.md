@@ -26,7 +26,67 @@
 
 <br />
 
+Hooks 이전에는
 
+* 컴포넌트 내부에 상태가 있다면?
+  * class
+* 컴포넌트 내부에 상태가 없다면?
+  * 라이프사이클을 사용해야 한다면?
+    * class
+  * 라이프사이클에 관계 없다면?
+    * function
+
+<br />
+
+Hooks 이후
+
+* class
+* function <- 상태, 라이프사이클 기능 이용 가능
+
+<br />
+
+Class 컴포넌트
+
+```react
+import React from 'react';
+
+// 정의
+class ClassComponent extends React.Component {
+    render() {
+        return (<div>Hello</div>);
+    }
+}
+
+// 사용
+<ClassComponent />
+```
+
+<br />
+
+[코드 참고](./what-is-react/index.html)
+
+<br />
+
+Function 컴포넌트
+
+```React
+import React from 'react';
+
+// 정의 1
+function FunctionComponent() {
+    return <div>Hello</div>;
+}
+
+// 정의 2
+const FunctionComponent = () => <div>Hello</div>;
+
+// 사용
+<FunctionComponent />
+```
+
+<br />
+
+[코드 참고](./what-is-react/index.html)
 
 <br />
 
