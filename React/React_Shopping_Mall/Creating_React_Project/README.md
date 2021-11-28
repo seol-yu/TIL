@@ -185,7 +185,70 @@ package.json에
 
 <br />
 
+An opinionated code formatter
 
+<br />
+
+https://prettier.io/
+
+<br />
+
+`mkdir prettier-test`
+
+`cd prettier-test`
+
+`npm init -y`
+
+`npm i prettier -D`
+
+<br />
+
+`npx prettier index.js`
+
+`npx prettier index.js --write` <- 바로 바꿔줌
+
+<br />
+
+플러그인 설치하고 설정 format에 검색해서 Prettier 설정하고 Format On Save 체크
+
+<br />
+
+.prettierrc.json 파일 만들고
+
+```json
+{
+    "singleQuote": true
+}
+```
+
+옵션 찾아서 설정하기
+
+<br />
+
+Command + Shift + P 해서 > Format Document
+
+`"editor.formatOnSave": true,`
+
+<br />
+
+`eslint-config-prettier`
+
+Prettier 에서 불필요하거나 Prettier 와 충돌할 수 있는 모든 규칙 끈다
+
+이 구성은 규칙을 끄기만 하기 때문에 다른 설정과 함께 사용하는 것이 좋다
+
+```js
+{
+    ...
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "prettier"
+        ]
+    },
+    ...
+}
+```
 
 <br />
 
