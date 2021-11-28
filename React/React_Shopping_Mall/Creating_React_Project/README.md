@@ -264,7 +264,35 @@ Prettier 에서 불필요하거나 Prettier 와 충돌할 수 있는 모든 규�
 
 <br />
 
+Git hooks made easy
 
+<br />
+
+`mkdir husky-test`
+
+`cd husky-test`
+
+`npm init -y`
+
+`git init`
+
+`npm i husky -D`
+
+`npx husky install`
+
+<br />
+
+package.json의 scripts에
+
+`"prepare": "husky install",` 추가
+
+`npx husky add .husky/pre-commit "npm test"`
+
+<br />
+
+`git add -A`
+
+`git commit -m 'husky test'`
 
 <br />
 
