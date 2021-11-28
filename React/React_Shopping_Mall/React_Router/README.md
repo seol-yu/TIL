@@ -26,7 +26,53 @@
 
 <br />
 
+`Single Page Application`
 
+서버로부터 해당 url 데이터 받아오는 것이 아니고
+
+하나의 큰 앱 전체 묶음 받아와서 Client (Browser)에서 url에 따라서 어떤 것을 보여줄지 결정
+
+<br />
+
+SPA 라우팅 과정
+
+1. 브라우저에서 최초에 '/' 경로(루트 경로)로 요청을 하면
+2. 서버는 React Web App을 내려준다
+3. 내려받은 React App에서 '/' 경로에 맞는 컴포넌트를 보여준다
+4. React App에서 다른 페이지로 이동하는 동작을 수행하면
+5. 새로운 경로에 맞는 컴포넌트 보여준다
+
+<br />
+
+https://reactrouter.com/
+
+`npm i react-router-dom`
+
+* cra에 기본 내장된 패키지가 아님
+* react-router-dom은 페이스북의 공식 패키지는 아니다
+* 가장 대표적인 라우팅 패키지
+
+<br />
+
+`npx create-react-app react-router-example`
+
+`cd react-router-example`
+
+`npm i react-router-dom`
+
+`npm start`
+
+<br />
+
+특정 경로에서 보여줄 컴포넌트 준비
+
+* '/' => Home 컴포넌트
+* '/profile' => Profile 컴포넌트
+* '/about' => About 컴포넌트
+
+<br />
+
+https://reactrouter.com/docs/en/v6/getting-started/tutorial
 
 <br />
 
@@ -42,7 +88,19 @@
 
 <br />
 
+버전 v6로 바뀌면서 코드 바뀜
 
+<br />
+
+`npm i query-string`
+
+<br />
+
+강의 진행이 어려워서
+
+새로 플젝 만들고
+
+`npm i react-router-dom@5`
 
 <br />
 
