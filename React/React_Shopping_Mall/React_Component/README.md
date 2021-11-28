@@ -267,7 +267,133 @@ class Comp extends React.Component {
 
 <br />
 
+[코드 참고](./Component_Lifecycle/index.html)
 
+<br />
+
+리액트 컴포넌트는 탄생부터 죽음까지(그려지고 사라지는) 여러지점에서 개발자가 작업이 가능하도록 메서드를 오버라이딩할 수 있게 해줌
+
+<br />
+
+Declarative 디클레러티브
+
+* Initialization
+  * setup props and state
+* Mounting
+  * componentWillMount -> render -> componentDidMount
+* Updation
+  * props
+    * componentWillReceiveProps -> shouldComponentUpdate -> componentWillUpdate -> render -> componentDidUpdate
+  * states
+    * shouldComponentUpdate -> componentWillUpdate -> render -> componentDidUpdate
+* Unmounting
+  * componentWillUnmount
+
+<br />
+
+위에는 Component 생성 및 마운트 v16.3 이전
+
+constructor
+
+componentWillMount
+
+`render (최초 렌더)` <- 마운트
+
+componentDidMount
+
+<br />
+
+Component props, state 변경 (< v16.3)
+
+componentWillReceiveProps
+
+shouldComponentUpdate
+
+componentWillUpdate
+
+render
+
+componentDidUpdate
+
+<br />
+
+componentWillReceiveProps
+
+* props를 새로 지정했을 때 바로 호출됨
+* 여기는 state의 변경에 반응하지 않음
+  * 여기서 props의 값에 따라 state를 변경해야 한다면
+    * setState를 이용해 state를 변경
+    * 그러면 다음 이벤트로 각각 가는 것이 아니라 한번에 변경됨
+
+<br />
+
+shouldComponentUpdate
+
+* props만 변경되어도
+* state만 변경되어도
+* props & state 둘 다 변경되어도
+* newProps와 newState를 인자로 해서 호출
+* return type이 boolean
+  * true 면 render
+  * false면 render가 호출되지 않음
+  * 이 함수를 구현하지 않으면 디폴트는 true
+
+<br />
+
+componentWillUpdate
+
+* 컴포넌트가 재 렌더링되기 직전에 불림
+* 여기선 setState 같은 것을 쓰면 안됨
+
+<br />
+
+componentDidUpdate
+
+* 컴포넌트가 재 렌더링 마치면 불림
+
+<br />
+
+Component 언마운트 (< v16.3)
+
+* componentWillUnmount
+
+<br />
+
+v16.3 이후
+
+Component 라이프사이클 변경
+
+constructor
+
+componentWillMount => getDerivedStateFromProps
+
+render
+
+componentDidMount
+
+componentWillReceiveProps => getDerivedStateFromProps
+
+shouldComponentUpdate
+
+render
+
+componentWillUpdate => getSnapshotBeforeUpdate
+
+(dom에 적용)
+
+componentDidUpdate
+
+componentWillUnmount
+
+<br />
+
+Component 에러 캐치
+
+componentDidCatch
+
+<br />
+
+Error Boundaries
 
 <br />
 
