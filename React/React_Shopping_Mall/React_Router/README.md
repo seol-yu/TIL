@@ -132,7 +132,11 @@ URLSearchParams <- 브라우저 지원 안하는 경우도 있어서 `npm i quer
 
 <br />
 
+Switch
 
+* 여러 Route 중 순서대로 먼저 맞는 하나만 보여줌
+* exact 를 뺄 수 있는 로직을 만들 수 있음
+* 가장 마지막에 어디 path 에도 맞지 않으면 보여지는 컴포넌트를 설정해서 "Not Found" 페이지를 만들 수 있음
 
 <br />
 
