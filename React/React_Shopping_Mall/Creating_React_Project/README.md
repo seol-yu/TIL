@@ -366,7 +366,17 @@ npx lint-staged 로 npx 앞에 붙이기
 
 <br />
 
+src 폴더에
 
+index.js <- 시작하는 코드
+
+public 폴더에 index.html 코드보면 id가 root인 코드 있는데
+
+<App /> 컴포넌트가 그려지는 부분
+
+<br />
+
+코드 참고
 
 <br />
 
