@@ -308,7 +308,49 @@ package.json의 scripts에
 
 <br />
 
+Run linters on git staged files
 
+<br />
+
+틱택토 프로젝트가서
+
+`git init` <-
+
+`npm i husky -D`
+
+`npx husky install`
+
+package.json의 scripts에
+
+`"prepare": "husky install",` 추가
+
+`npx husky add .husky/pre-commit "lint-staged"`
+
+`npm i lint-staged -D`
+
+<br />
+
+package.json에
+
+```json
+"lint-staged": {
+    "**/*.js": [
+        "eslint --fix",
+        "prettier --write",
+        "git add"
+    ]
+},
+```
+
+`npm i prettier -D`
+
+<br />
+
+자동포맷저장 언체크하고 테스트해보기
+
+.husky > pre-commit 에
+
+npx lint-staged 로 npx 앞에 붙이기
 
 <br />
 
