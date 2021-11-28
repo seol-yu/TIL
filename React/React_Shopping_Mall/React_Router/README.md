@@ -190,7 +190,12 @@ Switch
 
 <br />
 
+```jsx
+import { Redirect } from 'react-router-dom';
 
+// jsx
+<Redirect to="/" />
+```
 
 <br />
 
