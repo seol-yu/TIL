@@ -104,6 +104,22 @@ https://reactrouter.com/docs/en/v6/getting-started/tutorial
 
 <br />
 
+url 동적으로 처리(동적 라우팅 처리)
+
+<br />
+
+?name=seolyu
+
+쿼리 스트링
+
+<br />
+
+브라우저 내장 객체
+
+URLSearchParams <- 브라우저 지원 안하는 경우도 있어서 `npm i query-string`
+
+<br />
+
 [목차로](#목차)
 
 <br />
