@@ -152,7 +152,13 @@ Switch
 
 <br />
 
+코드 참고
 
+<br />
+
+* import { NavLink } from 'react-router-dom';
+* activeClassName, activeStyle 처럼 active 상태에 대한 스타일 지정이 가능
+* Route 의 path 처럼 동작하기 때문에 exact 가 있음
 
 <br />
 
