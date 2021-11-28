@@ -96,7 +96,80 @@ ex) js, jsx -> babel-loader(babel config 안에서 어떤 문법을 번역할지
 
 <br />
 
+ESLint <- The pluggable linting utility for JavaScript and JSX
 
+코딩 스타일 맞추기
+
+<br />
+
+`mkdir eslint-test`
+
+`cd eslint-test`
+
+`npm init -y`
+
+`npm i eslint -D`
+
+`npx eslint --init`
+
+```js
+module.exports = {
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 13
+    },
+    "rules": {
+        "semi": [
+            "error",
+            "always",
+        ]
+    }
+};
+```
+
+`npx eslint index.js`
+
+ESLint 플러그인 설치
+
+`npx eslint index.js --fix` 고쳐줌
+
+<br />
+
+이전에 만든 프로젝트 보면
+
+package.json에
+
+```json
+"eslintConfig": {
+    "extends": [
+        "react-app",
+        "react-app/jest"
+    ]
+},
+```
+
+이 부분에
+
+"rules" 추가해서 쓸 수 있다
+
+```json
+"eslintConfig": {
+    "extends": [
+        "react-app",
+        "react-app/jest"
+    ],
+    "rules": {
+        "semi": [
+            "error",
+            "always",
+        ]
+    }
+},
+```
 
 <br />
 
