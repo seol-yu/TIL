@@ -26,7 +26,43 @@
 
 <br />
 
+.js, .jsx --> babel-loader -->
 
+.css --> style-loader, css-loader -->
+
+webpack <- 파일 확장자에 맞는 loader 에게 위임
+
+<br />
+
+`npx create-react-app style-loaders-example`
+
+`cd style-loaders-example`
+
+`npm run eject`
+
+config 폴더 보면 webpack.config.js 있음
+
+.css 검색해서 어떻게 처리하는지 보기
+
+<br />
+
+```jsx
+import './App.css';
+```
+
+```jsx
+import styles from './App.module.css';
+```
+
+```jsx
+import './App.scss';
+import './App.sass';
+```
+
+```jsx
+import styles from './App.module.scss';
+import styles from './App.module.sass';
+```
 
 <br />
 
