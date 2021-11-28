@@ -392,7 +392,9 @@ public 폴더에 index.html 코드보면 id가 root인 코드 있는데
 
 <br />
 
+깃헙에 페이스북의 React Developer Tools
 
+크롬 React Developer Tools 설치
 
 <br />
 
