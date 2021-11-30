@@ -78,7 +78,13 @@ import styles from './App.module.sass';
 
 <br />
 
+BEM
 
+http://getbem.com/naming/
+
+<br />
+
+`npm i sass`
 
 <br />
 
@@ -91,6 +97,10 @@ import styles from './App.module.sass';
 <br />
 
 ### CSS_module_SASS_module
+
+<br />
+
+Create React App 사이트에 Styles and Assets > Adding CSS Modules 참고
 
 <br />
 

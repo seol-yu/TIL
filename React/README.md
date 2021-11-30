@@ -13,3 +13,6 @@
 [React 쇼핑몰 제작](./React_Shopping_Mall)
 
 <br />
+
+[Redux](./Redux)
+
