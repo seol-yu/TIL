@@ -161,7 +161,28 @@ function 리듀서(previousState, action) {
 
 <br />
 
+redux로 부터 import
 
+<br />
+
+스토어를 만드는 함수
+
+const store = createStore(리듀서);
+
+* ```
+  createStore<S>(
+  	reducer: Reducer<S>,
+  	preloadedState: S,
+  	enhancer?: StoreEnhancer<S>
+  ): Store<S>;
+  ```
+
+* `store.getState();`  // 현재 스토어의 state 를 가져오는 함수
+* `store.dispatch(액션);`, `store.dispatch(액션생성자());`
+* `const unsubscribe = store.subscribe(() => {});`
+  * 리턴이 unsubscribe 라는 점
+  * unsubscribe(); 하면 제거
+* `store.replaceReducer(다른리듀서);`
 
 <br />
 
