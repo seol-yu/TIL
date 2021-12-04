@@ -214,7 +214,30 @@ redux 로 부터 import
 
 <br />
 
+react-redux 안쓰고 연결하기
 
+<br />
+
+단일 store를 만들고,
+
+subscribe와 getState를 이용하여 변경되는 state 데이터를 얻어 props로 계속 아래로 전달
+
+* componentDidMount - subscribe
+* componentWillUnmount - unsubscribe
+
+<br />
+
+react-redux 쓰고 연결하기
+
+* Provider 컴포넌트를 제공해준다
+* connect 함수를 통해 '컨테이너'를 만들어준다
+  * 컨테이너는 스토어의 state와 dispatch(액션)를 연결한 컴포넌트에 props로 넣어주는 역할을 한다
+  * 필요한 것은
+    * 어떤 state를 어떤 props에 연결할 것인지에 대한 정의
+    * 어떤 dispatch(액션)을 어떤 props에 연결할 것인지에 대한 정의
+    * 그 props를 보낼 컴포넌트를 정의
+
+`npm i react-redux`
 
 <br />
 
