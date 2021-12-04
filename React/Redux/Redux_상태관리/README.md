@@ -198,7 +198,7 @@ const store = createStore(리듀서);
 
 <br />
 
-
+redux 로 부터 import
 
 <br />
 

@@ -4,21 +4,28 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
-import { addTodo } from "./redux/actions";
+import { addTodo, completeTodo, showComplete } from "./redux/actions";
 
-const unsubscribe = store.subscribe(() => {
+// const unsubscribe = store.subscribe(() => {
+//   console.log(store.getState());
+// });
+
+store.subscribe(() => {
   console.log(store.getState());
 });
 
 // console.log(store);
+store.dispatch(addTodo("할일"));
+store.dispatch(completeTodo(0));
+store.dispatch(showComplete());
 
-store.dispatch(addTodo("coding"));
-store.dispatch(addTodo("seolyu"));
-store.dispatch(addTodo("developer"));
-unsubscribe();
-store.dispatch(addTodo("coding"));
-store.dispatch(addTodo("seolyu"));
-store.dispatch(addTodo("developer"));
+// store.dispatch(addTodo("coding"));
+// store.dispatch(addTodo("seolyu"));
+// store.dispatch(addTodo("developer"));
+// unsubscribe();
+// store.dispatch(addTodo("coding"));
+// store.dispatch(addTodo("seolyu"));
+// store.dispatch(addTodo("developer"));
 
 ReactDOM.render(
   <React.StrictMode>
