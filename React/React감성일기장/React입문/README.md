@@ -2,6 +2,8 @@
 
 [React가 필요한 이유](#React_필요성)
 
+[Create React App](#Create_React_App)
+
 <br />
 
 ---
@@ -33,6 +35,59 @@ React는 Component 기반의 UI 라이브러리
 Virtual Dom - 가상돔
 
 State Change -> Compute Diff -> Re-render
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### Create_React_App
+
+<br />
+
+React.js <- Node 기반의 Javascript UI 라이브러리
+
+추가적인 라이브러리
+
+* Webpack <- 다수의 자바스크립트 파일을 하나의 파일로 합쳐주는 모듈 번들 라이브러리
+* Babel <- JSX 등의 쉽고 직관적인 자바스크립트 문법을 사용할 수 있도록 해주는 라이브러리
+
+<br />
+
+`Create React App`
+
+이미 세팅 완료된 패키지 Boiler Plate
+
+<br />
+
+`npx -v`
+
+`node -v`
+
+`npm -v`
+
+`npm install -g npx` <- 설치
+
+<br />
+
+`npx create-react-app reactpjt1`
+
+`cd reactpjt1`
+
+`npm start`
+
+<br />
+
+src에 index.js가 실행되면서
+
+public에 index.html에 있는 id가 root인 div 아래로
+
+App.js안에 있는 App 함수가 리턴하는 값들이 들어감
 
 <br />
 
