@@ -4,6 +4,8 @@
 
 [Create React App](#Create_React_App)
 
+[JSX](#JSX)
+
 <br />
 
 ---
@@ -88,6 +90,24 @@ src에 index.js가 실행되면서
 public에 index.html에 있는 id가 root인 div 아래로
 
 App.js안에 있는 App 함수가 리턴하는 값들이 들어감
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
+### JSX
+
+<br />
+
+index.js에서 최상위 컴포넌트 정의할 수 있다
+
+보통 App으로
 
 <br />
 
