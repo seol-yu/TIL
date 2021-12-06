@@ -1,4 +1,5 @@
 import React from "react";
+import Counter from "./Counter";
 // import "./App.css";
 import MyHeader from "./MyHeader";
 
@@ -7,7 +8,7 @@ function App() {
 
   const style = {
     App: {
-      backgroundColor: "black",
+      backgroundColor: "yellow",
     },
     h2: {
       color: "palevioletred",
@@ -26,6 +27,7 @@ function App() {
   return (
     <div style={style.App}>
       <MyHeader />
+      <Counter />
       <h2 style={style.h2}>
         안녕 {name} {1 + 2} {"Seolyu"} {func()}
       </h2>
