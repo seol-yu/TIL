@@ -2,6 +2,13 @@
   border: 1px solid palevioletred;
   text-align: center;
   padding: 20px;
+  font-family: 'DM Sans',
+    sans-serif;
+  font-family: 'Nanum Brush Script',
+    cursive;
+  font-family: 'Nanum Pen Script',
+    cursive;
+  font-size: 32px;
 }
 
 .DiaryEditor input,
@@ -9,6 +16,13 @@ textarea {
   margin-bottom: 20px;
   width: 500px;
   padding: 10px;
+  font-family: 'DM Sans',
+    sans-serif;
+  font-family: 'Nanum Brush Script',
+    cursive;
+  font-family: 'Nanum Pen Script',
+    cursive;
+  font-size: 28px;
 }
 
 .DiaryEditor textarea {
@@ -19,10 +33,73 @@ textarea {
   width: 300px;
   padding: 10px;
   margin-bottom: 20px;
+  font-family: 'DM Sans',
+    sans-serif;
+  font-family: 'Nanum Brush Script',
+    cursive;
+  font-family: 'Nanum Pen Script',
+    cursive;
+  font-size: 28px;
 }
 
 .DiaryEditor button {
   width: 500px;
   padding: 10px;
   cursor: pointer;
+  font-family: 'DM Sans',
+    sans-serif;
+  font-family: 'Nanum Brush Script',
+    cursive;
+  font-family: 'Nanum Pen Script',
+    cursive;
+  font-size: 28px;
+}
+
+/* List */
+
+.DiaryList {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: 'DM Sans',
+    sans-serif;
+  font-family: 'Nanum Brush Script',
+    cursive;
+  font-family: 'Nanum Pen Script',
+    cursive;
+  font-size: 30px;
+}
+
+.DiaryList h2 {
+  text-align: center;
+}
+
+/* Item */
+.DiaryItem {
+  background-color: #220313;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+.DiaryItem:hover {
+  transform: scale(1.01);
+}
+
+.DiaryItem .info {
+  border-bottom: 1px solid palevioletred;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.DiaryItem .date {
+  color: gray;
+}
+
+.DiaryItem .content {
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
