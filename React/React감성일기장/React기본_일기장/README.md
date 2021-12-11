@@ -71,3 +71,27 @@ useEffect(() => {
 https://jsonplaceholder.typicode.com/
 
 <br />
+
+---
+
+<br />
+
+React Developer Tools 크롬 웹스토어에서
+
+도구더보기 - 확장 프로그램 들어가서
+
+체크해주고
+
+세부정보 들어가서
+
+사이트 엑세스 - 모든 사이트에서
+
+파일 URL에 대한 액세스 허용, 시크릿 모드 허용 모두 체크
+
+<br />
+
+개발자도구 Components
+
+설정 - Highlight updates when components render. 체크
+
+<br />
