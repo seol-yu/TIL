@@ -34,3 +34,14 @@ Multipage Application `MPA`
 
 <br />
 
+리액트 라우터 라이브러리 이용
+
+react router 구글링
+
+<br />
+
+`npm install react-router-dom@6`
+
+`npm start`
+
+<br />
