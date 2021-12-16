@@ -45,3 +45,27 @@ react router 구글링
 `npm start`
 
 <br />
+
+---
+
+<br />
+
+React Router Dom의 유용한 기능
+
+리액트 라우터 v6
+
+React에서 CSR 기반의 페이지 라우팅을 할 수 있게 해주는 라이브러리
+
+1. Path Variable  - useParams
+2. Query String - useSearchParams
+3. Page Moving - useNavigate
+
+<br />
+
+Query <- 웹 페이지에 데이터를 전달하는 가장 간단한 방법
+
+/edit?id=10&mode=dark
+
+=> Query String
+
+<br />
