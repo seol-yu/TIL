@@ -93,3 +93,18 @@ Query <- 웹 페이지에 데이터를 전달하는 가장 간단한 방법
    모든 페이지에 공통으로 사용되는 버튼, 헤더 컴포넌트 세팅
 
 <br />
+
+1. 상태 관리 세팅하기
+
+   프로젝트 전반적으로 사용될 일기 데이터 State 관리 로직 작성하기
+
+2. 프로젝트 State Context 세팅하기
+
+   일기 데이터 State를 공급할 Context를 생성하고 Provider로 공급하기
+
+3. 프로젝트 Dispatch Context 세팅하기
+
+   일기 데이터 State의 Dispatch 함수들을 공급할 Context를 생성하고 Provider로 공급하기
+
+<br />
+
