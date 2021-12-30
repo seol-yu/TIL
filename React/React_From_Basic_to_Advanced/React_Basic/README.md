@@ -30,3 +30,37 @@ Virtual DOM / JSX / Flux / Functional Programming...
 
 
 
+DOM (Document Object Model) <- 브라우저가 이해하는 Element의 원형
+
+문서를 논리 트리로 표현한다
+
+
+
+https://codesandbox.io/
+
+테스트해보기
+
+
+
+CDN (Content Delivery Network)
+
+웹에서 사용되는 다양한 컨텐츠(리소스)를 저장하여 제공하는 시스템
+
+react document cdn
+
+
+
+React <- 바닐라 자바스크립트에서 createElement에 해당하는 createElement
+
+React-dom <- appendChild에 해당하는 render
+
+
+
+---
+
+
+
+
+
+
+
