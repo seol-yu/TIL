@@ -30,8 +30,34 @@
         
         const Seolyu = () => <h3>Seolyu, Lee</h3>;
 
+        const Developer = ({ developer }) => {  // js 이지만 jsx 를 리턴
+            // text가 대문자로 시작하면 h1,
+            // 소문자로 시작하면 h3
+            if (developer.charAt(0) === developer.charAt(0).toUpperCase()) {  // js
+                return (  // js
+                    <h1>
+                        {developer} {/* js */}
+                    </h1>  // jsx
+                );
+            } else {
+                return <h3>{developer}😋</h3>;
+            }
+        }
+
+        function Number({ number, selected }) {
+            return selected ? <h1>{number}</h1> : <h3>{number}</h3>;
+        }
+
         const element = (
             <>
+                <Number number={1} />
+                <Number number={2} selected={true} />
+                <Number number={3} />
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
+                    <Number number={number} selected={number === 3} />
+                ))}
+                <Developer developer="Lee Seolyu" />
+                <Developer developer="lee seolyu" />
                 <Paint title="Seolyu" description="developer">
                     <h1>Hi</h1>
                     <Seolyu />
