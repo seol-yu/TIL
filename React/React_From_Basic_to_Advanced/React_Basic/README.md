@@ -126,6 +126,57 @@ JS 와 JSX 섞어쓰기
 
 <br />
 
+Interpolation -> 이미 HTML에서 쓰고 있었다
+
+<br />
+
 ---
 
 <br />
+
+바닐라 JS -> 변경으로 인해 Element를 다시 그림
+
+React -> 변경된 부분만 다시 그림
+
+<br />
+
+---
+
+<br />
+
+React 앨리먼트는 불변객체(immutable)이다
+
+<br />
+
+불변객체란 `변하지 않는 객체`
+
+ReactDOM.render(element, rootElement); 로 전달하면
+
+변경 판단 및 반영은 리액트가 알아서 한다
+
+<br />
+
+앨리먼트 타입이 바뀌면?
+
+이전 앨리먼트는 버리고 새로 그린다
+
+앨리먼트 타입이 같다면?
+
+(key를 먼저 비교하고,) props를 비교해서 변경사항 반영
+
+<br />
+
+리액트의 앨리먼트 -> 불변 객체
+
+변견 사항 반영 -> 리액트에게 일임
+
+리액트의 비교 -> Reconciliation
+
+Virtual Dom -> 비교시 활용
+
+<br />
+
+---
+
+<br />
+
