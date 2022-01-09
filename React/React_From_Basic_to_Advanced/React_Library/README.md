@@ -70,3 +70,40 @@ Time / Date 라이브러리
 
 https://momentjs.com/
 
+<br />
+
+code
+
+Ctrl + Shift + P
+
+code 검색 - Shell Command: Install 'code' command in PATH
+
+<br />
+
+`npm install moment`
+
+`npm install moment-timezone`
+
+<br />
+
+Mutability
+
+Daylight saving time / Leap years
+
+Time zone / Format / Strict mode forgiving mode
+
+<br />
+
+vscode 익스텐션 `Import Cost`
+
+<br />
+
+Moment 라이브러리 사용할 필요X (사이즈가 크고 tree shaking 알고리즘이 제대로 동작X, mutable 한 구조)
+
+Luxon, Day.js, date-fns, js-Joda 등 라이브러리 추천
+
+<br />
+
+---
+
+<br />
