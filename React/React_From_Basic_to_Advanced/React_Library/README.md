@@ -107,3 +107,26 @@ Luxon, Day.js, date-fns, js-Joda 등 라이브러리 추천
 ---
 
 <br />
+
+dayjs
+
+day.js.org
+
+`npm install dayjs`
+
+가볍고 간단한 기능 적용 시 좋음
+
+<br />
+
+타임존 -> plugin/timezone plugin/utc
+
+Format / 비교 -> 원하는 스타일로 표기 가능
+
+가벼움 -> Tree shaking X
+
+<br />
+
+---
+
+<br />
+
