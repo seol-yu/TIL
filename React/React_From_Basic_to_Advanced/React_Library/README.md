@@ -130,3 +130,34 @@ Format / 비교 -> 원하는 스타일로 표기 가능
 
 <br />
 
+date-fns
+
+커버리지가 제일 높은 라이브러리
+
+`npm install date-fns date-fns-tz`
+
+<br />
+
+https://date-fns.org/
+
+Most comprehensive(가장 포괄적인)
+
+Modular support tree-shaking
+
+Immutable & Pure & FP & |18n
+
+<br />
+
+타임존 -> date-fns-tz
+
+Format / 비교 -> 원하는 스타일로 표기 가능
+
+포괄적임 -> Immutable / Tree shaking 까지
+
+함수별 import -> 가능 ex. addWeeks
+
+<br />
+
+---
+
+<br />

@@ -45,7 +45,7 @@ export default function MomentExample() {
         {moment("2017-01-01").subtract(1, "year").format()}
       </div>
       <div>
-        2017년 1월 1일에 365 더하기:
+        2017년 1월 1일에 365 빼기:
         {moment("2017-01-01").subtract(365, "day").format()}
       </div>
       <br />
