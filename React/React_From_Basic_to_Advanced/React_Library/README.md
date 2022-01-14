@@ -161,3 +161,29 @@ Format / 비교 -> 원하는 스타일로 표기 가능
 ---
 
 <br />
+
+기능 / 성능 / 번들 사이즈 / tree shaking(안쓰는 기능은 빌드하지 않기)
+
+문서 가독성 / 인기 / 관리 상태(최근 관리) / 관리 주체
+
+<br />
+
+Time / Date 라이브러리
+
+가벼운게 최우선 -> Day.js
+
+FP 패러다임을 따르거나 tree-shaking이 필요 -> date-fns
+
+<br />
+
+라이브러리 선택에 도움 주는 도구들
+
+사이즈: https://bundlephobia.com/
+
+인기: https://www.npmtrends.com/date-fns-vs-dayjs-vs-luxon-vs-moment
+
+기능 / 성능: https://github.com/you-dont-need/You-Dont-Need-Momentjs/blob/master/README.md
+
+대체제 찾을 때 alternatives 구글링
+
+<br />
