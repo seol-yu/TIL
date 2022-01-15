@@ -1,5 +1,19 @@
 <br />
 
+[라이브러리 기초](#라이브러리_기초)
+
+[스타일링 라이브러리](#스타일링_라이브러리)
+
+<br />
+
+---
+
+<br />
+
+### 라이브러리_기초
+
+<br />
+
 라이브러리 <- 공구. 개발 편의를 위한 도구 모음
 
 <br />
@@ -185,5 +199,81 @@ FP 패러다임을 따르거나 tree-shaking이 필요 -> date-fns
 기능 / 성능: https://github.com/you-dont-need/You-Dont-Need-Momentjs/blob/master/README.md
 
 대체제 찾을 때 alternatives 구글링
+
+<br />
+
+---
+
+<br />
+
+### 스타일링_라이브러리
+
+<br />
+
+styled-components
+
+<br />
+
+CSS in JS
+
+(https://speakerdeck.com/vjeux/react-css-in-js)
+
+<br />
+
+CSS의 문제점
+
+Global Namespace / Dependencies / Dead Code Elimination
+
+Minification / Sharing Constants
+
+Non-deterministic Resolution / Isolation
+
+<br />
+
+CSS의 문제점 (React를 쓰면서...)
+
+* Global Namespace: 글로벌 변수를 지양해야하는 JS와 대치
+* Dependencies: css 간의 의존 관리
+* Dead Code Elimination: 안쓰는 css 인지 어려움
+* Minification: 클래스 이름 최소화
+* Sharing Constants: JS의 코드와 값을 공유하고 싶음
+* Non-deterministic Resolution: css 파일 로드 타이밍 이슈
+* Isolation: 격리
+
+<br />
+
+스타일드 컴포넌트 (styled-components)
+
+https://styled-components.com/
+
+https://styled-components.com/docs/basics
+
+<br />
+
+`npm install --save styled-components`
+
+<br />
+
+Automatic critical CSS: 자동 style injects & 코드 스플릿
+
+No class name bugs: unique / overlap x / misspellings
+
+Easier deletion of CSS: tied to a specific component
+
+Simple dynamic styling: props / global theme
+
+Painless maintenance: styling affecting your component
+
+Automatic vendor prefixing: current standard only
+
+<br />
+
+CSS in JS -> CSS 문제점 해소
+
+해결책 -> 스타일을 style 태그로 분리
+
+사용법(Template literals) -> styled.{element}``
+
+styled(스타일드컴포넌트) -> 상속
 
 <br />
