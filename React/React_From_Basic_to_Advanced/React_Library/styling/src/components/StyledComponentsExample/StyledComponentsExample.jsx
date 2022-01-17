@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import styled, { keyframes, ThemeProvider } from "styled-components";
+import styled, {
+  keyframes,
+  ThemeProvider,
+  createGlobalStyle,
+} from "styled-components";
 
 // Create a Title component that'll render an <h1> tag with some styles
 const Title = styled.h1`
@@ -128,11 +132,18 @@ const redTheme = {
   borderColor: "red",
 };
 
+const GlobalStyle = createGlobalStyle`
+  button {
+    background-color: pink;
+  }
+`;
+
 export default function StyledComponentsExample() {
   const [theme, setTheme] = useState(defaultTheme);
   // Use Title and Wrapper like any other React component – except they're styled!
   return (
     <>
+      <GlobalStyle />
       <>
         <button onClick={() => setTheme(redTheme)}>red</button>
         <button onClick={() => setTheme(defaultTheme)}>green</button>

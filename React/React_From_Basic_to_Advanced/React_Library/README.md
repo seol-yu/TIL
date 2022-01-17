@@ -278,11 +278,13 @@ styled(스타일드컴포넌트) -> 상속
 
 <br />
 
----
+& -> 가상 엘리먼트 / 가상 선택자
 
-<br />
+Global Style -> 전역 스타일
 
+attrs -> props addition
 
+keyframes / ThemeProvider -> Animation / Theme
 
 <br />
 
