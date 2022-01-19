@@ -291,3 +291,81 @@ keyframes / ThemeProvider -> Animation / Theme
 ---
 
 <br />
+
+emotion
+
+https://emotion.sh/docs/introduction
+
+<br />
+
+`npm i @emotion/styled @emotion/react`
+
+<br />
+
+리액트용 @emotion/react
+
+/** @jsxImportSource @emotion/react */
+
+<br />
+
+css props: like style props
+
+<br />
+
+auto vendor-prefix / nested selectors / media queries
+
+<br />
+
+SSR with zero configuration
+
+<br />
+
+css Props
+
+```jsx
+Object Styles: css={{ fontSize: 12 }}
+
+String Styles: css={css`font-size: 12px`}
+```
+
+<br />
+
+styled-components 와 유사한 + @ 기능 제공
+
+Composing dynamic styles
+
+as prop
+
+Nesting components
+
+Fallbacks, &, Global, keyframes
+
+<br />
+
+react에 특화 -> @emotion/react
+
+css props -> jsx 대체
+
+styled components -> styled-component + @
+
+composition -> css 안에서 css 사용
+
+<br />
+
+styled-components vs emotion
+
+두 라이브러리 처음에는 조금 달랐지만 이제 거의 유사해짐
+
+emotion 가 styled-components 서포트하듯 styled-components 도 css 서포트
+
+(https://styled-components.com/docs/api#css-prop)
+
+<br />
+
+emotion <- smaller & faster
+
+<br />
+
+---
+
+<br />
