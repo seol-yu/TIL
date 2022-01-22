@@ -369,3 +369,41 @@ emotion <- smaller & faster
 ---
 
 <br />
+
+sass
+
+https://sass-lang.com/
+
+CSS 전처리기
+
+CSS를 확장하는 Preprocessing
+
+프로젝트가 커지고 복잡해질수록 관리 힘들어짐
+
+Nesting / Mixins / Inheritance ...
+
+가이드 https://sass-lang.com/guide
+
+<br />
+
+`npm install sass`
+
+<br />
+
+syntax
+
+https://sass-lang.com/documentation/syntax/structure
+
+<br />
+
+variables / modules / mixin / extend
+
+<br />
+
+syntax <- 언어처럼 자체 syntax가 있음
+
+Interpolation <- #{ } 값을 주입 (마치 \`${}\`)
+
+values / functions <- 프로그래밍 언어스러움
+
+<br />
