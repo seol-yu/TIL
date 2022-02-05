@@ -15,3 +15,6 @@ https://themoviedb.org
 `npm i axios`
 
 https://developers.themoviedb.org/3/movies/get-latest-movie
+
+`npm i react-slick`
+
