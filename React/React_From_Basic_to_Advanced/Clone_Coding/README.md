@@ -18,3 +18,4 @@ https://developers.themoviedb.org/3/movies/get-latest-movie
 
 `npm i react-slick`
 
+`npm i @types/react-slick -D`
