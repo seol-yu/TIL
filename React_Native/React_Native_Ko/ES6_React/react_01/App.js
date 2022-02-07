@@ -1,18 +1,10 @@
-`react-native init --version 0.61.5 react_01`
-
-`cd react_01`
-
-`npm start`
-
-터미널 추가 후
-
-`react-native run-android`
-
-<br />
-
-App.js를
-
-```javascript
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @format
+ * @flow
+ */
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
@@ -36,7 +28,3 @@ const styles = StyleSheet.create({
 })
 
 export default App;
-```
-
-
-
