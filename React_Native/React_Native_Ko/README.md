@@ -130,3 +130,40 @@ Android Emulator 구동
 ---
 
 <br />
+
+새로운 프로젝트 생성
+
+`react-native init --version 0.61.5 react_native_01`
+
+<br />
+
+`npm start`
+
+`react-native run-android`
+
+<br />
+
+App.js 를
+
+```js
+import React, { Component } from 'react';
+import { View, Text } from 'react-native';
+
+class App extends Component {
+    render() {
+        return (
+            <View>
+            	<Text> Hello World </Text>
+            </View>
+        )
+    }
+}
+
+export default App;
+```
+
+<br />
+
+---
+
+<br />
