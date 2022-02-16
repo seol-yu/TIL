@@ -7,7 +7,14 @@
  */
 
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, ScrollView} from 'react-native';
+import {
+  TextInput,
+  Button,
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+} from 'react-native';
 import Header from './src/header';
 import Generator from './src/generator';
 import NumList from './src/numlist';
@@ -15,9 +22,20 @@ import Input from './src/input';
 
 class App extends Component {
   state = {
-    appName: 'My First App',
-    random: [11, 22],
+    myTextInput: '',
+    alphabet: ['a', 'b', 'c', 'd'],
   };
+
+  onChangeInput = (event) => {
+    this.setState({
+      myTextInput: event,
+    });
+  };
+
+  // state = {
+  //   appName: 'My First App',
+  //   random: [11, 22],
+  // };
 
   onAddRandomNum = () => {
     const randomNum = Math.floor(Math.random() * 100) + 1;
@@ -34,6 +52,15 @@ class App extends Component {
     });
     this.setState({
       random: newArray,
+    });
+  };
+
+  onAddTextInput = () => {
+    this.setState((prevState) => {
+      return {
+        myTextInput: '',
+        alphabet: [...prevState.alphabet, prevState.myTextInput],
+      };
     });
   };
 
@@ -58,7 +85,23 @@ class App extends Component {
           bounces={true}>
           <NumList num={this.state.random} delete={this.onNumDelete} />
         </ScrollView> */}
-        <Input />
+        <TextInput
+          value={this.state.myTextInput}
+          style={styles.input}
+          onChangeText={this.onChangeInput}
+          multiline={true}
+          maxLength={100}
+          autoCapitalize={'none'}
+          editable={true}
+        />
+        <Button title="Add Text Input" onPress={this.onAddTextInput} />
+        <ScrollView style={{width: '100%'}}>
+          {this.state.alphabet.map((item, idx) => (
+            <Text style={styles.mainText} key={idx}>
+              {item}
+            </Text>
+          ))}
+        </ScrollView>
       </View>
     );
   }
@@ -89,6 +132,15 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     color: 'red',
     padding: 20,
+    margin: 20,
+    backgroundColor: 'pink',
+  },
+  input: {
+    width: '100%',
+    backgroundColor: '#cecece',
+    marginTop: 20,
+    fontSize: 25,
+    padding: 10,
   },
 });
 
