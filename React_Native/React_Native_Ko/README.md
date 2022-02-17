@@ -167,3 +167,19 @@ export default App;
 ---
 
 <br />
+
+`npm install @react-native-picker/picker --save`
+
+<br />
+
+`cd ios`
+
+<br />
+
+`npx pod-install`
+
+<br />
+
+---
+
+<br />
