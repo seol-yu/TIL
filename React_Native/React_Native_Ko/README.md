@@ -183,3 +183,15 @@ export default App;
 ---
 
 <br />
+
+`npm install @react-native-community/slider --save`
+
+<br />
+
+`npx pod-install`
+
+<br />
+
+---
+
+<br />
