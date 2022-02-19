@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, ActivityIndicator} from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 import {Slider} from 'react-native';
 
@@ -36,6 +36,12 @@ class PickerComponent extends Component {
           step={1}
         />
         <Text style={styles.input}>{this.state.value}</Text>
+        <ActivityIndicator
+          style={{paddingTop: 10}}
+          size="large"
+          color="green"
+          animating={false}
+        />
         <Picker
           style={{height: 50, width: 250}}
           selectedValue={this.state.country}
