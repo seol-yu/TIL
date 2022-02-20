@@ -14,12 +14,14 @@ import {
   Text,
   StyleSheet,
   ScrollView,
+  Image,
 } from 'react-native';
 import Header from './src/header';
 import Generator from './src/generator';
 import NumList from './src/numlist';
 import Input from './src/input';
 import PickerComponent from './src/picker';
+import Deco from './assets/images/deco.png';
 
 class App extends Component {
   state = {
@@ -68,6 +70,13 @@ class App extends Component {
   render() {
     return (
       <View style={styles.mainView}>
+        <Image
+          style={styles.image}
+          // source={Deco}
+          source={{uri: 'https://picsum.photos/id/237/200/300'}}
+          resizeMode="contain"
+          onLoadEnd={() => alert('Image Loaded!!!')}
+        />
         <PickerComponent />
         {/* <Header name={this.state.appName} />
         <View>
@@ -143,6 +152,10 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 25,
     padding: 10,
+  },
+  image: {
+    width: '100%',
+    height: 300,
   },
 });
 
