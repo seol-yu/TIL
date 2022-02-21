@@ -22,6 +22,7 @@ import NumList from './src/numlist';
 import Input from './src/input';
 import PickerComponent from './src/picker';
 import Deco from './assets/images/deco.png';
+import ModalComponent from './src/modal';
 
 class App extends Component {
   state = {
@@ -70,6 +71,7 @@ class App extends Component {
   render() {
     return (
       <View style={styles.mainView}>
+        <ModalComponent />
         <Image
           style={styles.image}
           // source={Deco}
