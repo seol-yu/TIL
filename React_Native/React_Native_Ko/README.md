@@ -195,3 +195,41 @@ export default App;
 ---
 
 <br />
+
+React Navigation <- 화면 전환
+
+<br />
+
+프로젝트 생성
+
+`react-native init --version 0.61.5 react_navigation_01`
+
+=> `react-native init react_navigation_01` 명령어 사용함
+
+<br />
+
+`npm install @react-navigation/native`
+
+<br />
+
+`npm install react-native-screens react-native-safe-area-context`
+
+<br />
+
+ios 폴더에서
+
+`npx pod-install ios`
+
+<br />
+
+stack navigator library 설치
+
+<br />
+
+`npm install @react-navigation/native-stack`
+
+<br />
+
+---
+
+<br />
