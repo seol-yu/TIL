@@ -228,6 +228,14 @@ stack navigator library 설치
 
 `npm install @react-navigation/native-stack`
 
+=> `npm install @react-navigation/stack` 명령어 사용
+
+https://reactnavigation.org/docs/stack-navigator/
+
+=> `npm install react-native-gesture-handler` 도 설치함
+
+=> `npm install @react-native-masked-view/masked-view` 도 설치
+
 <br />
 
 ---
