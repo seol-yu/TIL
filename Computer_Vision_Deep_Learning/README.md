@@ -196,3 +196,83 @@ OpenCV-Python 시작하기 - 영상의 구조와 표현
   * 알파 채널(투명도)을 지원
 
 <br />
+
+OpenCV <- 컴퓨터 비전 & 머신 러닝 오픈 소스 라이브러리
+
+* BSD license ... Free for academic & commercial use
+
+* Multiple interface ... C, C++, Python, Java, JavaScript, MATLAB ..
+
+* Multiple platform ... Windows, Linux, Mac OS, iOS, Android
+
+* Optimized ... CPU instructions, Multi-core processing, OpenCL, CUDA
+
+  ....
+
+<br />
+
+OpenCV 구성
+
+* 메인 모듈
+
+  Core, widely used, infrastructures
+
+  https://github.com/opencv/opencv/
+
+* extra 모듈
+
+  Brand new, unpopular, non-free, HW deependency...
+
+  https://github.com/opencv/opencv_contrib/
+
+<br />
+
+https://opencv.org
+
+https://docs.opencv.org/master/
+
+https://answers.opencv.org/questions/
+
+https://github.com/opencv/opencv/
+
+https://github.com/opencv/opencv_contrib/
+
+<br />
+
+파이썬 설치
+
+* 파이썬 3.7, 64-bit 설치 실행 파일 다운로드
+
+  https://www.python.org/downloads/release/python-377/
+
+  Add Python .. to PATH 체크하고 Install Now
+
+OpenCV-python 설치
+
+* pip 명령으로 설치하기
+
+  `pip install opencv-python`
+
+  * <PYTHON_PATH>\Lib\site-packages 폴더 아래에 cv, opencv_python-4.2.0.34.dist-info 폴더가 생성되고, 그 아래에 cv2.cp37-win_amd64.pyd 파일이 저장됨
+
+  * 설치되는 OpenCV 버전은 https://pypi.org/ 에서 확인 가능
+
+  * OpenCV 추가 모듈도 함께 사용하려면 opencv-contrib-python 패키지를 설치
+
+  * OpenCV 4.2.0 버전에서 cv2.imread() 함수를 사용하여 영상을 그레이스케일 형식으로 불러올 때 픽셀 값 잘못 설정되는 문제 있음
+
+    -> cv2.imread() 함수가 정상 동작하는 OpenCV를 설치하려면 `pip install opencv-python==4.1.0.25`
+
+  * 업데이트 된 opencv-python 패키지 버전에선 고쳐진 상태
+
+cmd 창에서
+
+`python`
+
+`import cv2`
+
+`cv2.__version__`
+
+`exit()`
+
+<br />
