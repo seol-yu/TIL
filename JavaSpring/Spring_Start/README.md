@@ -129,3 +129,23 @@ cf) `spring-boot-devtools` 라이브러리 추가하면, `html` 파일을 컴파
 인텔리J 컴파일 방법: menu에서 build -> Recompile
 
 <br />
+
+빌드하고 실행하기
+
+`./gradlew build`
+
+한 후
+
+`cd build/libs`
+
+`java -jar hello-spring-0.0.1-SNAPSHOT.jar`
+
+<br />
+
+`./gradlew clean` 혹은 `./gradlew clean build` 하면 build 폴더 없어짐
+
+<br />
+
+---
+
+<br />
