@@ -149,3 +149,43 @@ cf) `spring-boot-devtools` 라이브러리 추가하면, `html` 파일을 컴파
 ---
 
 <br />
+
+스프링 웹 개발 기초
+
+1. 정적 컨텐츠
+
+   파일을 웹 브라우저에 그대로 내려주는 것
+
+   * 스프링 부트 Static Content 기능 자동 제공함
+
+     https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/reference/html/spring-boot-features.html#boot-features-spring-mvc-static-content
+
+2. MVC와 템플릿 엔진(MVC: Model, View, Controller)
+
+   html을 동적으로 바꿔서
+
+   서버에서 변형
+
+3. API
+
+   JSON 데이터 구조 포맷으로
+
+   @ResponseBody 문자 반환
+
+   * http://localhost:8080/hello-string?name=seolyu!!!
+
+   * HTTP의 BODY에 문자 내용 직접 반환
+
+   * @ResponseBody 사용하고 객체를 반환하면 객체가 JSON 으로 변환
+
+   * 뷰 리졸버(viewResolver) 대신 httpMessageConverter 동작
+
+   * 기본 문자처리: StringHttpMessageConverter
+
+   * 기본 객체처리: MappingJackson2HttpMessageConverter
+
+   * byte 처리 등등 기타 여러 HttpMessageConverter 가 기본으로 등록되어 있음
+
+     cf) 클라이언트의 HTTP Accept 헤더와 서버의 컨트롤러 반환 타입 정보 둘을 조합해서 HttpMessageConverter가 선택됨
+
+<br />
