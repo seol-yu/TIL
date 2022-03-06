@@ -22,8 +22,24 @@ class HomeScreen extends Component {
         <Button
           title="To User Screen"
           onPress={() => {
-            this.props.navigation.navigate('User');
+            this.props.navigation.navigate('User', {
+              userIdx: 100,
+              userName: 'Seolyu',
+              userLastName: 'Lee',
+            });
           }}
+        />
+        <Button
+          title="Change the title"
+          onPress={() =>
+            this.props.navigation.setOptions({
+              title: 'Changed!!!',
+              headerStyle: {
+                backgroundColor: 'pink',
+              },
+              headerTintColor: 'red',
+            })
+          }
         />
       </View>
     );
