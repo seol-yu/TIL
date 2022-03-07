@@ -241,3 +241,9 @@ https://reactnavigation.org/docs/stack-navigator/
 ---
 
 <br />
+
+Stack.Navigator 태그에서 screenOptions로 공통 Style 적용 가능
+
+Stack.Screen에서 다르게 할 수 있음
+
+<br />
