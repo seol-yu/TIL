@@ -21,11 +21,19 @@ class UserScreen extends Component {
         fontWeight: 'bold',
         color: 'green',
       },
+      headerBackTitle: 'BACK',
+      headerRight: () => (
+        <Button
+          title="Go Back"
+          onPress={() => this.props.navigation.navigate('Home')}
+          color="orange"
+        />
+      ),
     });
   };
 
   render() {
-    // this.headerStyle();
+    this.headerStyle();
     const {params} = this.props.route;
     const userIdx = params ? params.userIdx : null;
     const userName = params ? params.userName : null;
