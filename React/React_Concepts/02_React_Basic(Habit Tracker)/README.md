@@ -135,7 +135,7 @@
   - `memo(function)` <- 함수형 컴포넌트. Higher Order Component(고차 컴포넌트)라고 부르기도 함.
   - `React Hook`
 
-cf) JSK, State, Props, SyntheticEvents, refs, Lifecycle methods, Lists and keys, developer tools, techniques
+cf) JSX, State, Props, SyntheticEvents, refs, Lifecycle methods, Lists and keys, developer tools, techniques
 
 <br />
 
