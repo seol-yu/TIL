@@ -180,3 +180,41 @@ Virtual Dom -> 비교시 활용
 
 <br />
 
+바닐라JS에서는
+
+addEventListener
+
+on{event} onclick onmouseout onfocus onblur ...
+
+<br />
+
+React JS에서는 카멜 케이스
+
+on{Event} onClick onMouseCut onFocus onBlur ...
+
+<br />
+
+기본 문장 on click
+
+카멜 케이스 onClick
+
+파스칼 케이스 OnClick
+
+케밥 케이스 on-click
+
+스네이크 케이스 on_click
+
+<br />
+
+이벤트 핸들러
+
+Object.assign -> 객체 내용 복사
+
+전역 변수 변경 -> ReactDOM.render
+
+<br />
+
+---
+
+<br />
+
