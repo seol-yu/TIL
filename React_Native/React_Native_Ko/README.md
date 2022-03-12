@@ -247,3 +247,25 @@ Stack.Navigator 태그에서 screenOptions로 공통 Style 적용 가능
 Stack.Screen에서 다르게 할 수 있음
 
 <br />
+
+---
+
+<br />
+
+`npm install @react-navigation/drawer`
+
+but, 헤더바 사라짐
+
+<br />
+
+---
+
+<br />
+
+`npm install @react-navigation/bottom-tabs`
+
+<br />
+
+---
+
+<br />
