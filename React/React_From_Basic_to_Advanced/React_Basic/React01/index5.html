@@ -14,22 +14,37 @@
     <script type="text/babel">
       const rootElement = document.getElementById("root");
 
-      const App = () => {
-        console.log("render");
-        const [keyword, setKeyword] = React.useState(() => {
+      function useLocalStorage(itemName, value = "") {
+        const [state, setState] = React.useState(() => {
           console.log("initialize");
-          return window.localStorage.getItem("keyword");
+          return window.localStorage.getItem(itemName) || value;
         });
-        const [result, setResult] = React.useState("");
-        const [typing, setTyping] = React.useState(false);
 
         React.useEffect(() => {
           console.log("effect");
-          window.localStorage.setItem("keyword", keyword);
-        }, [keyword]);
+          window.localStorage.setItem(itemName, state);
+        }, [state]);
+
+        return [state, setState];
+      }
+
+      const App = () => {
+        console.log("render");
+        // const [keyword, setKeyword] = React.useState(() => {
+        //   console.log("initialize");
+        //   return window.localStorage.getItem("keyword") || "";
+        // });
+        const [keyword, setKeyword] = useLocalStorage("keyword");
+        const [result, setResult] = useLocalStorage("result");
+        const [typing, setTyping] = useLocalStorage("typing", false);
+
+        // React.useEffect(() => {
+        //   console.log("effect");
+        //   window.localStorage.setItem("keyword", keyword);
+        // }, [keyword]);
 
         function handleChange(event) {
-          window.localStorage.setItem("keyword", event.target.value);
+          //   window.localStorage.setItem("keyword", event.target.value);
           setKeyword(event.target.value);
           setTyping(true);
         }

@@ -257,3 +257,153 @@ useEffect -> dependency array
 ---
 
 <br />
+
+커스텀 훅 만들기
+
+use{Name}
+
+<br />
+
+---
+
+<br />
+
+반복되는 기능
+
+찍어내기 / 반복 => 함수화
+
+useState / useEffect 반복 => 커스텀 훅
+
+<br />
+
+---
+
+<br />
+
+
+
+<br />
+
+---
+
+---
+
+<br />
+
+공식문서
+
+라이브러리 <- 만든 사람이 있고, 만든 목적과 도구의 상용법 정리해둠
+
+<br />
+
+리액트 공식문서 <- 친절, 한국어 번역, Tutorial 있음
+
+<br />
+
+MDN / React Document
+
+<br />
+
+바로 사용 vs 이해 해보기
+
+연습 / 반복
+
+<br />
+
+공식 문서 -> 라이브러리 설명서
+
+공식 문서 읽기 -> 리액트로 시작 후 반복 숙달
+
+<br />
+
+---
+
+<br />
+
+Visual Studio Code (vscode)
+
+https://github.com/microsoft/vscode
+
+자바스크립트로 만들어진 IDE(통합 개발 환경)
+
+<br />
+
+Extensions 필요한거 설치
+
+<br />
+
+Create React App 리액트 앱 만들어보기
+
+https://ko.reactjs.org/docs/create-a-new-react-app.html
+
+<br />
+
+`npx create-react-app my-app`
+
+`cd my-app`
+
+`npm start`
+
+<br />
+
+Node 설치 <- 로컬(컴퓨터)에서 리액트 앱 돌아갈 수 있도록 해주는 환경
+
+npm(node package manager)도 자동 설치됨
+
+npm이 설치되면 npx(node package runner)도 자동으로 설치됨
+
+<br />
+
+`node -v`
+
+`npm -v`
+
+`npx -v`
+
+<br />
+
+---
+
+<br />
+
+JSX 없이 사용하는 React
+
+https://ko.reactjs.org/docs/react-without-jsx.html
+
+<br />
+
+JSX <- React.createElement 간편 표현식
+
+https://ko.reactjs.org/docs/introducing-jsx.html
+
+<br />
+
+---
+
+<br />
+
+Props
+
+https://ko.reactjs.org/docs/components-and-props.html
+
+<br />
+
+ES7+ React/Redux/React-Native snippets 익스텐션 설치
+
+rfc 엔터
+
+<br />
+
+Props -> 컴포넌트에 전달되는 단일 객체
+
+순수함수처럼 동작 -> Props 자체를 수정해서는 안됨
+
+컴포넌트 합성 -> 여러 컴포넌트를 모아서
+
+컴포넌트 추출 -> 여러곳에서 사용되거나 복잡한 경우
+
+<br />
+
+---
+
+<br />
