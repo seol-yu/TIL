@@ -407,3 +407,39 @@ Props -> 컴포넌트에 전달되는 단일 객체
 ---
 
 <br />
+
+State and Lifecycle
+
+https://ko.reactjs.org/docs/state-and-lifecycle.html
+
+<br />
+
+익스텐션
+
+ESLint
+
+indent-rainbow
+
+npm
+
+Prettier
+
+Rainbow Brackets
+
+vscode-icons
+
+<br />
+
+컴포넌트 내의 상태 -> 자신의 출력값을 변경
+
+Class component -> State LifeCycle
+
+Functional component -> 훅으로 관리
+
+유의사항 -> 직접 수정X / 비동기적일 수 있음
+
+<br />
+
+---
+
+<br />
