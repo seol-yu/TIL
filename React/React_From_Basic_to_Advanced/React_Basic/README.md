@@ -233,3 +233,27 @@ DOM: 논리 트리
 앨리먼트: 요소
 
 <br />
+
+---
+
+<br />
+
+컴포넌트 사이드 이펙트 다루기
+
+사이드 이펙트 = 부작용
+
+의도하지 않은 효과 vs 부수 효과
+
+`useEffect`
+
+<br />
+
+useState -> lazy initialize
+
+useEffect -> dependency array
+
+<br />
+
+---
+
+<br />
