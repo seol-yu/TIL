@@ -95,3 +95,24 @@ https://github.com/divyanshub024/AndroidDraw
 ---
 
 <br />
+
+`npm install -g @ionic/cli`
+
+<br />
+
+`ionic start`
+
+<br />
+
+`ionic start mobile-dnn sidemenu`
+
+`cd mobile-dnn`
+
+`ionic serve`
+
+<br />
+
+---
+
+<br />
+
