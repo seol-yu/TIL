@@ -289,3 +289,166 @@ argmax
 
 <br />
 
+파이토치(PyTorch) 튜토리얼
+
+* 왜 파이토치?
+  * 장점
+    * NumPy와 매우 비슷한 문법
+    * 동적으로 back-propagation 경로 생성 가능
+    * 훌륭한 documentation
+    * 난이도에 비해 자유도 높음
+  * 단점
+    * ~~TF에 비해 상대적으로 부족한 오픈 소스 코드~~
+    * TF에 비해 낮은 상용화 지원
+    * ~~텐서보드 부재~~
+    * ~~Google TPU 지원 불가~~
+
+<br />
+
+---
+
+<br />
+
+pytorch.org
+
+<br />
+
+Stable, 운영체제, Conda, Python...
+
+아나콘다 프롬프트에서
+
+`conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
+
+으로 설치함
+
+<br />
+
+`ipython`
+
+```python
+import torch
+torch.__version__
+```
+
+`exit`
+
+<br />
+
+https://pytorch.org/get-started/previous-versions/
+
+<br />
+
+---
+
+<br />
+
+### Dataset
+
+<br />
+
+주어진 데이터에 대해서 결과를 내는 가상의 함수를 모사하는 함수를 만들기
+
+e.g. 주어진 숫자 그림을 보고 숫자 맞추기
+
+<br />
+
+그러기 위해서
+
+* 가상의 함수(ground-truth)를 통해 데이터 쌍(x, y)을 수집해 데이터셋을 만들고, 우리의 함수(e.g. 신경망)가 데이터를 통해 가상의 함수를 모방하도록 한다
+
+  ![1](./imgs/1.png)
+
+* 이때, x와 y는 각각 n차원과 m차원의 벡터로 표현될 수 있다
+
+  ![2](./imgs/2.png)
+
+<br />
+
+Tabular Dataset
+
+여러 column으로 이루어진 테이블로 구성된 데이터셋(e.g. 엑셀 파일 csv)
+
+* 한 row가 한 개의 sample을 의미
+* Column 객수가 벡터의 차원을 의미
+
+<br />
+
+---
+
+<br />
+
+### Tensor
+
+<br />
+
+차원이 0D <- scalar
+
+1D <- vector
+
+2D <- matrix
+
+3D <- tensor (여기까지 시각화)
+
+4D <- tensor
+
+5D <- tensor
+
+6D <- tensor
+
+<br />
+
+Tensor Shape
+
+육면체로 표현
+
+![3](./imgs/3.png)
+
+<br />
+
+Matrix Shape
+
+![4](./imgs/4.png)
+
+<br />
+
+Typical Tensor Shape: Tabular Dataset
+
+![5](./imgs/5.png)
+
+<br />
+
+Mini-batch: Consider Parallel Operations
+
+![6](./imgs/6.png)
+
+<br />
+
+Typical Tensor Shape: Natural Language Processing
+
+![7](./imgs/7.png)
+
+|x| = (#s, #w, #f)
+
+#f <- |xᵢ,j| = (#f, )
+
+|xᵢ| = (#w, #f)
+
+<br />
+
+Typical Tensor Shape: Computer Vision (Grayscale)
+
+|x| = (#img, h, w)
+
+<br />
+
+Typical Tensor Shape: Computer Vision (Color)
+
+|x| = (#img, #ch, h, w)
+
+|xᵢ| = (#ch, h, w)
+
+<br />
+
+---
+
+<br />
