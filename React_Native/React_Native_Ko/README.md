@@ -269,3 +269,66 @@ but, 헤더바 사라짐
 ---
 
 <br />
+
+`npm install --save react-native-vector-icons`
+
+<br />
+
+---
+
+<br />
+
+`react-native init --version 0.61.5 RNative_ImagePicker`
+
+=> `react-native init RNative_ImagePicker`
+
+<br />
+
+`cd RNative_ImagePicker`
+
+<br />
+
+`npm install --save react-native-image-picker`
+
+<br />
+
+`cd ios`
+
+<br />
+
+`pod install`
+
+<br />
+
+android > app > src > main 에 AndroidManifest.xml 에 가서 권한 주기
+
+```xml
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
+추가
+
+<br />
+
+---
+
+<br />
+
+react native contacts
+
+<br />
+
+`npm install react-native-contacts --save`
+
+<br />
+
+https://www.npmjs.com/package/react-native-contacts
+
+설정하기
+
+<br />
+
+---
+
