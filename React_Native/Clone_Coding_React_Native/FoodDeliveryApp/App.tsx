@@ -10,13 +10,13 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
+  SafeAreaView,  // 죽은 공간 처리, 최상단을 SafeAreaView로
   ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
+  Text,  // span
   useColorScheme,
-  View,
+  View,  // div
 } from 'react-native';
 
 import {
@@ -65,7 +65,7 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
+      <ScrollView  // FlatList
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
@@ -73,7 +73,7 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
+          <Section title="Step One :)">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
           </Section>
