@@ -129,3 +129,76 @@ Advanced - prototype / Hoisting / Scope / Closure (내부 구현사항)
 ---
 
 <br />
+
+크롬 브라우저 F12 Console에서
+
+```javascript
+console.log('Heello World!');
+```
+
+<br />
+
+---
+
+<br />
+
+Visual Studio Code
+
+익스텐션
+
+1. prettier
+2. material icon Theme
+3. Material Theme
+4. Live Server
+
+<br />
+
+Settings - quote 검색
+
+single 사용
+
+<br />
+
+---
+
+<br />
+
+node 설치
+
+터미널에서
+
+`node -v`
+
+`node`
+
+console.log('Hello World');
+
+Ctrl + C 종료
+
+<br />
+
+---
+
+<br />
+
+index.js
+
+```javascript
+console.log('seolyu');
+```
+
+`node index.js`
+
+`npm install nodemon -g` <- nodemon 설치
+
+`nodemon index.js`
+
+수정한거 반영됨
+
+Ctrl + C 종료
+
+<br />
+
+---
+
+<br />
