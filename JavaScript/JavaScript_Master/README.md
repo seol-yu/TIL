@@ -4,7 +4,19 @@
 
 <br />
 
+[목차](#목차)
+
+[자바스크립트](#자바스크립트)
+
+[변수](#변수)
+
+<br />
+
 ---
+
+<br />
+
+## 자바스크립트
 
 <br />
 
@@ -133,7 +145,7 @@ Advanced - prototype / Hoisting / Scope / Closure (내부 구현사항)
 크롬 브라우저 F12 Console에서
 
 ```javascript
-console.log('Heello World!');
+console.log('Hello World!');
 ```
 
 <br />
@@ -199,6 +211,167 @@ Ctrl + C 종료
 
 <br />
 
+[목차로](#목차)
+
+<br />
+
 ---
+
+<br />
+
+## 변수
+
+<br />
+
+컴퓨터 - 하드디스크 Hard Drive, CPU 연산 Compute, 메모리 Memory
+
+<br />
+
+어플리케이션이 메모리 상에 올라왔을 때
+
+Code, Data(변수), Stack(실행순서), Heap(복잡한 데이터 타입인 객체들 할당)
+
+<br />
+
+---
+
+<br />
+
+변수 Variable
+
+입력 input -> `처리 process` -> 출력 output (-> 저장 storage / 데이터 보내기)
+
+<br />
+
+변수 Variables: 값을 저장하는 공간. 자료를 저장할 수 있는 이름이 주어진 기억장소
+
+let  a = 0;  // 변수 선언 Variable declaration과 값의 할당 assignment
+
+// 메모리 셀(메모리 주소 들어있음) 어딘가에 0 할당. a 변수 이름은 메모리 주소 가리킴.
+
+// a는 변수 이름 Variable name. 식별자 identifier
+
+// 메모리 주소 자체를 변수로 쓰면 어떤 변수인지 유추 어려움
+
+a = 1;  // 값의 재할당 value reassigning
+
+const
+
+처리 process -> 데이터 data
+
+<br />
+
+---
+
+<br />
+
+변수 이름 짓기 Naming Variables
+
+저장된 값을 잘 나타낼 수 있는 의미 있는 이름
+
+구체적일수록 좋다
+
+<br />
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords
+
+<br />
+
+---
+
+<br />
+
+데이터 타입 Data Type
+
+* 원시 Primitive(->Data, Stack) - 단일 데이터 number(2^53 - 1 BigInt), string, boolean, null, undefined, Symbol
+
+  값 자체가 메모리 셀에 들어있다
+
+* 객체 object(->Heap 메모리 공간에 할당. 사이즈 동적으로) - 복합 데이터 object(array), function
+
+  참조값(메모리 주소)가 메모리 셀에 들어있다
+
+  복합 데이터 {key: value}
+
+  ```javascript
+  {
+      id: 1234,
+      key: 'secret-key',
+  }
+  ```
+
+  ```javascript
+  let a = 123;
+  
+  let apple = {
+      name: 'apple',
+      color: 'red',
+      display: '🍎',
+  }
+  
+  apple.name
+  ```
+
+<br />
+
+---
+
+<br />
+
+원시 Primitive
+
+```javascript
+// Copy by Value
+let a = 1;
+let b = a;  // b에 1이 들어감
+
+b= 2;  // b에 2이 들어감
+```
+
+<br />
+
+객체 Object
+
+```javascript
+// Copy by Reference
+let apple = {
+    name: 'apple',
+}
+let orange = apple;  // orange 변수에 apple이 가리키는 메모리 주소값이 할당됨
+apple.name = 'orange';
+```
+
+<br />
+
+---
+
+<br />
+
+let <- 재할당 가능
+
+const <- 재할당 불가능
+
+<br />
+
+|       | 재할당 Reassignable | 변경 Mutable |
+| ----- | ------------------- | ------------ |
+| let   | Yes                 | Yes          |
+| const | No                  | Yes          |
+
+<br />
+
+JavaScript 자바스크립트 <- 동적인 언어
+
+컴파일러로 실행파일로 변환하는 언어는 정적 타입 Static Type 인데
+
+자바스크립트는 자바스크립트 엔진(인터프리터)이 런타임 시 코드를 한줄씩 번역해서 실행. 동적 타입(동적으로 타입 결정. weakly typed)
+
+<br />
+
+---
+
+<br />
+
+[목차로](#목차)
 
 <br />

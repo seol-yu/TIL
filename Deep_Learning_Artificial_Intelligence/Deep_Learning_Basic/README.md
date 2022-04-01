@@ -452,3 +452,17 @@ Typical Tensor Shape: Computer Vision (Color)
 ---
 
 <br />
+
+`pip install jupyter`
+
+`jupyter notebook`
+
+`conda install pytorch`
+
+`conda install jupyter`
+
+<br />
+
+---
+
+<br />
