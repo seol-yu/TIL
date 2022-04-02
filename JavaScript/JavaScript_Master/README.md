@@ -10,6 +10,8 @@
 
 [변수](#변수)
 
+[연산자](#연산자)
+
 <br />
 
 ---
@@ -368,10 +370,60 @@ JavaScript 자바스크립트 <- 동적인 언어
 
 <br />
 
+[목차로](#목차)
+
+<br />
+
 ---
 
 <br />
 
+## 연산자
+
+<br />
+
+Operators
+
+<br />
+
+표현식 Expressions <- 값으로  평가될 수 있는 문
+
+값 Value
+
+<br />
+
+리터럴 Literal: 코드에서 값을 나타내는 표기법
+
+\`템플릿 리터럴(Template Literal)\`
+
+<br />
+
+문 Statement
+
+최소 실행 단위
+
+<br />
+
+```javascript
+1;  // 숫자 리터럴 표현식
+1 + 1;  // 연산자 표현식
+call();  // 함수 호출 표현식
+let b;  // 선언문
+b = 2;  // 할당문, 할당 표현식인 문
+```
+
+<br />
+
+연산자 우선순위
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+<br />
+
 [목차로](#목차)
+
+<br />
+
+---
 
 <br />
