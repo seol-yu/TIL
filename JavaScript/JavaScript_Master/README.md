@@ -590,7 +590,36 @@ Immutability(unchangable) 불변성
 
 <br />
 
+객체 Object <- 복합 데이터
 
+서로 연관있는 속성(데이터. 프로퍼티)과 행동(함수. 메소드)을 묶어주기 위해
+
+ex) 순수 데이터 객체
+
+```javascript
+let apple = {
+    name: 'apple',
+    color: 'red',
+    display: '🍎',
+}
+```
+
+ex) 상태와 행동 객체
+
+```javascript
+let apple = {
+    name: 'apple', // 속성 Property
+    display: function() { // 행동 Method
+        console.log('');
+    }
+}
+```
+
+밀접하게 관련 있는 상태와 행동을 객체로 묶기
+
+<br />
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Working_with_Objects
 
 <br />
 
