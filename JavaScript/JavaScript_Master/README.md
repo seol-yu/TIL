@@ -16,6 +16,12 @@
 
 [함수](#함수)
 
+[객체](#객체)
+
+[클래스](#클래스)
+
+[유용한 객체들](#유용한_객체들)
+
 <br />
 
 ---
@@ -670,3 +676,38 @@ https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Working_with_Objects
 ---
 
 <br />
+
+## 유용한_객체들
+
+<br />
+
+내장 객체 Built-in Objects
+
+호스트 객체 Host Objects <- 런타임 환경에서 제공되는 (ex. Node APIs, Browser APIs)
+
+사용자 정의 객체 User-defined Objects
+
+<br />
+
+Built-ins 오브젝트 중
+
+`래퍼 객체` <- 데이터 타입 관련
+
+`글로벌 객체` <- ex) eval(), isFinite(), isNaN(), parseFloat(), parseInt(), decodeURI(), decodeURIComponent(), encodeURI(), encodeURIComponent()
+
+글로벌 객체 <- F12 - globalThis, this(브라우저에서는 전역객체 window) 콘솔창에
+
+<br />
+
+
+
+<br />
+
+[목차로](#목차)
+
+<br />
+
+---
+
+<br />
+
