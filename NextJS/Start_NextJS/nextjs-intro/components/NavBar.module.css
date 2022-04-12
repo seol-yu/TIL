@@ -1,0 +1,13 @@
+.link {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: lavenderblush;
+}
+
+.active {
+    color: palevioletred;
+}
