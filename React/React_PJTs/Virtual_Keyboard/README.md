@@ -29,3 +29,48 @@ package.json 에 scripts 에 "dev": "webpack-dev-server"
 `npm run dev`
 
 <br />
+
+---
+
+<br />
+
+`npm i -D eslint`
+
+`npm install --save-dev --save-exact prettier`
+
+<br />
+
+^ <- 패키지 없데이트시 minor 버전 이하 업데이트 허용
+
+--save-exact 옵션 사용하면 ^ 없이 설치됨
+
+<br />
+
+`npm i -D eslint-config-prettier eslint-plugin-prettier`
+
+<br />
+
+`npx eslint --init`
+
+<br />
+
+eslint, prettier, open in browser 익스텐션 설치
+
+<br />
+
+Preferences: Open Workspace Settings (JSON) 가서
+
+```json
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnsave": {
+        "source.fixAll.eslint": true
+    }
+}
+```
+
+<br />
+
+---
+
+<br />
